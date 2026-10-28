@@ -14,6 +14,7 @@
 .detail-panel{margin-top:14px;border:1px solid var(--line);border-radius:15px;background:linear-gradient(160deg,#141d27,#0f161e);overflow:hidden}
 .detail-panel.hidden{display:none!important}.detail-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:0}.detail-media{min-height:300px;background:#0c1218;position:relative}.detail-media img{width:100%;height:100%;min-height:300px;object-fit:cover;display:block}.detail-body{padding:18px}.detail-facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:14px 0}.detail-fact{padding:9px;border:1px solid #2c3948;border-radius:10px;background:#111923}.detail-fact span{display:block;color:var(--muted);font-size:.68rem}.detail-fact b{display:block;margin-top:2px}.proscons{display:grid;grid-template-columns:1fr 1fr;gap:10px}.proscons>div{padding:11px;border-radius:10px;background:#101821;border:1px solid var(--line)}.proscons ul{margin:.35em 0 0;padding-left:1.15em}.flight-detail{padding:16px}.flight-detail .detail-facts{grid-template-columns:repeat(4,minmax(0,1fr))}
 @media(max-width:800px){.detail-grid{grid-template-columns:1fr}.detail-media,.detail-media img{min-height:220px}.flight-detail .detail-facts{grid-template-columns:1fr 1fr}.proscons{grid-template-columns:1fr}}
+.date-input-wrap{display:flex;gap:7px;align-items:center}.date-input-wrap input{flex:1}.calendar-btn{width:42px;height:42px;border:1px solid #405064;background:#1c2633;color:#fff;border-radius:9px;cursor:pointer}.calendar-btn:hover{background:#273444}.heatmap-wrap{margin-top:16px;border:1px solid var(--line);border-radius:14px;padding:14px;background:#101720}.heatmap-head{display:flex;justify-content:space-between;gap:10px;align-items:flex-start;flex-wrap:wrap;margin-bottom:10px}.legend{display:flex;align-items:center;gap:6px;font-size:.72rem;color:var(--muted)}.legend-scale{display:flex;gap:2px}.legend-scale i{display:block;width:20px;height:10px;border-radius:2px}.heat-grid{display:grid;grid-template-columns:90px repeat(3,minmax(0,1fr));gap:6px}.heat-label{display:flex;align-items:center;color:var(--muted);font-size:.74rem}.heat-cell{border:1px solid rgba(255,255,255,.09);border-radius:10px;padding:9px;cursor:pointer;min-height:74px;color:#111;display:flex;flex-direction:column;justify-content:space-between}.heat-cell:hover{outline:2px solid var(--accent)}.heat-cell.selected{outline:3px solid #fff;box-shadow:0 0 0 2px var(--accent)}.heat-cell .hc-date{font-size:.72rem;font-weight:900}.heat-cell .hc-cost{font-size:.9rem;font-weight:950}.heat-cell .hc-note{font-size:.64rem;opacity:.8}.heat-h1{background:#dff1e3}.heat-h2{background:#bfe3c8}.heat-h3{background:#f1df9f}.heat-h4{background:#e7b76e}.heat-h5{background:#cf7a63}.optimizer{margin-top:12px;display:grid;grid-template-columns:1fr 1fr;gap:10px}.optimizer .note{margin:0}.saving{color:var(--good);font-weight:900}@media(max-width:700px){.heat-grid{grid-template-columns:70px repeat(3,minmax(90px,1fr));overflow-x:auto}.optimizer{grid-template-columns:1fr}}
 
 .profile-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.profile-card{padding:15px;cursor:pointer;border:1px solid var(--line);border-radius:14px;background:linear-gradient(160deg,var(--panel),#111821);position:relative}.profile-card:hover{border-color:#56687c}.profile-card.selected{border-color:var(--accent);box-shadow:0 0 0 2px rgba(229,179,90,.15)}.profile-card.selected:after{content:"✓ Aktif";position:absolute;right:9px;top:9px;background:var(--accent);color:#17120a;font-weight:900;font-size:.68rem;padding:4px 7px;border-radius:999px}.profile-icon{font-size:1.6rem;margin-bottom:6px}.restaurant-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.restaurant-card{padding:14px;border:1px solid var(--line);border-radius:13px;background:#121a23;cursor:pointer;position:relative}.restaurant-card.selected{border-color:var(--accent2);box-shadow:0 0 0 2px rgba(120,183,201,.14)}.restaurant-card .restaurant-check{position:absolute;right:10px;top:10px}.route-summary{margin-top:9px;padding:8px 10px;background:#0f161f;border:1px solid #2b3745;border-radius:9px;color:#cbd4dd;font-size:.76rem}.route-total{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 0}.route-total .badge{background:#1c2a38}.scenario-note{margin-top:12px}.restaurant-meta{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
 @media(max-width:980px){.profile-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.restaurant-grid{grid-template-columns:1fr 1fr}.controls{grid-template-columns:repeat(2,minmax(0,1fr))}.g3,.g4,.budget{grid-template-columns:1fr 1fr}.summarybar{position:static}.summarybar .wrap{grid-template-columns:repeat(2,minmax(0,1fr))}.sum{border-bottom:1px solid var(--line)}.sum.total{grid-column:1/-1}.day{grid-template-columns:90px 1fr}.day-toggle{grid-column:2}.map-wrap{height:460px}}
@@ -45,10 +46,15 @@
 <div class="controls">
 <div class="control"><label>Kişi sayısı</label><select id="people"><option value="2">2 kişi — Önder + Feza</option><option value="3">3 kişi — Önder + Feza + Doğa</option></select></div>
 <div class="control"><label>Doğa katılıyor mu?</label><div class="switchrow"><span id="dogaText"></span><label class="switch"><input id="doga" type="checkbox"><span class="slider"></span></label></div></div>
-<div class="control"><label>Gidiş</label><input id="outbound" type="date" min="2026-12-29" max="2026-12-31"></div>
-<div class="control"><label>Dönüş</label><input id="inbound" type="date" min="2027-01-02" max="2027-01-04"></div>
+<div class="control"><label>Gidiş</label><div class="date-input-wrap"><input id="outbound" type="date" min="2026-12-29" max="2026-12-31"><button class="calendar-btn" type="button" data-picker="outbound" aria-label="Gidiş takvimini aç">📅</button></div></div>
+<div class="control"><label>Dönüş</label><div class="date-input-wrap"><input id="inbound" type="date" min="2027-01-02" max="2027-01-04"><button class="calendar-btn" type="button" data-picker="inbound" aria-label="Dönüş takvimini aç">📅</button></div></div>
 </div>
 <div class="note" id="dateAdvice" style="margin-top:14px"></div>
+<div class="heatmap-wrap">
+ <div class="heatmap-head"><div><h3>Tarih maliyet haritası</h3><div class="muted mini">3×3 kombinasyon; uçuş + seçili konaklama için planlama tahmini. Açık yeşil daha ekonomik, koyu turuncu/kırmızı daha pahalıdır.</div></div><div class="legend"><span>Ucuz</span><span class="legend-scale"><i class="heat-h1"></i><i class="heat-h2"></i><i class="heat-h3"></i><i class="heat-h4"></i><i class="heat-h5"></i></span><span>Pahalı</span></div></div>
+ <div id="dateHeatGrid" class="heat-grid"></div>
+ <div class="optimizer"><div class="note" id="optimizerWhy"></div><div class="note" id="optimizerSaving"></div></div>
+</div>
 </div></section>
 
 <section id="senaryo"><div class="wrap">
@@ -184,6 +190,11 @@ const DATA={
    zavicaj:{name:'Zavičaj Skadarlija',day:'day3',premium:200,lat:44.8182,lng:20.4637,note:'Skadarlija • geleneksel Balkan'},
    trpkovic:{name:'Trpković Bakery',day:'day5',premium:-250,lat:44.8022,lng:20.4652,note:'Burek + yoğurt'}
  },
+ dateModel:{
+   outboundFactor:{'2026-12-29':0.96,'2026-12-30':1.00,'2026-12-31':1.10},
+   inboundFactor:{'2027-01-02':1.04,'2027-01-03':0.96,'2027-01-04':0.93},
+   nightlyWeight:{'2026-12-29':113,'2026-12-30':166,'2026-12-31':215,'2027-01-01':171,'2027-01-02':124,'2027-01-03':101}
+ },
  profiles:{
    family:{people:3,doga:true,flight:'balanced',stay:'apartment2br',food:'balanced',restaurants:['trisesira','zavicaj','trpkovic']},
    romantic:{people:2,doga:false,flight:'direct',stay:'maison',food:'special',restaurants:['ambar','trisesira']},
@@ -240,7 +251,7 @@ function render(){
  const c=compute();$('bFlight').textContent=money(c.flight);$('bStay').textContent=money(c.stay);$('bFood').textContent=money(c.food);$('bRestaurant').textContent=(c.restaurant>=0?'+ ':'− ')+money(Math.abs(c.restaurant));$('bNye').textContent=money(c.nye);$('bTransport').textContent=money(c.transport);$('bActivity').textContent=money(c.activity);$('bBuffer').textContent=money(c.buffer);$('totalCost').textContent=money(c.total);$('perPerson').textContent='Kişi başı yaklaşık '+money(c.total/state.people);$('sumTotal').textContent=money(c.total);
  $('budgetNote').textContent=(state.people===2?'Doğa katılmadığı için kişi bazlı kalemler düşüyor; konaklama ise oda/apart bazlı olduğu için toplam tasarruf oransal olarak daha sınırlı. ':'')+(n>4?'Uzun konaklama uçuş esnekliğini artırır; ekstra gecenin maliyetini daha ucuz biletle karşılaştırın.':'Daha kısa konaklama oteli düşürür fakat yılbaşı uçuş fiyatı daha yüksek olabilir.');
  const direct=(state.outbound==='2026-12-31'&&state.inbound==='2027-01-03'); $('dateAdvice').innerHTML=direct?'<b>Direkt uçuş avantajı:</b> 31 Aralık–3 Ocak penceresi direkt uçuş ihtimalini artırıyor; ancak yılbaşı günü varış nedeniyle program daha sıkışık.':'<b>Dengeli pencere:</b> '+n+' gece; 30 Aralık civarı varış yılbaşı gecesinden önce şehre alışma payı bırakıyor. 4 Ocak dönüş seçimi, fiyat uygunsa bir tam gün daha kazandırıyor.';
- document.querySelectorAll('.day').forEach(x=>x.classList.toggle('off',!state.days[x.dataset.day]));renderProfile();renderRestaurants();renderRouteSummaries();renderChoiceFocus();renderFlightDetail();renderStayDetail(); updateMap();buildPrint();save();
+ document.querySelectorAll('.day').forEach(x=>x.classList.toggle('off',!state.days[x.dataset.day]));renderProfile();renderRestaurants();renderRouteSummaries();renderChoiceFocus();renderFlightDetail();renderStayDetail();renderDateHeatmap(); updateMap();buildPrint();save();
 }
 function formatDate(s){const [y,m,d]=s.split('-');const mm={'12':'Ara','01':'Oca'};return Number(d)+' '+mm[m]}
 function setCustom(){if(state.profile!=='custom'){state.profile='custom'}}
@@ -250,6 +261,39 @@ function applyProfile(id){
  Object.assign(state,p);
  if(id==='economy'||id==='gastro'){state.people=keepPeople;state.doga=keepDoga}
  state.profile=id;state.focus={flight:true,stay:true,food:true};syncControls();render();
+}
+function dateRangeNights(outbound,inbound){
+ const days=[];let t=dateParts(outbound),end=dateParts(inbound);
+ while(t<end){const d=new Date(t);days.push(d.toISOString().slice(0,10));t+=86400000}
+ return days;
+}
+function estimateFlightForDates(outbound,inbound){
+ const base=(DATA.flights[state.flight]||DATA.flights.balanced).pp;
+ const a=DATA.dateModel.outboundFactor[outbound]||1,b=DATA.dateModel.inboundFactor[inbound]||1;
+ let pp=base*((a+b)/2);
+ if(outbound==='2026-12-31'&&inbound==='2027-01-03')pp*=0.97;
+ return pp*state.people;
+}
+function estimateStayForDates(outbound,inbound){
+ const st=DATA.stays[state.stay]||DATA.stays.apartment2br;
+ const baseWeights=['2026-12-30','2026-12-31','2027-01-01','2027-01-02','2027-01-03'].reduce((a,d)=>a+(DATA.dateModel.nightlyWeight[d]||100),0);
+ const w=dateRangeNights(outbound,inbound).reduce((a,d)=>a+(DATA.dateModel.nightlyWeight[d]||100),0);
+ return st.base*(w/baseWeights)*(state.people===2?.88:1);
+}
+function comboCost(outbound,inbound){return estimateFlightForDates(outbound,inbound)+estimateStayForDates(outbound,inbound)}
+function renderDateHeatmap(){
+ const outs=['2026-12-29','2026-12-30','2026-12-31'],ins=['2027-01-02','2027-01-03','2027-01-04'];
+ const combos=[];outs.forEach(o=>ins.forEach(i=>combos.push({o,i,c:comboCost(o,i)})));
+ const min=Math.min(...combos.map(x=>x.c)),max=Math.max(...combos.map(x=>x.c));
+ const rank=c=>{const r=(c-min)/(max-min||1);return r<.2?1:r<.4?2:r<.6?3:r<.8?4:5};
+ let html='<div class="heat-label"></div>'+ins.map(i=>'<div class="heat-label">'+formatDate(i)+' dönüş</div>').join('');
+ outs.forEach(o=>{html+='<div class="heat-label">'+formatDate(o)+' gidiş</div>';ins.forEach(i=>{const c=comboCost(o,i),sel=o===state.outbound&&i===state.inbound;const direct=o==='2026-12-31'&&i==='2027-01-03';html+='<button type="button" class="heat-cell heat-h'+rank(c)+(sel?' selected':'')+'" data-date-combo="'+o+'|'+i+'"><span class="hc-date">'+formatDate(o)+' → '+formatDate(i)+'</span><span class="hc-cost">'+money(c)+'</span><span class="hc-note">'+(direct?'Direkt uçuş avantajı':'uçuş + konaklama')+'</span></button>'})});
+ $('dateHeatGrid').innerHTML=html;
+ document.querySelectorAll('[data-date-combo]').forEach(b=>b.addEventListener('click',()=>{const [o,i]=b.dataset.dateCombo.split('|');state.outbound=o;state.inbound=i;$('outbound').value=o;$('inbound').value=i;setCustom();render()}));
+ const best=combos.sort((a,b)=>a.c-b.c)[0],cur=comboCost(state.outbound,state.inbound),save=Math.max(0,cur-best.c);
+ const direct=state.outbound==='2026-12-31'&&state.inbound==='2027-01-03';
+ $('optimizerWhy').innerHTML='<b>Neden mevcut tarihler?</b><br>'+(direct?'31 Aralık–3 Ocak kombinasyonu direkt uçuş günlerine denk gelme avantajı taşıyor; ancak yılbaşı günü varış programı sıkıştırır.':'Seçiminiz '+nights()+' gece sağlar. 30 Aralık civarı geliş, yılbaşından önce yerleşme ve dinlenme payı bırakır; 4 Ocak dönüş ise düşük sezon gecesinden yararlanabilir.');
+ $('optimizerSaving').innerHTML='<b>Daha ucuz seçenek:</b><br>'+formatDate(best.o)+' → '+formatDate(best.i)+' tahmini uçuş+konaklama '+money(best.c)+'. '+(save>1000?'<span class="saving">Mevcut seçime göre yaklaşık '+money(save)+' tasarruf potansiyeli.</span>':'Mevcut seçiminiz zaten en düşük maliyet bandına yakın.');
 }
 function renderChoiceFocus(){
  [['ucus','flight'],['konaklama','stay'],['yeme','food']].forEach(([id,key])=>{const sec=$(id);if(sec)sec.classList.toggle('focused',!!state.focus[key]&&!!state[key])});
@@ -296,6 +340,7 @@ function visiblePlaces(){return places.filter(p=>(!p.day||state.days[p.day])&&(!
 function updateMap(){if(!map)return;markers.forEach(m=>map.removeLayer(m));markers=[];visiblePlaces().forEach(p=>{const m=L.marker([p.lat,p.lng]).addTo(map).bindPopup('<b>'+p.name+'</b><br>'+p.note+'<br><a target="_blank" href="https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(p.name+' Belgrade')+'">Google Maps ↗</a>');markers.push(m)});if(markers.length){const g=L.featureGroup(markers);map.fitBounds(g.getBounds().pad(.16),{maxZoom:14})}}
 function buildPrint(){const tb=document.querySelector('#printPlaces tbody');if(!tb)return;tb.innerHTML=visiblePlaces().map(p=>'<tr><td style="padding:5px;border-bottom:1px solid #ccc"><b>'+p.name+'</b></td><td style="padding:5px;border-bottom:1px solid #ccc">'+p.note+'</td></tr>').join('')}
 $('people').addEventListener('change',e=>{state.people=Number(e.target.value);state.doga=state.people===3;setCustom();render()});$('doga').addEventListener('change',e=>{state.doga=e.target.checked;state.people=state.doga?3:2;setCustom();render()});$('outbound').addEventListener('change',e=>{state.outbound=e.target.value;if(dateParts(state.inbound)<=dateParts(state.outbound))state.inbound='2027-01-03';setCustom();render()});$('inbound').addEventListener('change',e=>{state.inbound=e.target.value;if(dateParts(state.inbound)<=dateParts(state.outbound)){state.outbound='2026-12-30';$('outbound').value=state.outbound}setCustom();render()});
+document.querySelectorAll('[data-picker]').forEach(b=>b.addEventListener('click',()=>{const input=$(b.dataset.picker);if(input.showPicker)input.showPicker();else{input.focus();input.click()}}));
 selectCard('[data-flight]','flight');selectCard('[data-stay]','stay');selectCard('[data-food]','food');document.querySelectorAll('[data-profile]').forEach(x=>x.addEventListener('click',()=>applyProfile(x.dataset.profile)));document.querySelectorAll('[data-restaurant]').forEach(x=>x.addEventListener('click',e=>{e.preventDefault();toggleRestaurant(x.dataset.restaurant)}));document.querySelectorAll('[data-day-toggle]').forEach(x=>x.addEventListener('change',e=>{state.days[e.target.dataset.dayToggle]=e.target.checked;setCustom();render()}));document.querySelectorAll('.filter').forEach(b=>b.addEventListener('click',()=>{activeCat=b.dataset.cat;document.querySelectorAll('.filter').forEach(x=>x.classList.toggle('active',x===b));updateMap();buildPrint()}));document.querySelectorAll('[data-clear-section]').forEach(b=>b.addEventListener('click',()=>clearSection(b.dataset.clearSection)));$('resetBtn').addEventListener('click',()=>{state=JSON.parse(JSON.stringify(DEFAULT));syncControls();render()});$('printBtn').addEventListener('click',()=>window.print());$('printBtn2').addEventListener('click',()=>window.print());
 window.addEventListener('load',()=>{load();initMap();setTimeout(()=>map&&map.invalidateSize(),250)});window.addEventListener('resize',()=>map&&map.invalidateSize());
 </script>
