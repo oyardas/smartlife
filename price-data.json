@@ -1,9 +1,548 @@
 {
+  "schema_version": 2,
   "alert": false,
-  "checked_at": "2026-10-28 13:42 Europe/Istanbul",
-  "label": "Belgrad fiyat takibi aktif",
-  "new_price": null,
+  "label": "Belgrad fiyat takibi – doğrulanmış yeni dip fiyat yok",
   "previous_best": null,
+  "new_price": null,
   "saving": null,
-  "saving_pct": null
+  "saving_pct": null,
+  "checked_at": "2026-10-29 (Türkiye saati, sabah taraması)",
+  "scan_kind": "initial_verified_baseline",
+  "previous_scan_comparable": false,
+  "currency": "TRY",
+  "caveats": [
+    "Bu tutarlar tarama anındaki Pegasus uçuş parçaları ve Trivago tesis fiyatlarının toplamından oluşur; rezervasyon garantisi değildir.",
+    "Uçuş bagajı, ücret sınıfı ve ödeme ekranı toplamı doğrulanmadı; toplam maliyet kesin fiyat olarak kullanılmamalı.",
+    "Pegasus doğrudan uçuş göstermedi. AJet VF1001/VF1002 perşembe-pazar direkt uçuşu tarifede var, ancak bu tarihlerde ücret çekilemedi.",
+    "31 Aralık gecesi Pegasus aktarması 1 Ocak'ta Belgrad'a varacağından yılbaşı gecesini kaçırır.",
+    "Trivago fiyatları 1 oda, belirtilen yetişkin sayısı ve tam konaklama aralığı için kaynak gözlemleridir; tesis oda tipini ve kapasiteyi rezervasyonda doğrulayın.",
+    "29 Aralık gidişi ve 2 Ocak dönüşü için Pegasus sonuçlarında çift yönlü karşılaştırılabilir ücret bulunmadı.",
+    "Skyscanner'ın bu sorguda sunduğu en düşük ay içi fiyatlar farklı Aralık tarihlerindeydi; burada hedef tarihler için canlı fiyat gibi kullanılmadı."
+  ],
+  "sources": {
+    "pegasus": "https://www.flypgs.com/",
+    "trivago": "https://www.trivago.com.tr/",
+    "skyscanner": "https://skyscanner.net/g/referrals/v1/flights/home?mediaPartnerId=2850210&utm_term=skyscanner_chatgpt_app_data",
+    "ajet": "https://ajet.com/",
+    "schedule_outbound": "https://info.flightmapper.net/flight/AJet_VF_1001",
+    "schedule_return": "https://info.flightmapper.net/flight/AJet_VF_1002"
+  },
+  "recommended_quoted": {
+    "two_adults": {
+      "dates": "2026-12-30 → 2027-01-04",
+      "total_excluding_unknown_baggage": 76889.6,
+      "hotel": "Skadarlija -magnolia"
+    },
+    "three_adults": {
+      "dates": "2026-12-30 → 2027-01-04",
+      "total_excluding_unknown_baggage": 112595.4,
+      "hotel": "Kopernikus Hotel Prag"
+    }
+  },
+  "combinations": [
+    {
+      "adults": 2,
+      "outbound": "2026-12-29",
+      "inbound": "2027-01-02",
+      "nights": 4,
+      "hotel": {
+        "name": "Skadarlija -magnolia",
+        "total": 21906,
+        "rating": 9.7,
+        "source": "Trivago",
+        "quote_type": "1 room, all nights, price snapshot"
+      },
+      "flight": {
+        "carrier": "Pegasus",
+        "outbound_cost": null,
+        "return_cost": null,
+        "total": null,
+        "connections": "SAW",
+        "outbound_layover": null,
+        "return_layover": null,
+        "baggage_included": "unknown",
+        "taxes_finalized": false,
+        "source": "Pegasus app"
+      },
+      "combined_total": null,
+      "nye_available_with_quoted_pegasus_flight": false,
+      "warning": null
+    },
+    {
+      "adults": 2,
+      "outbound": "2026-12-29",
+      "inbound": "2027-01-03",
+      "nights": 5,
+      "hotel": {
+        "name": "Skadarlija -magnolia",
+        "total": 27466,
+        "rating": 9.7,
+        "source": "Trivago",
+        "quote_type": "1 room, all nights, price snapshot"
+      },
+      "flight": {
+        "carrier": "Pegasus",
+        "outbound_cost": null,
+        "return_cost": 36588,
+        "total": null,
+        "connections": "SAW",
+        "outbound_layover": null,
+        "return_layover": "2h40",
+        "baggage_included": "unknown",
+        "taxes_finalized": false,
+        "source": "Pegasus app"
+      },
+      "combined_total": null,
+      "nye_available_with_quoted_pegasus_flight": false,
+      "warning": null
+    },
+    {
+      "adults": 2,
+      "outbound": "2026-12-29",
+      "inbound": "2027-01-04",
+      "nights": 6,
+      "hotel": {
+        "name": "Skadarlija -magnolia",
+        "total": 30023,
+        "rating": 9.7,
+        "source": "Trivago",
+        "quote_type": "1 room, all nights, price snapshot"
+      },
+      "flight": {
+        "carrier": "Pegasus",
+        "outbound_cost": null,
+        "return_cost": 19002,
+        "total": null,
+        "connections": "SAW",
+        "outbound_layover": null,
+        "return_layover": "3h10",
+        "baggage_included": "unknown",
+        "taxes_finalized": false,
+        "source": "Pegasus app"
+      },
+      "combined_total": null,
+      "nye_available_with_quoted_pegasus_flight": false,
+      "warning": null
+    },
+    {
+      "adults": 2,
+      "outbound": "2026-12-30",
+      "inbound": "2027-01-02",
+      "nights": 3,
+      "hotel": {
+        "name": "Skadarlija -magnolia",
+        "total": 19348,
+        "rating": 9.7,
+        "source": "Trivago",
+        "quote_type": "1 room, all nights, price snapshot"
+      },
+      "flight": {
+        "carrier": "Pegasus",
+        "outbound_cost": 30421.6,
+        "return_cost": null,
+        "total": null,
+        "connections": "SAW",
+        "outbound_layover": "11h20",
+        "return_layover": null,
+        "baggage_included": "unknown",
+        "taxes_finalized": false,
+        "source": "Pegasus app"
+      },
+      "combined_total": null,
+      "nye_available_with_quoted_pegasus_flight": false,
+      "warning": "22:00 kalkış ve İstanbul'da 11s20 aktarma; Belgrad'a 31 Aralık sabahı varış."
+    },
+    {
+      "adults": 2,
+      "outbound": "2026-12-30",
+      "inbound": "2027-01-03",
+      "nights": 4,
+      "hotel": {
+        "name": "Skadarlija -magnolia",
+        "total": 24908,
+        "rating": 9.7,
+        "source": "Trivago",
+        "quote_type": "1 room, all nights, price snapshot"
+      },
+      "flight": {
+        "carrier": "Pegasus",
+        "outbound_cost": 30421.6,
+        "return_cost": 36588,
+        "total": 67009.6,
+        "connections": "SAW",
+        "outbound_layover": "11h20",
+        "return_layover": "2h40",
+        "baggage_included": "unknown",
+        "taxes_finalized": false,
+        "source": "Pegasus app"
+      },
+      "combined_total": 91917.6,
+      "nye_available_with_quoted_pegasus_flight": true,
+      "warning": "22:00 kalkış ve İstanbul'da 11s20 aktarma; Belgrad'a 31 Aralık sabahı varış."
+    },
+    {
+      "adults": 2,
+      "outbound": "2026-12-30",
+      "inbound": "2027-01-04",
+      "nights": 5,
+      "hotel": {
+        "name": "Skadarlija -magnolia",
+        "total": 27466,
+        "rating": 9.7,
+        "source": "Trivago",
+        "quote_type": "1 room, all nights, price snapshot"
+      },
+      "flight": {
+        "carrier": "Pegasus",
+        "outbound_cost": 30421.6,
+        "return_cost": 19002,
+        "total": 49423.6,
+        "connections": "SAW",
+        "outbound_layover": "11h20",
+        "return_layover": "3h10",
+        "baggage_included": "unknown",
+        "taxes_finalized": false,
+        "source": "Pegasus app"
+      },
+      "combined_total": 76889.6,
+      "nye_available_with_quoted_pegasus_flight": true,
+      "warning": "22:00 kalkış ve İstanbul'da 11s20 aktarma; Belgrad'a 31 Aralık sabahı varış."
+    },
+    {
+      "adults": 2,
+      "outbound": "2026-12-31",
+      "inbound": "2027-01-02",
+      "nights": 2,
+      "hotel": {
+        "name": "Nobel Gallery Hotel",
+        "total": 19732,
+        "rating": 9,
+        "source": "Trivago",
+        "quote_type": "1 room, all nights, price snapshot"
+      },
+      "flight": {
+        "carrier": "Pegasus",
+        "outbound_cost": 16357.6,
+        "return_cost": null,
+        "total": null,
+        "connections": "SAW",
+        "outbound_layover": "11h45",
+        "return_layover": null,
+        "baggage_included": "unknown",
+        "taxes_finalized": false,
+        "source": "Pegasus app"
+      },
+      "combined_total": null,
+      "nye_available_with_quoted_pegasus_flight": false,
+      "warning": "Ucuz Pegasus gidişi 31 Aralık gecesi aktarmalıdır; Belgrad'a 1 Ocak'ta varır."
+    },
+    {
+      "adults": 2,
+      "outbound": "2026-12-31",
+      "inbound": "2027-01-03",
+      "nights": 3,
+      "hotel": {
+        "name": "Skadarlija -magnolia",
+        "total": 18792,
+        "rating": 9.7,
+        "source": "Trivago",
+        "quote_type": "1 room, all nights, price snapshot"
+      },
+      "flight": {
+        "carrier": "Pegasus",
+        "outbound_cost": 16357.6,
+        "return_cost": 36588,
+        "total": 52945.6,
+        "connections": "SAW",
+        "outbound_layover": "11h45",
+        "return_layover": "2h40",
+        "baggage_included": "unknown",
+        "taxes_finalized": false,
+        "source": "Pegasus app"
+      },
+      "combined_total": 71737.6,
+      "nye_available_with_quoted_pegasus_flight": false,
+      "warning": "Ucuz Pegasus gidişi 31 Aralık gecesi aktarmalıdır; Belgrad'a 1 Ocak'ta varır."
+    },
+    {
+      "adults": 2,
+      "outbound": "2026-12-31",
+      "inbound": "2027-01-04",
+      "nights": 4,
+      "hotel": {
+        "name": "Skadarlija -magnolia",
+        "total": 21350,
+        "rating": 9.7,
+        "source": "Trivago",
+        "quote_type": "1 room, all nights, price snapshot"
+      },
+      "flight": {
+        "carrier": "Pegasus",
+        "outbound_cost": 16357.6,
+        "return_cost": 19002,
+        "total": 35359.6,
+        "connections": "SAW",
+        "outbound_layover": "11h45",
+        "return_layover": "3h10",
+        "baggage_included": "unknown",
+        "taxes_finalized": false,
+        "source": "Pegasus app"
+      },
+      "combined_total": 56709.6,
+      "nye_available_with_quoted_pegasus_flight": false,
+      "warning": "Ucuz Pegasus gidişi 31 Aralık gecesi aktarmalıdır; Belgrad'a 1 Ocak'ta varır."
+    },
+    {
+      "adults": 3,
+      "outbound": "2026-12-29",
+      "inbound": "2027-01-02",
+      "nights": 4,
+      "hotel": {
+        "name": "Parlamento ve Aziz Markos",
+        "total": 34249,
+        "rating": 9.1,
+        "source": "Trivago",
+        "quote_type": "1 room, all nights, price snapshot"
+      },
+      "flight": {
+        "carrier": "Pegasus",
+        "outbound_cost": null,
+        "return_cost": null,
+        "total": null,
+        "connections": "SAW",
+        "outbound_layover": null,
+        "return_layover": null,
+        "baggage_included": "unknown",
+        "taxes_finalized": false,
+        "source": "Pegasus app"
+      },
+      "combined_total": null,
+      "nye_available_with_quoted_pegasus_flight": false,
+      "warning": null
+    },
+    {
+      "adults": 3,
+      "outbound": "2026-12-29",
+      "inbound": "2027-01-03",
+      "nights": 5,
+      "hotel": {
+        "name": "Parlamento ve Aziz Markos",
+        "total": 42811,
+        "rating": 9.1,
+        "source": "Trivago",
+        "quote_type": "1 room, all nights, price snapshot"
+      },
+      "flight": {
+        "carrier": "Pegasus",
+        "outbound_cost": null,
+        "return_cost": 54882,
+        "total": null,
+        "connections": "SAW",
+        "outbound_layover": null,
+        "return_layover": "2h40",
+        "baggage_included": "unknown",
+        "taxes_finalized": false,
+        "source": "Pegasus app"
+      },
+      "combined_total": null,
+      "nye_available_with_quoted_pegasus_flight": false,
+      "warning": null
+    },
+    {
+      "adults": 3,
+      "outbound": "2026-12-29",
+      "inbound": "2027-01-04",
+      "nights": 6,
+      "hotel": {
+        "name": "Parlamento ve Aziz Markos",
+        "total": 51373,
+        "rating": 9.1,
+        "source": "Trivago",
+        "quote_type": "1 room, all nights, price snapshot"
+      },
+      "flight": {
+        "carrier": "Pegasus",
+        "outbound_cost": null,
+        "return_cost": 28503,
+        "total": null,
+        "connections": "SAW",
+        "outbound_layover": null,
+        "return_layover": "3h10",
+        "baggage_included": "unknown",
+        "taxes_finalized": false,
+        "source": "Pegasus app"
+      },
+      "combined_total": null,
+      "nye_available_with_quoted_pegasus_flight": false,
+      "warning": null
+    },
+    {
+      "adults": 3,
+      "outbound": "2026-12-30",
+      "inbound": "2027-01-02",
+      "nights": 3,
+      "hotel": {
+        "name": "Modern Belgrad Daireleri",
+        "total": 25798,
+        "rating": 9.4,
+        "source": "Trivago",
+        "quote_type": "1 room, all nights, price snapshot"
+      },
+      "flight": {
+        "carrier": "Pegasus",
+        "outbound_cost": 45632.4,
+        "return_cost": null,
+        "total": null,
+        "connections": "SAW",
+        "outbound_layover": "11h20",
+        "return_layover": null,
+        "baggage_included": "unknown",
+        "taxes_finalized": false,
+        "source": "Pegasus app"
+      },
+      "combined_total": null,
+      "nye_available_with_quoted_pegasus_flight": false,
+      "warning": "22:00 kalkış ve İstanbul'da 11s20 aktarma; Belgrad'a 31 Aralık sabahı varış."
+    },
+    {
+      "adults": 3,
+      "outbound": "2026-12-30",
+      "inbound": "2027-01-03",
+      "nights": 4,
+      "hotel": {
+        "name": "Parlamento ve Aziz Markos",
+        "total": 34249,
+        "rating": 9.1,
+        "source": "Trivago",
+        "quote_type": "1 room, all nights, price snapshot"
+      },
+      "flight": {
+        "carrier": "Pegasus",
+        "outbound_cost": 45632.4,
+        "return_cost": 54882,
+        "total": 100514.4,
+        "connections": "SAW",
+        "outbound_layover": "11h20",
+        "return_layover": "2h40",
+        "baggage_included": "unknown",
+        "taxes_finalized": false,
+        "source": "Pegasus app"
+      },
+      "combined_total": 134763.4,
+      "nye_available_with_quoted_pegasus_flight": true,
+      "warning": "22:00 kalkış ve İstanbul'da 11s20 aktarma; Belgrad'a 31 Aralık sabahı varış."
+    },
+    {
+      "adults": 3,
+      "outbound": "2026-12-30",
+      "inbound": "2027-01-04",
+      "nights": 5,
+      "hotel": {
+        "name": "Kopernikus Hotel Prag",
+        "total": 38460,
+        "rating": 8.6,
+        "source": "Trivago",
+        "quote_type": "1 room, all nights, price snapshot"
+      },
+      "flight": {
+        "carrier": "Pegasus",
+        "outbound_cost": 45632.4,
+        "return_cost": 28503,
+        "total": 74135.4,
+        "connections": "SAW",
+        "outbound_layover": "11h20",
+        "return_layover": "3h10",
+        "baggage_included": "unknown",
+        "taxes_finalized": false,
+        "source": "Pegasus app"
+      },
+      "combined_total": 112595.4,
+      "nye_available_with_quoted_pegasus_flight": true,
+      "warning": "22:00 kalkış ve İstanbul'da 11s20 aktarma; Belgrad'a 31 Aralık sabahı varış."
+    },
+    {
+      "adults": 3,
+      "outbound": "2026-12-31",
+      "inbound": "2027-01-02",
+      "nights": 2,
+      "hotel": {
+        "name": "Apartment Milan",
+        "total": 19259,
+        "rating": 9.4,
+        "source": "Trivago",
+        "quote_type": "1 room, all nights, price snapshot"
+      },
+      "flight": {
+        "carrier": "Pegasus",
+        "outbound_cost": 24536.4,
+        "return_cost": null,
+        "total": null,
+        "connections": "SAW",
+        "outbound_layover": "11h45",
+        "return_layover": null,
+        "baggage_included": "unknown",
+        "taxes_finalized": false,
+        "source": "Pegasus app"
+      },
+      "combined_total": null,
+      "nye_available_with_quoted_pegasus_flight": false,
+      "warning": "Ucuz Pegasus gidişi 31 Aralık gecesi aktarmalıdır; Belgrad'a 1 Ocak'ta varır."
+    },
+    {
+      "adults": 3,
+      "outbound": "2026-12-31",
+      "inbound": "2027-01-03",
+      "nights": 3,
+      "hotel": {
+        "name": "Kopernikus Hotel Prag",
+        "total": 23661,
+        "rating": 8.6,
+        "source": "Trivago",
+        "quote_type": "1 room, all nights, price snapshot"
+      },
+      "flight": {
+        "carrier": "Pegasus",
+        "outbound_cost": 24536.4,
+        "return_cost": 54882,
+        "total": 79418.4,
+        "connections": "SAW",
+        "outbound_layover": "11h45",
+        "return_layover": "2h40",
+        "baggage_included": "unknown",
+        "taxes_finalized": false,
+        "source": "Pegasus app"
+      },
+      "combined_total": 103079.4,
+      "nye_available_with_quoted_pegasus_flight": false,
+      "warning": "Ucuz Pegasus gidişi 31 Aralık gecesi aktarmalıdır; Belgrad'a 1 Ocak'ta varır."
+    },
+    {
+      "adults": 3,
+      "outbound": "2026-12-31",
+      "inbound": "2027-01-04",
+      "nights": 4,
+      "hotel": {
+        "name": "Parlamento ve Aziz Markos",
+        "total": 34249,
+        "rating": 9.1,
+        "source": "Trivago",
+        "quote_type": "1 room, all nights, price snapshot"
+      },
+      "flight": {
+        "carrier": "Pegasus",
+        "outbound_cost": 24536.4,
+        "return_cost": 28503,
+        "total": 53039.4,
+        "connections": "SAW",
+        "outbound_layover": "11h45",
+        "return_layover": "3h10",
+        "baggage_included": "unknown",
+        "taxes_finalized": false,
+        "source": "Pegasus app"
+      },
+      "combined_total": 87288.4,
+      "nye_available_with_quoted_pegasus_flight": false,
+      "warning": "Ucuz Pegasus gidişi 31 Aralık gecesi aktarmalıdır; Belgrad'a 1 Ocak'ta varır."
+    }
+  ]
 }
