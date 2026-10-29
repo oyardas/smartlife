@@ -23,6 +23,22 @@
 @media(max-width:980px){.profile-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.restaurant-grid{grid-template-columns:1fr 1fr}.controls{grid-template-columns:repeat(2,minmax(0,1fr))}.g3,.g4,.budget{grid-template-columns:1fr 1fr}.summarybar{position:static}.summarybar .wrap{grid-template-columns:repeat(2,minmax(0,1fr))}.sum{border-bottom:1px solid var(--line)}.sum.total{grid-column:1/-1}.day{grid-template-columns:90px 1fr}.day-toggle{grid-column:2}.map-wrap{height:460px}}
 @media(max-width:700px){.profile-grid,.restaurant-grid{grid-template-columns:1fr}body{font-size:13.5px}.wrap{padding:0 13px}.hero{min-height:50vh}.hero .inner{padding:40px 0 34px}.hero h1{font-size:2.4rem}.stickybar .wrap{gap:3px}.stickybar a,.stickybar button{font-size:.75rem;padding:7px 8px}.print-btn{margin-left:0!important}.controls,.g2,.g3,.g4,.budget{grid-template-columns:1fr}.summarybar .wrap{grid-template-columns:1fr 1fr}.card img{height:180px}.day{grid-template-columns:1fr;gap:7px}.day-toggle{grid-column:auto}.flight-card .meta{grid-template-columns:1fr}.map-wrap{height:400px}.filters{overflow:auto;flex-wrap:nowrap}.filter{white-space:nowrap}section{padding:30px 0}}
 @media print{*{box-shadow:none!important;text-shadow:none!important}html,body{background:#fff!important;color:#111!important;font-size:10pt!important}body{line-height:1.3!important}.stickybar,.summarybar,.btns,.filters,.map-wrap,.print-btn,.switch,.select-card:after,.restaurant-check{display:none!important}.print-only{display:block!important}.hero{min-height:auto!important;background:none!important;color:#111!important;border-bottom:2px solid #222!important}.hero:before{display:none!important}.hero .inner{padding:16px 0 12px!important}.hero h1{font-size:23pt!important;color:#111!important}.hero p,.muted,.lead,.source-list,footer{color:#333!important}.eyebrow,.kicker,.date{color:#8a5b12!important}section{padding:14px 0!important;border-bottom:1px solid #bbb!important}.wrap{max-width:none!important;padding:0 8mm!important}.grid,.g2,.g3,.g4,.budget,.controls{display:block!important}.card,.control,.day,.totalbox,.note{background:#fff!important;color:#111!important;border:1px solid #bbb!important;break-inside:avoid;margin-bottom:8px!important;border-radius:4px!important}.card img{height:40mm!important}.select-card:not(.selected){display:none!important}.day.off{display:none!important}.tag,.badge{color:#111!important;border-color:#888!important;background:#fff!important}.price,.totalbig{color:#111!important}h2{font-size:16pt!important}h3{font-size:12pt!important}a{color:#111!important;text-decoration:none!important}@page{size:A4;margin:12mm}}
+
+/* Price tracker: measured quotes are separate from the planning-model heatmap. */
+.watch-wrap{margin:18px 0 2px;border:1px solid #344759;border-radius:16px;background:linear-gradient(150deg,#101a25,#0b141d);padding:17px}
+.watch-head{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:center}
+.watch-head h3{margin:0 0 6px}.watch-status{font-size:.8rem;color:var(--muted)}
+.watch-switch{display:flex;gap:7px}.watch-switch button{border:1px solid #48596b;border-radius:10px;padding:10px 15px;background:#1a2530;color:#d8e7ee;cursor:pointer;min-height:42px}
+.watch-switch button.active{background:#2b5e56;color:#fff;border-color:#71b6aa}
+.watch-overview{padding:11px;margin-top:12px;background:#14271f;border:1px solid #2e6550;border-radius:10px;font-size:.85rem}
+.watch-list{display:flex;flex-direction:column;gap:7px;margin-top:12px}
+.watch-row{display:grid;grid-template-columns:1.25fr 1.1fr 1fr 1fr 1.05fr;gap:9px;align-items:center;background:#15212d;border:1px solid #304153;padding:10px;border-radius:10px;font-size:.77rem}
+.watch-row strong{display:block;color:#f0f7f9;font-size:.86rem;margin-bottom:3px}
+.watch-row small{display:block;color:#a7b7c7}.watch-row.best{border-color:#64b597;background:#1b302a}
+.watch-row.invalid{opacity:.82}.watch-tag{font-weight:700;font-size:.7rem;color:#f1d493}
+.watch-foot{margin-top:11px;font-size:.78rem;color:#a5b8c8;line-height:1.55}
+.watch-links{display:flex;gap:9px;flex-wrap:wrap;margin-top:12px}.watch-links a{font-size:.78rem}
+@media(max-width:780px){.watch-wrap{padding:11px}.watch-row{grid-template-columns:1fr 1fr;gap:10px}.watch-row>div:first-child{grid-column:span 2;padding-bottom:8px;border-bottom:1px solid #344455}.watch-row>div:last-child{grid-column:span 2;padding-top:7px;border-top:1px solid #344455}.watch-switch button{min-width:90px}.watch-overview{line-height:1.6}}
 </style>
 </head>
 <body>
@@ -59,6 +75,18 @@
  <div id="dateHeatGrid" class="heat-grid"></div>
  <div class="optimizer"><div class="note" id="optimizerWhy"></div><div class="note" id="optimizerSaving"></div></div>
 </div>
+</div></section>
+
+<section id="fiyat-takibi" class="wrap" aria-label="Gerçek fiyat taraması">
+<div class="watch-wrap">
+  <div class="watch-head">
+    <div><div class="kicker">FİYAT İZLEME • İLK ÖLÇÜM</div><h3>Tarama anındaki gerçek fiyat teklifleri</h3><div class="watch-status" id="watchStatus">Kaydedilen fiyat verisi yükleniyor…</div></div>
+    <div class="watch-switch" role="group" aria-label="Yolcu sayısı"><button type="button" class="active" data-watch-people="3" aria-pressed="true">3 kişi</button><button type="button" data-watch-people="2" aria-pressed="false">2 kişi</button></div>
+  </div>
+  <div class="watch-overview" id="watchOverview">Fiyatlar gösterilecek.</div>
+  <div id="watchList" class="watch-list"></div>
+  <div class="watch-foot">Bu tabloda <b>Trivago konaklama teklifleri</b> ve <b>Pegasus'un ilgili tarihlerde gösterdiği uçuş parçaları</b> bir araya getirilir. Uçuşlarda bagaj hakkı ve nihai ödeme toplamı teyit edilmedi. Tüm havayollarını kapsayan en düşük fiyat iddiası değildir. Yukarıdaki tarih ısı haritası ise hâlâ ayrı bir <b>planlama modeli</b>dir.</div>
+  <div class="watch-links"><a class="btn" href="https://www.flypgs.com/" target="_blank" rel="noopener">Pegasus'ta kontrol et ↗</a><a class="btn" href="https://ajet.com/" target="_blank" rel="noopener">AJet direkt uçuşları ↗</a><a class="btn" href="https://www.trivago.com.tr/" target="_blank" rel="noopener">Trivago konaklama ↗</a><a class="btn" href="https://skyscanner.net/g/referrals/v1/flights/home?mediaPartnerId=2850210&amp;utm_term=skyscanner_chatgpt_app_data" target="_blank" rel="noopener">Skyscanner karşılaştır ↗</a></div>
 </div></section>
 
 <section id="senaryo"><div class="wrap">
@@ -356,7 +384,28 @@ function buildPrint(){const tb=document.querySelector('#printPlaces tbody');if(!
 $('people').addEventListener('change',e=>{state.people=Number(e.target.value);state.doga=state.people===3;setCustom();render()});$('doga').addEventListener('change',e=>{state.doga=e.target.checked;state.people=state.doga?3:2;setCustom();render()});$('outbound').addEventListener('change',e=>{state.outbound=e.target.value;if(dateParts(state.inbound)<=dateParts(state.outbound))state.inbound='2027-01-03';setCustom();render()});$('inbound').addEventListener('change',e=>{state.inbound=e.target.value;if(dateParts(state.inbound)<=dateParts(state.outbound)){state.outbound='2026-12-30';$('outbound').value=state.outbound}setCustom();render()});
 document.querySelectorAll('[data-picker]').forEach(b=>b.addEventListener('click',()=>{const input=$(b.dataset.picker);if(input.showPicker)input.showPicker();else{input.focus();input.click()}}));
 selectCard('[data-flight]','flight');selectCard('[data-stay]','stay');selectCard('[data-food]','food');document.querySelectorAll('[data-profile]').forEach(x=>x.addEventListener('click',()=>applyProfile(x.dataset.profile)));document.querySelectorAll('[data-restaurant]').forEach(x=>x.addEventListener('click',e=>{e.preventDefault();toggleRestaurant(x.dataset.restaurant)}));document.querySelectorAll('[data-day-toggle]').forEach(x=>x.addEventListener('change',e=>{state.days[e.target.dataset.dayToggle]=e.target.checked;setCustom();render()}));document.querySelectorAll('.filter').forEach(b=>b.addEventListener('click',()=>{activeCat=b.dataset.cat;document.querySelectorAll('.filter').forEach(x=>x.classList.toggle('active',x===b));updateMap();buildPrint()}));document.querySelectorAll('[data-clear-section]').forEach(b=>b.addEventListener('click',()=>clearSection(b.dataset.clearSection)));$('resetBtn').addEventListener('click',()=>{state=JSON.parse(JSON.stringify(DEFAULT));syncControls();render()});$('printBtn').addEventListener('click',()=>window.print());$('printBtn2').addEventListener('click',()=>window.print());document.querySelector('.lightbox-close').addEventListener('click',closeLightbox);document.querySelector('.lightbox-prev').addEventListener('click',()=>stepLightbox(-1));document.querySelector('.lightbox-next').addEventListener('click',()=>stepLightbox(1));$('lightbox').addEventListener('click',e=>{if(e.target===$('lightbox'))closeLightbox()});document.addEventListener('keydown',e=>{if(!$('lightbox').classList.contains('open'))return;if(e.key==='Escape')closeLightbox();if(e.key==='ArrowLeft')stepLightbox(-1);if(e.key==='ArrowRight')stepLightbox(1)});
-async function loadPriceAlert(){try{const r=await fetch('price-data.json?ts='+Date.now(),{cache:'no-store'});if(!r.ok)return;const d=await r.json();if(!d.alert)return;const el=$('priceAlert');const t=$('priceAlertText');t.textContent=(d.label||'Yeni dip fiyat')+' • '+(d.new_price?money(d.new_price):'')+(d.previous_best?' • Önceki en iyi '+money(d.previous_best):'')+(d.saving?' • Tasarruf '+money(d.saving):'')+(d.saving_pct?' (%'+d.saving_pct+')':'')+(d.checked_at?' • '+d.checked_at:'');el.classList.remove('hidden')}catch(e){}}
+
+let watchSnapshot=null,watchPeople=3;
+function watchMoney(x){return (typeof x==='number'&&Number.isFinite(x))?new Intl.NumberFormat('tr-TR',{style:'currency',currency:'TRY',maximumFractionDigits:0}).format(x):'—'}
+function watchDate(x){const m=x.slice(5,7)==='12'?'Ara':'Oca';return Number(x.slice(8,10))+' '+m}
+function renderWatchPanel(){
+ const d=watchSnapshot;
+ if(!d||!Array.isArray(d.combinations))return;
+ document.querySelectorAll('[data-watch-people]').forEach(b=>{const on=Number(b.dataset.watchPeople)===watchPeople;b.classList.toggle('active',on);b.setAttribute('aria-pressed',String(on))});
+ $('watchStatus').textContent=(d.checked_at||'Tarih belirtilmedi')+' • '+d.combinations.length+' konaklama/uçuş senaryosu • TL';
+ const rows=d.combinations.filter(x=>x.adults===watchPeople);
+ const valid=rows.filter(x=>x.nye_available_with_quoted_pegasus_flight&&x.combined_total!=null&&x.nights>=3&&x.nights<=5).sort((a,b)=>a.combined_total-b.combined_total);
+ const best=valid[0];
+ $('watchOverview').innerHTML=best?'<b>Yılbaşı gecesine yetişen, Pegasus üzerinde iki yönü fiyatlanabilen en düşük senaryo:</b> '+watchDate(best.outbound)+' → '+watchDate(best.inbound)+' • '+best.nights+' gece • <b>'+watchMoney(best.combined_total)+'</b> (uçuş + '+best.hotel.name+'). <span class="watch-tag">Önemli: 11 saat 20 dakika aktarma, bagaj hariç/bilinmiyor.</span>':'Bu kişi sayısı için yılbaşı gecesine yetişen ve iki yönü de fiyatlanabilen seçenek bulunmadı.';
+ $('watchList').innerHTML=rows.map(q=>{
+ const ok=q.nye_available_with_quoted_pegasus_flight&&q.combined_total!=null;
+ const marked=best&&q.outbound===best.outbound&&q.inbound===best.inbound;
+ const warn=q.outbound==='2026-12-31'?'31 Aralık gecesi kalkışla Belgrad\'a 1 Ocak varış; yılbaşını kaçırır.':q.outbound==='2026-12-29'?'Pegasus gidiş uçuşu fiyatlanamadı.':q.inbound==='2027-01-02'?'Pegasus dönüş uçuşu fiyatlanamadı.':'Gece aktarması / uzun bekleme';
+ return '<div class="watch-row '+(marked?'best ':'')+(!ok?'invalid':'')+'"><div><strong>'+watchDate(q.outbound)+' → '+watchDate(q.inbound)+'</strong><small>'+q.nights+' gece'+(q.nights<3||q.nights>5?' • hedef süre dışı':'')+'</small></div><div><small>Konaklama • '+q.hotel.rating+'/10</small><strong>'+watchMoney(q.hotel.total)+'</strong><small>'+q.hotel.name+'</small></div><div><small>Pegasus gidiş-dönüş</small><strong>'+watchMoney(q.flight.total)+'</strong><small>'+(q.flight.total!=null?'SAW aktarmalı':'Eksik yön / fiyat yok')+'</small></div><div><small>Birleşik çekirdek toplam</small><strong>'+watchMoney(q.combined_total)+'</strong><small>Ek bagaj hariç / bilinmiyor</small></div><div><small>Uygunluk</small><strong>'+(marked?'En düşük uygun teklif':ok?'Yılbaşına yetişir':'Karşılaştırma sınırlı')+'</strong><span class="watch-tag">'+warn+'</span></div></div>'
+ }).join('');
+}
+document.querySelectorAll('[data-watch-people]').forEach(b=>b.addEventListener('click',()=>{watchPeople=Number(b.dataset.watchPeople);renderWatchPanel()}));
+async function loadPriceAlert(){try{const r=await fetch('price-data.json?ts='+Date.now(),{cache:'no-store'});if(!r.ok)return;const d=await r.json();watchSnapshot=d;renderWatchPanel();if(!d.alert)return;const el=$('priceAlert');const t=$('priceAlertText');t.textContent=(d.label||'Yeni dip fiyat')+' • '+(d.new_price?money(d.new_price):'')+(d.previous_best?' • Önceki en iyi '+money(d.previous_best):'')+(d.saving?' • Tasarruf '+money(d.saving):'')+(d.saving_pct?' (%'+d.saving_pct+')':'')+(d.checked_at?' • '+d.checked_at:'');el.classList.remove('hidden')}catch(e){}}
 $('dismissPriceAlert').addEventListener('click',()=>$('priceAlert').classList.add('hidden'));
 window.addEventListener('load',()=>{load();initMap();loadPriceAlert();setTimeout(()=>map&&map.invalidateSize(),250)});window.addEventListener('resize',()=>map&&map.invalidateSize());
 </script>
