@@ -1,0 +1,193 @@
+{
+  "schema_version": 1,
+  "comparison_rule": "Compare same adults, same dates, same property, same room/board and flight fare/baggage class; never compare cross-itinerary prices as historic drops.",
+  "snapshots": [
+    {
+      "checked_at": "2026-10-29 (Türkiye saati, sabah taraması)",
+      "source_status": "mixed: Pegasus exact date options, Trivago exact-date offers; AJet schedule-only and Skyscanner month-indicative.",
+      "quote_rows": [
+        {
+          "adults": 2,
+          "outbound": "2026-12-29",
+          "inbound": "2027-01-02",
+          "nights": 4,
+          "hotel_name": "Skadarlija -magnolia",
+          "hotel_price": 21906,
+          "flight_price": null,
+          "combined_total": null
+        },
+        {
+          "adults": 2,
+          "outbound": "2026-12-29",
+          "inbound": "2027-01-03",
+          "nights": 5,
+          "hotel_name": "Skadarlija -magnolia",
+          "hotel_price": 27466,
+          "flight_price": null,
+          "combined_total": null
+        },
+        {
+          "adults": 2,
+          "outbound": "2026-12-29",
+          "inbound": "2027-01-04",
+          "nights": 6,
+          "hotel_name": "Skadarlija -magnolia",
+          "hotel_price": 30023,
+          "flight_price": null,
+          "combined_total": null
+        },
+        {
+          "adults": 2,
+          "outbound": "2026-12-30",
+          "inbound": "2027-01-02",
+          "nights": 3,
+          "hotel_name": "Skadarlija -magnolia",
+          "hotel_price": 19348,
+          "flight_price": null,
+          "combined_total": null
+        },
+        {
+          "adults": 2,
+          "outbound": "2026-12-30",
+          "inbound": "2027-01-03",
+          "nights": 4,
+          "hotel_name": "Skadarlija -magnolia",
+          "hotel_price": 24908,
+          "flight_price": 67009.6,
+          "combined_total": 91917.6
+        },
+        {
+          "adults": 2,
+          "outbound": "2026-12-30",
+          "inbound": "2027-01-04",
+          "nights": 5,
+          "hotel_name": "Skadarlija -magnolia",
+          "hotel_price": 27466,
+          "flight_price": 49423.6,
+          "combined_total": 76889.6
+        },
+        {
+          "adults": 2,
+          "outbound": "2026-12-31",
+          "inbound": "2027-01-02",
+          "nights": 2,
+          "hotel_name": "Nobel Gallery Hotel",
+          "hotel_price": 19732,
+          "flight_price": null,
+          "combined_total": null
+        },
+        {
+          "adults": 2,
+          "outbound": "2026-12-31",
+          "inbound": "2027-01-03",
+          "nights": 3,
+          "hotel_name": "Skadarlija -magnolia",
+          "hotel_price": 18792,
+          "flight_price": 52945.6,
+          "combined_total": 71737.6
+        },
+        {
+          "adults": 2,
+          "outbound": "2026-12-31",
+          "inbound": "2027-01-04",
+          "nights": 4,
+          "hotel_name": "Skadarlija -magnolia",
+          "hotel_price": 21350,
+          "flight_price": 35359.6,
+          "combined_total": 56709.6
+        },
+        {
+          "adults": 3,
+          "outbound": "2026-12-29",
+          "inbound": "2027-01-02",
+          "nights": 4,
+          "hotel_name": "Parlamento ve Aziz Markos",
+          "hotel_price": 34249,
+          "flight_price": null,
+          "combined_total": null
+        },
+        {
+          "adults": 3,
+          "outbound": "2026-12-29",
+          "inbound": "2027-01-03",
+          "nights": 5,
+          "hotel_name": "Parlamento ve Aziz Markos",
+          "hotel_price": 42811,
+          "flight_price": null,
+          "combined_total": null
+        },
+        {
+          "adults": 3,
+          "outbound": "2026-12-29",
+          "inbound": "2027-01-04",
+          "nights": 6,
+          "hotel_name": "Parlamento ve Aziz Markos",
+          "hotel_price": 51373,
+          "flight_price": null,
+          "combined_total": null
+        },
+        {
+          "adults": 3,
+          "outbound": "2026-12-30",
+          "inbound": "2027-01-02",
+          "nights": 3,
+          "hotel_name": "Modern Belgrad Daireleri",
+          "hotel_price": 25798,
+          "flight_price": null,
+          "combined_total": null
+        },
+        {
+          "adults": 3,
+          "outbound": "2026-12-30",
+          "inbound": "2027-01-03",
+          "nights": 4,
+          "hotel_name": "Parlamento ve Aziz Markos",
+          "hotel_price": 34249,
+          "flight_price": 100514.4,
+          "combined_total": 134763.4
+        },
+        {
+          "adults": 3,
+          "outbound": "2026-12-30",
+          "inbound": "2027-01-04",
+          "nights": 5,
+          "hotel_name": "Kopernikus Hotel Prag",
+          "hotel_price": 38460,
+          "flight_price": 74135.4,
+          "combined_total": 112595.4
+        },
+        {
+          "adults": 3,
+          "outbound": "2026-12-31",
+          "inbound": "2027-01-02",
+          "nights": 2,
+          "hotel_name": "Apartment Milan",
+          "hotel_price": 19259,
+          "flight_price": null,
+          "combined_total": null
+        },
+        {
+          "adults": 3,
+          "outbound": "2026-12-31",
+          "inbound": "2027-01-03",
+          "nights": 3,
+          "hotel_name": "Kopernikus Hotel Prag",
+          "hotel_price": 23661,
+          "flight_price": 79418.4,
+          "combined_total": 103079.4
+        },
+        {
+          "adults": 3,
+          "outbound": "2026-12-31",
+          "inbound": "2027-01-04",
+          "nights": 4,
+          "hotel_name": "Parlamento ve Aziz Markos",
+          "hotel_price": 34249,
+          "flight_price": 53039.4,
+          "combined_total": 87288.4
+        }
+      ],
+      "notes": "First comparable 18-scenario baseline; lack of previous verified scan means price-drop alert is false. Two/three-adult best quoted NYE-feasible Pegasus scenario is 30 Dec to 4 Jan, but has >11h connection; AJet 31 Dec to 3 Jan direct fare not retrieved."
+    }
+  ]
+}
