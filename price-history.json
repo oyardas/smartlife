@@ -188,6 +188,313 @@
         }
       ],
       "notes": "First comparable 18-scenario baseline; lack of previous verified scan means price-drop alert is false. Two/three-adult best quoted NYE-feasible Pegasus scenario is 30 Dec to 4 Jan, but has >11h connection; AJet 31 Dec to 3 Jan direct fare not retrieved."
+    },
+    {
+      "checked_at": "2026-10-29 17:55 (Europe/Istanbul)",
+      "source_status": "Pegasus 18 itinerary checks and Trivago 18 date/person searches; final booking and baggage unknown",
+      "quote_rows": [
+        {
+          "adults": 2,
+          "outbound": "2026-12-29",
+          "inbound": "2027-01-02",
+          "nights": 4,
+          "hotel_name": "Parlamento ve Aziz Markos",
+          "hotel_price": 31580,
+          "hotel_advertiser": "Airbnb",
+          "hotel_conditions": [
+            "roomOnly"
+          ],
+          "flight_price": null,
+          "combined_total": null,
+          "flight_departure": null,
+          "flight_arrival": null
+        },
+        {
+          "adults": 2,
+          "outbound": "2026-12-29",
+          "inbound": "2027-01-03",
+          "nights": 5,
+          "hotel_name": "Olivia Rooms",
+          "hotel_price": 37270,
+          "hotel_advertiser": "Booking.com",
+          "hotel_conditions": [
+            "roomOnly",
+            "freeCancellation",
+            "payAtProperty"
+          ],
+          "flight_price": null,
+          "combined_total": null,
+          "flight_departure": null,
+          "flight_arrival": null
+        },
+        {
+          "adults": 2,
+          "outbound": "2026-12-29",
+          "inbound": "2027-01-04",
+          "nights": 6,
+          "hotel_name": "Olivia Rooms",
+          "hotel_price": 40763,
+          "hotel_advertiser": "Booking.com",
+          "hotel_conditions": [
+            "roomOnly",
+            "freeCancellation",
+            "payAtProperty"
+          ],
+          "flight_price": null,
+          "combined_total": null,
+          "flight_departure": null,
+          "flight_arrival": null
+        },
+        {
+          "adults": 2,
+          "outbound": "2026-12-30",
+          "inbound": "2027-01-02",
+          "nights": 3,
+          "hotel_name": "City Joy - sports Center Tasmajdan",
+          "hotel_price": 25781,
+          "hotel_advertiser": "Trip.com",
+          "hotel_conditions": [
+            "roomOnly",
+            "nonRefundable"
+          ],
+          "flight_price": null,
+          "combined_total": null,
+          "flight_departure": "22:00",
+          "flight_arrival": "2026-12-31 10:15"
+        },
+        {
+          "adults": 2,
+          "outbound": "2026-12-30",
+          "inbound": "2027-01-03",
+          "nights": 4,
+          "hotel_name": "Parlamento ve Aziz Markos",
+          "hotel_price": 31580,
+          "hotel_advertiser": "Airbnb",
+          "hotel_conditions": [
+            "roomOnly"
+          ],
+          "flight_price": 67009.6,
+          "combined_total": 98589.6,
+          "flight_departure": "22:00",
+          "flight_arrival": "2026-12-31 10:15"
+        },
+        {
+          "adults": 2,
+          "outbound": "2026-12-30",
+          "inbound": "2027-01-04",
+          "nights": 5,
+          "hotel_name": "Öğrenci Meydanı'ndaki Stüdyo",
+          "hotel_price": 38308,
+          "hotel_advertiser": "Airbnb",
+          "hotel_conditions": [
+            "roomOnly"
+          ],
+          "flight_price": 49423.6,
+          "combined_total": 87731.6,
+          "flight_departure": "22:00",
+          "flight_arrival": "2026-12-31 10:15"
+        },
+        {
+          "adults": 2,
+          "outbound": "2026-12-31",
+          "inbound": "2027-01-02",
+          "nights": 2,
+          "hotel_name": "Hotel Heritage",
+          "hotel_price": 20078,
+          "hotel_advertiser": "Agoda",
+          "hotel_conditions": [
+            "breakfastIncluded",
+            "freeCancellation"
+          ],
+          "flight_price": null,
+          "combined_total": null,
+          "flight_departure": "07:00",
+          "flight_arrival": "2026-12-31 10:15"
+        },
+        {
+          "adults": 2,
+          "outbound": "2026-12-31",
+          "inbound": "2027-01-03",
+          "nights": 3,
+          "hotel_name": "Kopernikus Hotel Prag",
+          "hotel_price": 18380,
+          "hotel_advertiser": "ZenHotels.com",
+          "hotel_conditions": [
+            "breakfastIncluded",
+            "nonRefundable"
+          ],
+          "flight_price": 67009.6,
+          "combined_total": 85389.6,
+          "flight_departure": "07:00",
+          "flight_arrival": "2026-12-31 10:15"
+        },
+        {
+          "adults": 2,
+          "outbound": "2026-12-31",
+          "inbound": "2027-01-04",
+          "nights": 4,
+          "hotel_name": "Öğrenci Meydanı'ndaki Stüdyo",
+          "hotel_price": 29412,
+          "hotel_advertiser": "Airbnb",
+          "hotel_conditions": [
+            "roomOnly"
+          ],
+          "flight_price": 49423.6,
+          "combined_total": 78835.6,
+          "flight_departure": "07:00",
+          "flight_arrival": "2026-12-31 10:15"
+        },
+        {
+          "adults": 3,
+          "outbound": "2026-12-29",
+          "inbound": "2027-01-02",
+          "nights": 4,
+          "hotel_name": "Parlamento ve Aziz Markos",
+          "hotel_price": 34249,
+          "hotel_advertiser": "Airbnb",
+          "hotel_conditions": [
+            "roomOnly"
+          ],
+          "flight_price": null,
+          "combined_total": null,
+          "flight_departure": null,
+          "flight_arrival": null
+        },
+        {
+          "adults": 3,
+          "outbound": "2026-12-29",
+          "inbound": "2027-01-03",
+          "nights": 5,
+          "hotel_name": "Parlamento ve Aziz Markos",
+          "hotel_price": 42811,
+          "hotel_advertiser": "Airbnb",
+          "hotel_conditions": [
+            "roomOnly"
+          ],
+          "flight_price": null,
+          "combined_total": null,
+          "flight_departure": null,
+          "flight_arrival": null
+        },
+        {
+          "adults": 3,
+          "outbound": "2026-12-29",
+          "inbound": "2027-01-04",
+          "nights": 6,
+          "hotel_name": "Parlamento ve Aziz Markos",
+          "hotel_price": 51373,
+          "hotel_advertiser": "Airbnb",
+          "hotel_conditions": [
+            "roomOnly"
+          ],
+          "flight_price": null,
+          "combined_total": null,
+          "flight_departure": null,
+          "flight_arrival": null
+        },
+        {
+          "adults": 3,
+          "outbound": "2026-12-30",
+          "inbound": "2027-01-02",
+          "nights": 3,
+          "hotel_name": "Veneti Suites",
+          "hotel_price": 29763,
+          "hotel_advertiser": "Trip.com",
+          "hotel_conditions": [
+            "roomOnly",
+            "nonRefundable"
+          ],
+          "flight_price": null,
+          "combined_total": null,
+          "flight_departure": "22:00",
+          "flight_arrival": "2026-12-31 10:15"
+        },
+        {
+          "adults": 3,
+          "outbound": "2026-12-30",
+          "inbound": "2027-01-03",
+          "nights": 4,
+          "hotel_name": "Parlamento ve Aziz Markos",
+          "hotel_price": 34249,
+          "hotel_advertiser": "Airbnb",
+          "hotel_conditions": [
+            "roomOnly"
+          ],
+          "flight_price": 100514.4,
+          "combined_total": 134763.4,
+          "flight_departure": "22:00",
+          "flight_arrival": "2026-12-31 10:15"
+        },
+        {
+          "adults": 3,
+          "outbound": "2026-12-30",
+          "inbound": "2027-01-04",
+          "nights": 5,
+          "hotel_name": "Kopernikus Hotel Prag",
+          "hotel_price": 40326,
+          "hotel_advertiser": "Hotels.com",
+          "hotel_conditions": [
+            "breakfastIncluded",
+            "nonRefundable"
+          ],
+          "flight_price": 74135.4,
+          "combined_total": 114461.4,
+          "flight_departure": "22:00",
+          "flight_arrival": "2026-12-31 10:15"
+        },
+        {
+          "adults": 3,
+          "outbound": "2026-12-31",
+          "inbound": "2027-01-02",
+          "nights": 2,
+          "hotel_name": "Apartment Milan",
+          "hotel_price": 19259,
+          "hotel_advertiser": "Booking.com",
+          "hotel_conditions": [
+            "roomOnly",
+            "freeCancellation",
+            "payAtProperty"
+          ],
+          "flight_price": null,
+          "combined_total": null,
+          "flight_departure": "07:00",
+          "flight_arrival": "2026-12-31 10:15"
+        },
+        {
+          "adults": 3,
+          "outbound": "2026-12-31",
+          "inbound": "2027-01-03",
+          "nights": 3,
+          "hotel_name": "Kopernikus Hotel Prag",
+          "hotel_price": 23661,
+          "hotel_advertiser": "Stayforlong",
+          "hotel_conditions": [
+            "breakfastIncluded",
+            "nonRefundable"
+          ],
+          "flight_price": 100514.4,
+          "combined_total": 124175.4,
+          "flight_departure": "07:00",
+          "flight_arrival": "2026-12-31 10:15"
+        },
+        {
+          "adults": 3,
+          "outbound": "2026-12-31",
+          "inbound": "2027-01-04",
+          "nights": 4,
+          "hotel_name": "Parlamento ve Aziz Markos",
+          "hotel_price": 34249,
+          "hotel_advertiser": "Airbnb",
+          "hotel_conditions": [
+            "roomOnly"
+          ],
+          "flight_price": 74135.4,
+          "combined_total": 108384.4,
+          "flight_departure": "07:00",
+          "flight_arrival": "2026-12-31 10:15"
+        }
+      ],
+      "notes": "New same-day 31 Dec Pegasus option discovered, but no equivalent historic price fall established. Prior baseline unchanged."
     }
   ]
 }
