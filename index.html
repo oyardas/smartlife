@@ -80,7 +80,7 @@
 <section id="fiyat-takibi" class="wrap" aria-label="Gerçek fiyat taraması">
 <div class="watch-wrap">
   <div class="watch-head">
-    <div><div class="kicker">FİYAT İZLEME • İLK ÖLÇÜM</div><h3>Tarama anındaki gerçek fiyat teklifleri</h3><div class="watch-status" id="watchStatus">Kaydedilen fiyat verisi yükleniyor…</div></div>
+    <div><div class="kicker">FİYAT İZLEME • SON TARAMA</div><h3>Tarama anındaki gerçek fiyat teklifleri</h3><div class="watch-status" id="watchStatus">Kaydedilen fiyat verisi yükleniyor…</div></div>
     <div class="watch-switch" role="group" aria-label="Yolcu sayısı"><button type="button" class="active" data-watch-people="3" aria-pressed="true">3 kişi</button><button type="button" data-watch-people="2" aria-pressed="false">2 kişi</button></div>
   </div>
   <div class="watch-overview" id="watchOverview">Fiyatlar gösterilecek.</div><div class="watch-foot" id="watchNightTradeoff" style="margin-top:10px"></div>
@@ -392,18 +392,18 @@ function renderWatchPanel(){
  const d=watchSnapshot;
  if(!d||!Array.isArray(d.combinations))return;
  document.querySelectorAll('[data-watch-people]').forEach(b=>{const on=Number(b.dataset.watchPeople)===watchPeople;b.classList.toggle('active',on);b.setAttribute('aria-pressed',String(on))});
- $('watchStatus').textContent=(d.checked_at||'Tarih belirtilmedi')+' • '+d.combinations.length+' konaklama/uçuş senaryosu • TL';
+ $('watchStatus').textContent=(d.checked_at||'Tarih belirtilmedi')+' • '+d.combinations.length+' senaryo • TL • Bagaj/son ödeme teyit edilmedi';
  const rows=d.combinations.filter(x=>x.adults===watchPeople);
  const valid=rows.filter(x=>x.nye_available_with_quoted_pegasus_flight&&x.combined_total!=null&&x.nights>=3&&x.nights<=5).sort((a,b)=>a.combined_total-b.combined_total);
  const best=valid[0];
- $('watchOverview').innerHTML=best?'<b>Yılbaşı gecesine yetişen, Pegasus üzerinde iki yönü fiyatlanabilen en düşük senaryo:</b> '+watchDate(best.outbound)+' → '+watchDate(best.inbound)+' • '+best.nights+' gece • <b>'+watchMoney(best.combined_total)+'</b> (uçuş + '+best.hotel.name+'). <span class="watch-tag">Önemli: 11 saat 20 dakika aktarma, bagaj hariç/bilinmiyor.</span>':'Bu kişi sayısı için yılbaşı gecesine yetişen ve iki yönü de fiyatlanabilen seçenek bulunmadı.';
+ $('watchOverview').innerHTML=best?'<b>Yılbaşına yetişen, bu taramada bulunan en uygun iki yönlü Pegasus+konaklama senaryosu:</b> '+watchDate(best.outbound)+' → '+watchDate(best.inbound)+' • '+best.nights+' gece • <b>'+watchMoney(best.combined_total)+'</b> (uçuş + '+best.hotel.name+'). <span class="watch-tag">Gidiş '+(best.flight.outbound_departure||'—')+' • SAW bekleme '+(best.flight.outbound_layover||'—')+' • Bagaj ve son ödeme tutarı belirsiz.</span>':'Bu kişi sayısı için yılbaşı gecesine yetişen ve iki yönü de fiyatlanabilen seçenek bulunmadı.';
  const ext=d.extra_night_comparison?.[String(watchPeople)];
  $('watchNightTradeoff').innerHTML=ext?'<b>Ek gece gerçekten avantaj sağlıyor mu?</b> '+ext.property+' için dönüşü 3 Ocak yerine 4 Ocak yapmak konaklamayı <b>'+watchMoney(ext.extra_stay)+'</b> artırıyor, ancak Pegasus uçuşunu <b>'+watchMoney(ext.flight_saving)+'</b> düşürüyor; net <b>'+watchMoney(ext.net_saving)+'</b> avantaj sağlıyor. Bagaj/ödeme farkları hariçtir.':'';
  $('watchList').innerHTML=rows.map(q=>{
  const ok=q.nye_available_with_quoted_pegasus_flight&&q.combined_total!=null;
  const marked=best&&q.outbound===best.outbound&&q.inbound===best.inbound;
- const warn=q.outbound==='2026-12-31'?'31 Aralık gecesi kalkışla Belgrad\'a 1 Ocak varış; yılbaşını kaçırır.':q.outbound==='2026-12-29'?'Pegasus gidiş uçuşu fiyatlanamadı.':q.inbound==='2027-01-02'?'Pegasus dönüş uçuşu fiyatlanamadı.':'Gece aktarması / uzun bekleme';
- return '<div class="watch-row '+(marked?'best ':'')+(!ok?'invalid':'')+'"><div><strong>'+watchDate(q.outbound)+' → '+watchDate(q.inbound)+'</strong><small>'+q.nights+' gece'+(q.nights<3||q.nights>5?' • hedef süre dışı':'')+'</small></div><div><small>Konaklama • '+q.hotel.rating+'/10</small><strong>'+watchMoney(q.hotel.total)+'</strong><small>'+q.hotel.name+'</small></div><div><small>Pegasus gidiş-dönüş</small><strong>'+watchMoney(q.flight.total)+'</strong><small>'+(q.flight.total!=null?'SAW aktarmalı':'Eksik yön / fiyat yok')+'</small></div><div><small>Birleşik çekirdek toplam</small><strong>'+watchMoney(q.combined_total)+'</strong><small>Ek bagaj hariç / bilinmiyor</small></div><div><small>Uygunluk</small><strong>'+(marked?'En düşük uygun teklif':ok?'Yılbaşına yetişir':'Karşılaştırma sınırlı')+'</strong><span class="watch-tag">'+warn+'</span></div></div>'
+ const warn=q.warning || 'Uçuş koşullarını doğrulayın.';
+ return '<div class="watch-row '+(marked?'best ':'')+(!ok?'invalid':'')+'"><div><strong>'+watchDate(q.outbound)+' → '+watchDate(q.inbound)+'</strong><small>'+q.nights+' gece'+(q.nights<3||q.nights>5?' • hedef süre dışı':'')+'</small></div><div><small>Konaklama • '+q.hotel.rating+'/10</small><strong>'+watchMoney(q.hotel.total)+'</strong><small>'+q.hotel.name+'</small></div><div><small>Pegasus gidiş-dönüş</small><strong>'+watchMoney(q.flight.total)+'</strong><small>'+(q.flight.total!=null?((q.flight.outbound_departure||'—')+' • SAW aktarmalı'):'Eksik yön / fiyat yok')+'</small></div><div><small>Birleşik çekirdek toplam</small><strong>'+watchMoney(q.combined_total)+'</strong><small>Ek bagaj hariç / bilinmiyor</small></div><div><small>Uygunluk</small><strong>'+(marked?'Tarama kapsamındaki en ekonomik':ok?'Yılbaşına yetişir':'Karşılaştırma sınırlı')+'</strong><span class="watch-tag">'+warn+'</span></div></div>'
  }).join('');
 }
 document.querySelectorAll('[data-watch-people]').forEach(b=>b.addEventListener('click',()=>{watchPeople=Number(b.dataset.watchPeople);renderWatchPanel()}));
