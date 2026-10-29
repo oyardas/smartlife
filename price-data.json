@@ -544,5 +544,27 @@
       "nye_available_with_quoted_pegasus_flight": false,
       "warning": "Ucuz Pegasus gidişi 31 Aralık gecesi aktarmalıdır; Belgrad'a 1 Ocak'ta varır."
     }
-  ]
+  ],
+  "extra_night_comparison": {
+    "2": {
+      "property": "Parlamento ve Aziz Markos",
+      "start": "2026-12-30",
+      "return_before": "2027-01-03",
+      "return_after": "2027-01-04",
+      "extra_stay": 7895,
+      "flight_saving": 17586,
+      "net_saving": 9691,
+      "notes": "Same property, 2 adults, same outbound. Flight before: 67,009.60 TRY, after: 49,423.60 TRY; hotel before 31,580 TRY, after 39,475 TRY."
+    },
+    "3": {
+      "property": "Parlamento ve Aziz Markos",
+      "start": "2026-12-30",
+      "return_before": "2027-01-03",
+      "return_after": "2027-01-04",
+      "extra_stay": 8562,
+      "flight_saving": 26379,
+      "net_saving": 17817,
+      "notes": "Same property, 3 adults, same outbound. Flight before: 100,514.40 TRY, after: 74,135.40 TRY; hotel before 34,249 TRY, after 42,811 TRY."
+    }
+  }
 }
