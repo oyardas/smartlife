@@ -83,7 +83,7 @@
     <div><div class="kicker">FİYAT İZLEME • İLK ÖLÇÜM</div><h3>Tarama anındaki gerçek fiyat teklifleri</h3><div class="watch-status" id="watchStatus">Kaydedilen fiyat verisi yükleniyor…</div></div>
     <div class="watch-switch" role="group" aria-label="Yolcu sayısı"><button type="button" class="active" data-watch-people="3" aria-pressed="true">3 kişi</button><button type="button" data-watch-people="2" aria-pressed="false">2 kişi</button></div>
   </div>
-  <div class="watch-overview" id="watchOverview">Fiyatlar gösterilecek.</div>
+  <div class="watch-overview" id="watchOverview">Fiyatlar gösterilecek.</div><div class="watch-foot" id="watchNightTradeoff" style="margin-top:10px"></div>
   <div id="watchList" class="watch-list"></div>
   <div class="watch-foot">Bu tabloda <b>Trivago konaklama teklifleri</b> ve <b>Pegasus'un ilgili tarihlerde gösterdiği uçuş parçaları</b> bir araya getirilir. Uçuşlarda bagaj hakkı ve nihai ödeme toplamı teyit edilmedi. Tüm havayollarını kapsayan en düşük fiyat iddiası değildir. Yukarıdaki tarih ısı haritası ise hâlâ ayrı bir <b>planlama modeli</b>dir.</div>
   <div class="watch-links"><a class="btn" href="https://www.flypgs.com/" target="_blank" rel="noopener">Pegasus'ta kontrol et ↗</a><a class="btn" href="https://ajet.com/" target="_blank" rel="noopener">AJet direkt uçuşları ↗</a><a class="btn" href="https://www.trivago.com.tr/" target="_blank" rel="noopener">Trivago konaklama ↗</a><a class="btn" href="https://skyscanner.net/g/referrals/v1/flights/home?mediaPartnerId=2850210&amp;utm_term=skyscanner_chatgpt_app_data" target="_blank" rel="noopener">Skyscanner karşılaştır ↗</a></div>
@@ -397,6 +397,8 @@ function renderWatchPanel(){
  const valid=rows.filter(x=>x.nye_available_with_quoted_pegasus_flight&&x.combined_total!=null&&x.nights>=3&&x.nights<=5).sort((a,b)=>a.combined_total-b.combined_total);
  const best=valid[0];
  $('watchOverview').innerHTML=best?'<b>Yılbaşı gecesine yetişen, Pegasus üzerinde iki yönü fiyatlanabilen en düşük senaryo:</b> '+watchDate(best.outbound)+' → '+watchDate(best.inbound)+' • '+best.nights+' gece • <b>'+watchMoney(best.combined_total)+'</b> (uçuş + '+best.hotel.name+'). <span class="watch-tag">Önemli: 11 saat 20 dakika aktarma, bagaj hariç/bilinmiyor.</span>':'Bu kişi sayısı için yılbaşı gecesine yetişen ve iki yönü de fiyatlanabilen seçenek bulunmadı.';
+ const ext=d.extra_night_comparison?.[String(watchPeople)];
+ $('watchNightTradeoff').innerHTML=ext?'<b>Ek gece gerçekten avantaj sağlıyor mu?</b> '+ext.property+' için dönüşü 3 Ocak yerine 4 Ocak yapmak konaklamayı <b>'+watchMoney(ext.extra_stay)+'</b> artırıyor, ancak Pegasus uçuşunu <b>'+watchMoney(ext.flight_saving)+'</b> düşürüyor; net <b>'+watchMoney(ext.net_saving)+'</b> avantaj sağlıyor. Bagaj/ödeme farkları hariçtir.':'';
  $('watchList').innerHTML=rows.map(q=>{
  const ok=q.nye_available_with_quoted_pegasus_flight&&q.combined_total!=null;
  const marked=best&&q.outbound===best.outbound&&q.inbound===best.inbound;
