@@ -495,6 +495,212 @@
         }
       ],
       "notes": "New same-day 31 Dec Pegasus option discovered, but no equivalent historic price fall established. Prior baseline unchanged."
+    },
+    {
+      "checked_at": "2026-10-30T08:50:40+03:00",
+      "observation_type": "hotel_only",
+      "source_status": "Trivago checked 18 room/stay date scenarios; 11 same property and advertiser/attributes offers comparable. Skyscanner indicative did not return target date fares. No refreshed baggage-included live flight quote.",
+      "quote_rows": [
+        {
+          "adults": 2,
+          "outbound": "2026-12-29",
+          "inbound": "2027-01-02",
+          "property": "Parlamento ve Aziz Markos",
+          "previous_quote": 31580,
+          "latest_same_advertiser_offer": 31703,
+          "source": "Trivago",
+          "same_advertiser_and_rate_attributes": true,
+          "price_change": 123
+        },
+        {
+          "adults": 2,
+          "outbound": "2026-12-29",
+          "inbound": "2027-01-03",
+          "property": "Olivia Rooms",
+          "previous_quote": 37270,
+          "latest_same_advertiser_offer": 37350,
+          "source": "Trivago",
+          "same_advertiser_and_rate_attributes": true,
+          "price_change": 80
+        },
+        {
+          "adults": 2,
+          "outbound": "2026-12-29",
+          "inbound": "2027-01-04",
+          "property": "Olivia Rooms",
+          "previous_quote": 40763,
+          "latest_same_advertiser_offer": null,
+          "source": "Trivago",
+          "same_advertiser_and_rate_attributes": false,
+          "price_change": null
+        },
+        {
+          "adults": 2,
+          "outbound": "2026-12-30",
+          "inbound": "2027-01-02",
+          "property": "City Joy - sports Center Tasmajdan",
+          "previous_quote": 25781,
+          "latest_same_advertiser_offer": 26746,
+          "source": "Trivago",
+          "same_advertiser_and_rate_attributes": true,
+          "price_change": 965
+        },
+        {
+          "adults": 2,
+          "outbound": "2026-12-30",
+          "inbound": "2027-01-03",
+          "property": "Parlamento ve Aziz Markos",
+          "previous_quote": 31580,
+          "latest_same_advertiser_offer": 31703,
+          "source": "Trivago",
+          "same_advertiser_and_rate_attributes": true,
+          "price_change": 123
+        },
+        {
+          "adults": 2,
+          "outbound": "2026-12-30",
+          "inbound": "2027-01-04",
+          "property": "Öğrenci Meydanı'ndaki Stüdyo",
+          "previous_quote": 38308,
+          "latest_same_advertiser_offer": 38401,
+          "source": "Trivago",
+          "same_advertiser_and_rate_attributes": true,
+          "price_change": 93
+        },
+        {
+          "adults": 2,
+          "outbound": "2026-12-31",
+          "inbound": "2027-01-02",
+          "property": "Hotel Heritage",
+          "previous_quote": 20078,
+          "latest_same_advertiser_offer": null,
+          "source": "Trivago",
+          "same_advertiser_and_rate_attributes": false,
+          "price_change": null
+        },
+        {
+          "adults": 2,
+          "outbound": "2026-12-31",
+          "inbound": "2027-01-03",
+          "property": "Kopernikus Hotel Prag",
+          "previous_quote": 18380,
+          "latest_same_advertiser_offer": null,
+          "source": "Trivago",
+          "same_advertiser_and_rate_attributes": false,
+          "price_change": null
+        },
+        {
+          "adults": 2,
+          "outbound": "2026-12-31",
+          "inbound": "2027-01-04",
+          "property": "Öğrenci Meydanı'ndaki Stüdyo",
+          "previous_quote": 29412,
+          "latest_same_advertiser_offer": 29470,
+          "source": "Trivago",
+          "same_advertiser_and_rate_attributes": true,
+          "price_change": 58
+        },
+        {
+          "adults": 3,
+          "outbound": "2026-12-29",
+          "inbound": "2027-01-02",
+          "property": "Parlamento ve Aziz Markos",
+          "previous_quote": 34249,
+          "latest_same_advertiser_offer": 34382,
+          "source": "Trivago",
+          "same_advertiser_and_rate_attributes": true,
+          "price_change": 133
+        },
+        {
+          "adults": 3,
+          "outbound": "2026-12-29",
+          "inbound": "2027-01-03",
+          "property": "Parlamento ve Aziz Markos",
+          "previous_quote": 42811,
+          "latest_same_advertiser_offer": 42977,
+          "source": "Trivago",
+          "same_advertiser_and_rate_attributes": true,
+          "price_change": 166
+        },
+        {
+          "adults": 3,
+          "outbound": "2026-12-29",
+          "inbound": "2027-01-04",
+          "property": "Parlamento ve Aziz Markos",
+          "previous_quote": 51373,
+          "latest_same_advertiser_offer": 51573,
+          "source": "Trivago",
+          "same_advertiser_and_rate_attributes": true,
+          "price_change": 200
+        },
+        {
+          "adults": 3,
+          "outbound": "2026-12-30",
+          "inbound": "2027-01-02",
+          "property": "Veneti Suites",
+          "previous_quote": 29763,
+          "latest_same_advertiser_offer": null,
+          "source": "Trivago",
+          "same_advertiser_and_rate_attributes": false,
+          "price_change": null
+        },
+        {
+          "adults": 3,
+          "outbound": "2026-12-30",
+          "inbound": "2027-01-03",
+          "property": "Parlamento ve Aziz Markos",
+          "previous_quote": 34249,
+          "latest_same_advertiser_offer": null,
+          "source": "Trivago",
+          "same_advertiser_and_rate_attributes": false,
+          "price_change": null
+        },
+        {
+          "adults": 3,
+          "outbound": "2026-12-30",
+          "inbound": "2027-01-04",
+          "property": "Kopernikus Hotel Prag",
+          "previous_quote": 40326,
+          "latest_same_advertiser_offer": null,
+          "source": "Trivago",
+          "same_advertiser_and_rate_attributes": false,
+          "price_change": null
+        },
+        {
+          "adults": 3,
+          "outbound": "2026-12-31",
+          "inbound": "2027-01-02",
+          "property": "Apartment Milan",
+          "previous_quote": 19259,
+          "latest_same_advertiser_offer": 19299,
+          "source": "Trivago",
+          "same_advertiser_and_rate_attributes": true,
+          "price_change": 40
+        },
+        {
+          "adults": 3,
+          "outbound": "2026-12-31",
+          "inbound": "2027-01-03",
+          "property": "Kopernikus Hotel Prag",
+          "previous_quote": 23661,
+          "latest_same_advertiser_offer": null,
+          "source": "Trivago",
+          "same_advertiser_and_rate_attributes": false,
+          "price_change": null
+        },
+        {
+          "adults": 3,
+          "outbound": "2026-12-31",
+          "inbound": "2027-01-04",
+          "property": "Parlamento ve Aziz Markos",
+          "previous_quote": 34249,
+          "latest_same_advertiser_offer": 34382,
+          "source": "Trivago",
+          "same_advertiser_and_rate_attributes": true,
+          "price_change": 133
+        }
+      ],
+      "notes": "No confirmed price reduction in 11 comparable lodging offers. Previous best overall trip records preserved; no new drop alert. Some alternative properties may be cheaper but are not evidence that the same product price dropped."
     }
   ]
 }
