@@ -1,14 +1,14 @@
 {
   "schema_version": 3,
   "alert": false,
-  "label": "Karşılaştırılabilir fiyat düşüşü doğrulanmadı",
+  "label": "Belgrad fiyat takibi – yeni doğrulanmış dip fiyat yok",
   "previous_best": null,
   "new_price": null,
   "saving": null,
   "saving_pct": null,
   "checked_at": "2026-10-29 17:55 (Europe/Istanbul)",
-  "scan_kind": "evening_18_scenarios",
-  "previous_scan_comparable": false,
+  "scan_kind": "hotel_only_repeat_18_scenarios",
+  "previous_scan_comparable": true,
   "currency": "TRY",
   "caveats": [
     "Fiyatlar 29 Ekim 2026 akşam taramasına ait Pegasus bilet parçaları ve Trivago toplam konaklama tekliflerinin birleşimidir; satın alma garantisi değildir.",
@@ -747,47 +747,85 @@
     "description": "31 Aralık erken kalkış aynı gün varır; bu daha kısa seyahat ve farklı otel karşılaştırması olup fiyat düşüşü değildir."
   },
   "latest_hotel_scan": {
-    "checked_at": "2026-10-30T08:50:40+03:00",
+    "checked_at": "2026-10-30T17:52:32+03:00",
     "checked_combinations": 18,
-    "comparable_previous_property_offers": 11,
-    "scope": "Konaklama tekrar taraması; uçuş fiyatları yeniden teyit edilemedi",
-    "quote_status": "Hotel price snapshot; same property/advertiser/attributes where available. Room type/capacity not independently verified.",
+    "comparable_previous_property_offers": 7,
+    "scope": "30 Ekim akşam konaklama fiyatı kontrolü; bagaj dahil uçuşlar tekrar doğrulanamadı",
+    "quote_status": "Trivago tek oda (2/3 yetişkin), tarih bazlı liste; oda kapasitesi ve son ödeme koşulları rezervasyonda teyit edilmeli.",
     "lowest_comparable_price_decrease": false,
-    "air_fare_check": "Skyscanner indicative Dec/Jan results did not include requested 29-31 Dec / 2-4 Jan combinations; no current date-scoped baggage-included fare verified",
+    "air_fare_check": "Skyscanner Aralık aylık gösterge fiyatları seçilen seyahat tarihlerine ait değil; bu turda yeni aynı-date uçuş toplamı elde edilemedi.",
     "headline_comparisons": [
       {
         "adults": 2,
-        "dates": "2026-12-31 → 2027-01-04",
+        "dates": "2026-12-30 → 2027-01-04",
         "hotel": "Öğrenci Meydanı'ndaki Stüdyo",
-        "previous_quote": 29412,
-        "new_quote": 29470,
-        "difference": 58,
+        "previous_quote": 38401,
+        "new_quote": 38401,
+        "difference": 0,
         "advertiser": "Airbnb"
       },
       {
         "adults": 3,
         "dates": "2026-12-31 → 2027-01-04",
         "hotel": "Parlamento ve Aziz Markos",
-        "previous_quote": 34249,
+        "previous_quote": 34382,
         "new_quote": 34382,
-        "difference": 133,
+        "difference": 0,
         "advertiser": "Airbnb"
       }
     ],
-    "extra_night_illustration_for_2_adults": {
-      "outbound": "2026-12-31",
-      "inbound_earlier": "2027-01-03",
-      "inbound_later": "2027-01-04",
-      "property": "Öğrenci Meydanı'ndaki Stüdyo",
-      "hotel_earlier": 24782,
-      "hotel_later": 29470,
-      "extra_hotel": 4688,
-      "prior_flight_return_earlier": 36588,
-      "prior_flight_return_later": 19002,
-      "old_snapshot_flight_saving": 17586,
-      "conditional_net_saving": 12898,
-      "flights_as_of": "2026-10-29",
-      "caveat": "Örnek hesap eski uçuş fiyatlarıyla yapılmıştır; 30 Ekim için canlı uçuş tasarrufu değildir."
-    }
+    "alternatives_not_historic_drops": [
+      {
+        "adults": 2,
+        "dates": "2026-12-31 → 2027-01-04",
+        "hotel": "Hotel Rex",
+        "stay_price": 22443,
+        "advertiser": "Booking.com",
+        "review_rating": 8.1,
+        "note": "Different hotel and neighborhood; not comparable with previous apartment; breakfast included, non-refundable."
+      },
+      {
+        "adults": 3,
+        "dates": "2026-12-31 → 2027-01-04",
+        "hotel": "ArkaBarka Floating Hostel",
+        "stay_price": 22657,
+        "advertiser": "Booking.com",
+        "review_rating": 9,
+        "note": "Floating hostel, winter comfort/room type not verified; not comparable to central apartment."
+      }
+    ],
+    "extra_night_conditional": {
+      "adults2": {
+        "outbound": "2026-12-30",
+        "return_earlier": "2027-01-03",
+        "return_later": "2027-01-04",
+        "property": "Parlamento ve Aziz Markos",
+        "hotel_earlier": 31703,
+        "hotel_later": 39629,
+        "hotel_extra": 7926,
+        "historical_flight_saving": 17586,
+        "conditional_net_saving": 9660
+      },
+      "adults3": {
+        "outbound": "2026-12-30",
+        "return_earlier": "2027-01-03",
+        "return_later": "2027-01-04",
+        "property": "Parlamento ve Aziz Markos",
+        "hotel_earlier": 34382,
+        "hotel_later": 42977,
+        "hotel_extra": 8595,
+        "historical_flight_saving": 26379,
+        "conditional_net_saving": 17784
+      },
+      "caveat": "Uçuş dönüş fiyat farkları 29 Ekim eski kayıtlarıdır; bu akşam için geçerli yeni havayolu teklifi değildir."
+    },
+    "source": "Trivago rate snapshots",
+    "notes": [
+      "Skyscanner indicative monthly fares did not show the exact Dec 29–31 outbound / Jan 2–4 inbound dates; no fresh baggage-inclusive flight totals established.",
+      "18 date/guest stay searches were performed with Trivago, filtering 8.0+ review rating. The cheapest listed offer per combination is not necessarily in the target central neighborhoods.",
+      "Cheaper different accommodation products (including floating hostels) are not evidence of a drop in the same hotel/room; winter comfort and room occupancy require confirmation.",
+      "AJet direct service may operate Thu/Sun (schedule source), but an exact booking-class fare and checked-bag total for 31 Dec–3 Jan remain unverified.",
+      "The prior itinerary totals are retained as historical references; no confirmed historic low-price threshold reached."
+    ]
   }
 }
