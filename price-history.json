@@ -701,6 +701,438 @@
         }
       ],
       "notes": "No confirmed price reduction in 11 comparable lodging offers. Previous best overall trip records preserved; no new drop alert. Some alternative properties may be cheaper but are not evidence that the same product price dropped."
+    },
+    {
+      "checked_at": "2026-10-30T17:52:32+03:00",
+      "observation_type": "hotel_only",
+      "source_status": "Trivago date-specific 18 searches; Skyscanner Dec indicative does not provide requested-date fares; AJet official page month examples not applicable to target days.",
+      "quote_rows": [
+        {
+          "adults": 2,
+          "outbound": "2026-12-29",
+          "inbound": "2027-01-02",
+          "nights": 4,
+          "lowest_seen_property": "Hotel Rex",
+          "lowest_seen_hotel_price": 24724,
+          "advertiser": "Booking.com",
+          "rate_attributes": [
+            "breakfastIncluded",
+            "nonRefundable"
+          ],
+          "comparable_to_prior_recommended_property": false,
+          "flight_price": null,
+          "combined_total": null
+        },
+        {
+          "adults": 2,
+          "outbound": "2026-12-29",
+          "inbound": "2027-01-03",
+          "nights": 5,
+          "lowest_seen_property": "Hotel Rex",
+          "lowest_seen_hotel_price": 29903,
+          "advertiser": "Booking.com",
+          "rate_attributes": [
+            "breakfastIncluded",
+            "nonRefundable"
+          ],
+          "comparable_to_prior_recommended_property": false,
+          "flight_price": null,
+          "combined_total": null
+        },
+        {
+          "adults": 2,
+          "outbound": "2026-12-29",
+          "inbound": "2027-01-04",
+          "nights": 6,
+          "lowest_seen_property": "Hotel Rex",
+          "lowest_seen_hotel_price": 33803,
+          "advertiser": "Booking.com",
+          "rate_attributes": [
+            "breakfastIncluded",
+            "nonRefundable"
+          ],
+          "comparable_to_prior_recommended_property": false,
+          "flight_price": null,
+          "combined_total": null
+        },
+        {
+          "adults": 2,
+          "outbound": "2026-12-30",
+          "inbound": "2027-01-02",
+          "nights": 3,
+          "lowest_seen_property": "ArkaBarka Floating Hostel",
+          "lowest_seen_hotel_price": 14497,
+          "advertiser": "Booking.com",
+          "rate_attributes": [
+            "breakfastIncluded",
+            "freeCancellation",
+            "payAtProperty"
+          ],
+          "comparable_to_prior_recommended_property": false,
+          "flight_price": null,
+          "combined_total": null
+        },
+        {
+          "adults": 2,
+          "outbound": "2026-12-30",
+          "inbound": "2027-01-03",
+          "nights": 4,
+          "lowest_seen_property": "Hotel Rex",
+          "lowest_seen_hotel_price": 24223,
+          "advertiser": "Booking.com",
+          "rate_attributes": [
+            "breakfastIncluded",
+            "nonRefundable"
+          ],
+          "comparable_to_prior_recommended_property": false,
+          "flight_price": null,
+          "combined_total": null
+        },
+        {
+          "adults": 2,
+          "outbound": "2026-12-30",
+          "inbound": "2027-01-04",
+          "nights": 5,
+          "lowest_seen_property": "Hotel Rex",
+          "lowest_seen_hotel_price": 28123,
+          "advertiser": "Booking.com",
+          "rate_attributes": [
+            "breakfastIncluded",
+            "nonRefundable"
+          ],
+          "comparable_to_prior_recommended_property": false,
+          "flight_price": null,
+          "combined_total": null
+        },
+        {
+          "adults": 2,
+          "outbound": "2026-12-31",
+          "inbound": "2027-01-02",
+          "nights": 2,
+          "lowest_seen_property": "San Art Floating Hostel & Apartments",
+          "lowest_seen_hotel_price": 9649,
+          "advertiser": "Booking.com",
+          "rate_attributes": [
+            "breakfastIncluded",
+            "freeCancellation",
+            "payAtProperty"
+          ],
+          "comparable_to_prior_recommended_property": false,
+          "flight_price": null,
+          "combined_total": null
+        },
+        {
+          "adults": 2,
+          "outbound": "2026-12-31",
+          "inbound": "2027-01-03",
+          "nights": 3,
+          "lowest_seen_property": "ArkaBarka Floating Hostel",
+          "lowest_seen_hotel_price": 14206,
+          "advertiser": "Booking.com",
+          "rate_attributes": [
+            "breakfastIncluded",
+            "freeCancellation",
+            "payAtProperty"
+          ],
+          "comparable_to_prior_recommended_property": false,
+          "flight_price": null,
+          "combined_total": null
+        },
+        {
+          "adults": 2,
+          "outbound": "2026-12-31",
+          "inbound": "2027-01-04",
+          "nights": 4,
+          "lowest_seen_property": "Hotel Rex",
+          "lowest_seen_hotel_price": 22443,
+          "advertiser": "Booking.com",
+          "rate_attributes": [
+            "breakfastIncluded",
+            "nonRefundable"
+          ],
+          "comparable_to_prior_recommended_property": false,
+          "flight_price": null,
+          "combined_total": null
+        },
+        {
+          "adults": 3,
+          "outbound": "2026-12-29",
+          "inbound": "2027-01-02",
+          "nights": 4,
+          "lowest_seen_property": "ArkaBarka Floating Hostel",
+          "lowest_seen_hotel_price": 22947,
+          "advertiser": "Booking.com",
+          "rate_attributes": [
+            "breakfastIncluded",
+            "freeCancellation",
+            "payAtProperty"
+          ],
+          "comparable_to_prior_recommended_property": false,
+          "flight_price": null,
+          "combined_total": null
+        },
+        {
+          "adults": 3,
+          "outbound": "2026-12-29",
+          "inbound": "2027-01-03",
+          "nights": 5,
+          "lowest_seen_property": "ArkaBarka Floating Hostel",
+          "lowest_seen_hotel_price": 28597,
+          "advertiser": "Booking.com",
+          "rate_attributes": [
+            "breakfastIncluded",
+            "freeCancellation",
+            "payAtProperty"
+          ],
+          "comparable_to_prior_recommended_property": false,
+          "flight_price": null,
+          "combined_total": null
+        },
+        {
+          "adults": 3,
+          "outbound": "2026-12-29",
+          "inbound": "2027-01-04",
+          "nights": 6,
+          "lowest_seen_property": "ArkaBarka Floating Hostel",
+          "lowest_seen_hotel_price": 34014,
+          "advertiser": "Booking.com",
+          "rate_attributes": [
+            "breakfastIncluded",
+            "freeCancellation",
+            "payAtProperty"
+          ],
+          "comparable_to_prior_recommended_property": false,
+          "flight_price": null,
+          "combined_total": null
+        },
+        {
+          "adults": 3,
+          "outbound": "2026-12-30",
+          "inbound": "2027-01-02",
+          "nights": 3,
+          "lowest_seen_property": "ArkaBarka Floating Hostel",
+          "lowest_seen_hotel_price": 17530,
+          "advertiser": "Booking.com",
+          "rate_attributes": [
+            "breakfastIncluded",
+            "freeCancellation",
+            "payAtProperty"
+          ],
+          "comparable_to_prior_recommended_property": false,
+          "flight_price": null,
+          "combined_total": null
+        },
+        {
+          "adults": 3,
+          "outbound": "2026-12-30",
+          "inbound": "2027-01-03",
+          "nights": 4,
+          "lowest_seen_property": "ArkaBarka Floating Hostel",
+          "lowest_seen_hotel_price": 23180,
+          "advertiser": "Booking.com",
+          "rate_attributes": [
+            "breakfastIncluded",
+            "freeCancellation",
+            "payAtProperty"
+          ],
+          "comparable_to_prior_recommended_property": false,
+          "flight_price": null,
+          "combined_total": null
+        },
+        {
+          "adults": 3,
+          "outbound": "2026-12-30",
+          "inbound": "2027-01-04",
+          "nights": 5,
+          "lowest_seen_property": "ArkaBarka Floating Hostel",
+          "lowest_seen_hotel_price": 28597,
+          "advertiser": "Booking.com",
+          "rate_attributes": [
+            "breakfastIncluded",
+            "freeCancellation",
+            "payAtProperty"
+          ],
+          "comparable_to_prior_recommended_property": false,
+          "flight_price": null,
+          "combined_total": null
+        },
+        {
+          "adults": 3,
+          "outbound": "2026-12-31",
+          "inbound": "2027-01-02",
+          "nights": 2,
+          "lowest_seen_property": "San Art Floating Hostel & Apartments",
+          "lowest_seen_hotel_price": 12805,
+          "advertiser": "Booking.com",
+          "rate_attributes": [
+            "breakfastIncluded",
+            "freeCancellation",
+            "payAtProperty"
+          ],
+          "comparable_to_prior_recommended_property": false,
+          "flight_price": null,
+          "combined_total": null
+        },
+        {
+          "adults": 3,
+          "outbound": "2026-12-31",
+          "inbound": "2027-01-03",
+          "nights": 3,
+          "lowest_seen_property": "ArkaBarka Floating Hostel",
+          "lowest_seen_hotel_price": 17239,
+          "advertiser": "Booking.com",
+          "rate_attributes": [
+            "breakfastIncluded",
+            "freeCancellation",
+            "payAtProperty"
+          ],
+          "comparable_to_prior_recommended_property": false,
+          "flight_price": null,
+          "combined_total": null
+        },
+        {
+          "adults": 3,
+          "outbound": "2026-12-31",
+          "inbound": "2027-01-04",
+          "nights": 4,
+          "lowest_seen_property": "ArkaBarka Floating Hostel",
+          "lowest_seen_hotel_price": 22657,
+          "advertiser": "Booking.com",
+          "rate_attributes": [
+            "breakfastIncluded",
+            "freeCancellation",
+            "payAtProperty"
+          ],
+          "comparable_to_prior_recommended_property": false,
+          "flight_price": null,
+          "combined_total": null
+        }
+      ],
+      "comparable_checks": [
+        {
+          "adults": 2,
+          "outbound": "2026-12-30",
+          "inbound": "2027-01-03",
+          "property": "Parlamento ve Aziz Markos",
+          "advertiser": "Airbnb",
+          "rate_attributes": [
+            "roomOnly"
+          ],
+          "previous_quote": 31703,
+          "new_quote": 31703,
+          "change": 0,
+          "strictly_comparable": true,
+          "comment": null
+        },
+        {
+          "adults": 2,
+          "outbound": "2026-12-30",
+          "inbound": "2027-01-04",
+          "property": "Öğrenci Meydanı'ndaki Stüdyo",
+          "advertiser": "Airbnb",
+          "rate_attributes": [
+            "roomOnly"
+          ],
+          "previous_quote": 38401,
+          "new_quote": 38401,
+          "change": 0,
+          "strictly_comparable": true,
+          "comment": null
+        },
+        {
+          "adults": 3,
+          "outbound": "2026-12-29",
+          "inbound": "2027-01-02",
+          "property": "Parlamento ve Aziz Markos",
+          "advertiser": "Airbnb",
+          "rate_attributes": [
+            "roomOnly"
+          ],
+          "previous_quote": 34382,
+          "new_quote": 34382,
+          "change": 0,
+          "strictly_comparable": true,
+          "comment": null
+        },
+        {
+          "adults": 3,
+          "outbound": "2026-12-29",
+          "inbound": "2027-01-03",
+          "property": "Parlamento ve Aziz Markos",
+          "advertiser": "Airbnb",
+          "rate_attributes": [
+            "roomOnly"
+          ],
+          "previous_quote": 42977,
+          "new_quote": 42977,
+          "change": 0,
+          "strictly_comparable": true,
+          "comment": null
+        },
+        {
+          "adults": 3,
+          "outbound": "2026-12-29",
+          "inbound": "2027-01-04",
+          "property": "Parlamento ve Aziz Markos",
+          "advertiser": "Airbnb",
+          "rate_attributes": [
+            "roomOnly"
+          ],
+          "previous_quote": 51573,
+          "new_quote": 51573,
+          "change": 0,
+          "strictly_comparable": true,
+          "comment": null
+        },
+        {
+          "adults": 3,
+          "outbound": "2026-12-30",
+          "inbound": "2027-01-03",
+          "property": "Parlamento ve Aziz Markos",
+          "advertiser": "Airbnb",
+          "rate_attributes": [
+            "roomOnly"
+          ],
+          "previous_quote": 34382,
+          "new_quote": 34382,
+          "change": 0,
+          "strictly_comparable": true,
+          "comment": null
+        },
+        {
+          "adults": 3,
+          "outbound": "2026-12-31",
+          "inbound": "2027-01-04",
+          "property": "Parlamento ve Aziz Markos",
+          "advertiser": "Airbnb",
+          "rate_attributes": [
+            "roomOnly"
+          ],
+          "previous_quote": 34382,
+          "new_quote": 34382,
+          "change": 0,
+          "strictly_comparable": true,
+          "comment": null
+        },
+        {
+          "adults": 2,
+          "outbound": "2026-12-31",
+          "inbound": "2027-01-03",
+          "property": "Kopernikus Hotel Prag",
+          "advertiser": "Booking.com",
+          "rate_attributes": [
+            "roomOnly",
+            "nonRefundable"
+          ],
+          "previous_quote": 18380,
+          "new_quote": 18183,
+          "change": -197,
+          "strictly_comparable": false,
+          "comment": "Previous advertiser not proven identical; do not treat as confirmed decrease"
+        }
+      ],
+      "confirmed_threshold_hits": 0,
+      "notes": "Skyscanner indicative monthly fares did not show the exact Dec 29–31 outbound / Jan 2–4 inbound dates; no fresh baggage-inclusive flight totals established. 18 date/guest stay searches were performed with Trivago, filtering 8.0+ review rating. The cheapest listed offer per combination is not necessarily in the target central neighborhoods. Cheaper different accommodation products (including floating hostels) are not evidence of a drop in the same hotel/room; winter comfort and room occupancy require confirmation. AJet direct service may operate Thu/Sun (schedule source), but an exact booking-class fare and checked-bag total for 31 Dec–3 Jan remain unverified. The prior itinerary totals are retained as historical references; no confirmed historic low-price threshold reached."
     }
   ]
 }
