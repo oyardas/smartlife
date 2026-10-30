@@ -745,5 +745,49 @@
     "inbound": "2027-01-04",
     "combined_total": 108384.4,
     "description": "31 Aralık erken kalkış aynı gün varır; bu daha kısa seyahat ve farklı otel karşılaştırması olup fiyat düşüşü değildir."
+  },
+  "latest_hotel_scan": {
+    "checked_at": "2026-10-30T08:50:40+03:00",
+    "checked_combinations": 18,
+    "comparable_previous_property_offers": 11,
+    "scope": "Konaklama tekrar taraması; uçuş fiyatları yeniden teyit edilemedi",
+    "quote_status": "Hotel price snapshot; same property/advertiser/attributes where available. Room type/capacity not independently verified.",
+    "lowest_comparable_price_decrease": false,
+    "air_fare_check": "Skyscanner indicative Dec/Jan results did not include requested 29-31 Dec / 2-4 Jan combinations; no current date-scoped baggage-included fare verified",
+    "headline_comparisons": [
+      {
+        "adults": 2,
+        "dates": "2026-12-31 → 2027-01-04",
+        "hotel": "Öğrenci Meydanı'ndaki Stüdyo",
+        "previous_quote": 29412,
+        "new_quote": 29470,
+        "difference": 58,
+        "advertiser": "Airbnb"
+      },
+      {
+        "adults": 3,
+        "dates": "2026-12-31 → 2027-01-04",
+        "hotel": "Parlamento ve Aziz Markos",
+        "previous_quote": 34249,
+        "new_quote": 34382,
+        "difference": 133,
+        "advertiser": "Airbnb"
+      }
+    ],
+    "extra_night_illustration_for_2_adults": {
+      "outbound": "2026-12-31",
+      "inbound_earlier": "2027-01-03",
+      "inbound_later": "2027-01-04",
+      "property": "Öğrenci Meydanı'ndaki Stüdyo",
+      "hotel_earlier": 24782,
+      "hotel_later": 29470,
+      "extra_hotel": 4688,
+      "prior_flight_return_earlier": 36588,
+      "prior_flight_return_later": 19002,
+      "old_snapshot_flight_saving": 17586,
+      "conditional_net_saving": 12898,
+      "flights_as_of": "2026-10-29",
+      "caveat": "Örnek hesap eski uçuş fiyatlarıyla yapılmıştır; 30 Ekim için canlı uçuş tasarrufu değildir."
+    }
   }
 }
