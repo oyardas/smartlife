@@ -2532,5 +2532,101 @@
       }
     ]
   },
-  "ajet_schedule_note": "31 Aralık Perşembe ADB→BEG ve 3 Ocak Pazar BEG→ADB için AJet VF1001/VF1002 doğrudan tarifesi bulunuyor; hedef güne özgü bagaj dahil fiyat doğrulanamadı."
+  "ajet_schedule_note": "31 Aralık Perşembe ADB→BEG ve 3 Ocak Pazar BEG→ADB için AJet VF1001/VF1002 doğrudan tarifesi bulunuyor; hedef güne özgü bagaj dahil fiyat doğrulanamadı.",
+  "flexible_flight_scan": {
+    "schema_version": 1,
+    "checked_at": "2026-10-31",
+    "source_snapshot_at": "2026-10-30 06:47 (Türkiye saati; Fırsat Uçuş rota sayfası)",
+    "source_url": "https://firsatucus.com/rota/izmir-belgrad",
+    "skyscanner_url": "https://skyscanner.net/g/referrals/v1/flights/home?mediaPartnerId=2850210&utm_term=skyscanner_chatgpt_app_data",
+    "currency": "TRY",
+    "category_explanation": {
+      "cached_roundtrip": "Üçüncü tarafın eski tarihli tek yolcu gidiş-dönüş fiyat gözlemi. Satın alınabilirlik, bagaj ve son ödeme toplamı doğrulanmadı.",
+      "search_index_only": "Arama sonucunda görülen fiyat, açık kaynak sayfasının güncel listesinde görünmedi; yalnız geçmiş gösterge.",
+      "assembled_indicative": "Skyscanner'dan birbirinden bağımsız iki tek yön gösterge fiyatının aritmetik toplamı; gerçek gidiş-dönüş bileti değildir.",
+      "schedule_only": "Direkt uçuş tarifesi var fakat hedef gün, yolcu sayısı ve bagaj dahil bilet ücreti bulunamadı."
+    },
+    "alert_eligible": false,
+    "alert_reason": "Fiyatlar farklı teklif sağlayıcılarından, farklı tarifelerden veya tek yön göstergelerinden geliyor; aynı uçuş ve bagaj sınıfına ait eski doğrulanmış fiyatla eşleşme yapılamıyor.",
+    "offers": [
+      {
+        "id": "fu-31dec-3jan",
+        "outbound": "2026-12-31",
+        "inbound": "2027-01-03",
+        "nights": 3,
+        "airline": "Pegasus",
+        "routing": "Aktarmalı",
+        "price_per_adult": 16154,
+        "category": "cached_roundtrip",
+        "order": 1,
+        "source": "Fırsat Uçuş / Aviasales (önbellek)",
+        "url": "https://firsatucus.com/go/fare/109949",
+        "baggage_included": "unknown",
+        "arrival_before_new_year": "unverified"
+      },
+      {
+        "id": "fu-29dec-2jan",
+        "outbound": "2026-12-29",
+        "inbound": "2027-01-02",
+        "nights": 4,
+        "airline": "Pegasus",
+        "routing": "Aktarmalı",
+        "price_per_adult": 16725,
+        "category": "cached_roundtrip",
+        "order": 2,
+        "source": "Fırsat Uçuş / Aviasales (önbellek)",
+        "url": "https://firsatucus.com/go/fare/65849",
+        "baggage_included": "unknown",
+        "arrival_before_new_year": "unverified"
+      },
+      {
+        "id": "fu-30dec-3jan-index",
+        "outbound": "2026-12-30",
+        "inbound": "2027-01-03",
+        "nights": 4,
+        "airline": "Pegasus",
+        "routing": "Aktarmalı",
+        "price_per_adult": 18855,
+        "category": "search_index_only",
+        "order": 3,
+        "source": "Fırsat Uçuş arama dizini; doğrudan sayfada teyit yok",
+        "url": "https://firsatucus.com/rota/izmir-belgrad",
+        "baggage_included": "unknown",
+        "arrival_before_new_year": "unverified"
+      },
+      {
+        "id": "ajet-31dec-3jan",
+        "outbound": "2026-12-31",
+        "inbound": "2027-01-03",
+        "nights": 3,
+        "airline": "AJet",
+        "routing": "Direkt (tarife)",
+        "price_per_adult": null,
+        "category": "schedule_only",
+        "order": 4,
+        "source": "Setur 31 Aralık–3 Ocak VF1001/VF1002 tur tarifesi; uçak bileti fiyatı değil",
+        "url": "https://ajet.com/tr-tr/en-uygun-izmir-kalkisli-belgrad-varisli-ucak-bileti",
+        "baggage_included": "unknown",
+        "arrival_before_new_year": "scheduled"
+      },
+      {
+        "id": "sky-31dec-7jan",
+        "outbound": "2026-12-31",
+        "inbound": "2027-01-07",
+        "nights": 7,
+        "airline": "Pegasus gidiş + AJet dönüş",
+        "routing": "Aktarmalı gidiş / direkt dönüş göstergesi",
+        "price_per_adult": 11229,
+        "category": "assembled_indicative",
+        "order": 5,
+        "source": "Skyscanner aylık tek yön fiyat göstergeleri: 5.551 + 5.678 TL",
+        "url": "https://skyscanner.net/g/referrals/v1/flights/home?mediaPartnerId=2850210&utm_term=skyscanner_chatgpt_app_data",
+        "baggage_included": "unknown",
+        "arrival_before_new_year": "unverified",
+        "one_way_outbound": 5551,
+        "one_way_inbound": 5678
+      }
+    ],
+    "note": "İki ve üç kişi toplamları, tek kişi başlangıç fiyatının yolcu sayısıyla çarpılmasıdır. Aynı fiyattan koltuk sayısı teyit edilmedi; kesin bagaj dahil veya kombine satın alma toplamı değildir. 7 Ocak dönüşü, orijinal 2–4 Ocak karşılaştırma aralığının dışındadır."
+  }
 }
