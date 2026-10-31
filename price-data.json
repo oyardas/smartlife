@@ -34,14 +34,14 @@
       "dates": "2026-12-31 → 2027-01-04",
       "total_excluding_unknown_baggage": 74645.6,
       "hotel": "Kopernikus Hotel Prag",
-      "outbound_time": "05:25",
+      "outbound_time": "07:00",
       "nights": 4
     },
     "three_adults": {
       "dates": "2026-12-31 → 2027-01-04",
       "total_excluding_unknown_baggage": 114470.4,
       "hotel": "Parlamento ve Aziz Markos",
-      "outbound_time": "05:25",
+      "outbound_time": "07:00",
       "nights": 4
     }
   },
@@ -305,8 +305,8 @@
         "return_cost": null,
         "total": null,
         "connections": "SAW",
-        "outbound_departure": "05:25",
-        "outbound_layover": "3sa 55dk",
+        "outbound_departure": "07:00",
+        "outbound_layover": "2sa 20dk",
         "outbound_arrival_local": "2026-12-31 10:15",
         "return_layover": null,
         "baggage_included": "unknown",
@@ -316,7 +316,7 @@
       },
       "combined_total": null,
       "nye_available_with_quoted_pegasus_flight": true,
-      "warning": "Pegasus 05:25 • 1 aktarma, 3sa 55dk bekleme; bagaj paketi belirsiz. 21.35 gidişi 1 Ocak varışlıdır. Konaklama süresi hedeflenen 3–5 gecenin dışında.",
+      "warning": "Pegasus 07:00 • 1 aktarma, 2sa 20dk bekleme (aynı ücretli 05:25 seçeneğine göre daha kısa aktarma); bagaj paketi belirsiz. 21.35 gidişi 1 Ocak varışlıdır. Konaklama süresi hedeflenen 3–5 gecenin dışında.",
       "quote_at": "2026-10-31T15:24:54.800Z"
     },
     {
@@ -344,8 +344,8 @@
         "return_cost": 37198,
         "total": 70603.6,
         "connections": "SAW",
-        "outbound_departure": "05:25",
-        "outbound_layover": "3sa 55dk",
+        "outbound_departure": "07:00",
+        "outbound_layover": "2sa 20dk",
         "outbound_arrival_local": "2026-12-31 10:15",
         "return_layover": "2sa 40dk",
         "baggage_included": "unknown",
@@ -355,7 +355,7 @@
       },
       "combined_total": 88138.6,
       "nye_available_with_quoted_pegasus_flight": true,
-      "warning": "Pegasus 05:25 • 1 aktarma, 3sa 55dk bekleme; bagaj paketi belirsiz. 21.35 gidişi 1 Ocak varışlıdır.",
+      "warning": "Pegasus 07:00 • 1 aktarma, 2sa 20dk bekleme (aynı ücretli 05:25 seçeneğine göre daha kısa aktarma); bagaj paketi belirsiz. 21.35 gidişi 1 Ocak varışlıdır.",
       "quote_at": "2026-10-31T15:24:54.800Z"
     },
     {
@@ -383,8 +383,8 @@
         "return_cost": 19920,
         "total": 53325.6,
         "connections": "SAW",
-        "outbound_departure": "05:25",
-        "outbound_layover": "3sa 55dk",
+        "outbound_departure": "07:00",
+        "outbound_layover": "2sa 20dk",
         "outbound_arrival_local": "2026-12-31 10:15",
         "return_layover": "3sa 10dk",
         "baggage_included": "unknown",
@@ -394,7 +394,7 @@
       },
       "combined_total": 74645.6,
       "nye_available_with_quoted_pegasus_flight": true,
-      "warning": "Pegasus 05:25 • 1 aktarma, 3sa 55dk bekleme; bagaj paketi belirsiz. 21.35 gidişi 1 Ocak varışlıdır.",
+      "warning": "Pegasus 07:00 • 1 aktarma, 2sa 20dk bekleme (aynı ücretli 05:25 seçeneğine göre daha kısa aktarma); bagaj paketi belirsiz. 21.35 gidişi 1 Ocak varışlıdır.",
       "quote_at": "2026-10-31T15:24:54.800Z"
     },
     {
@@ -653,8 +653,8 @@
         "return_cost": null,
         "total": null,
         "connections": "SAW",
-        "outbound_departure": "05:25",
-        "outbound_layover": "3sa 55dk",
+        "outbound_departure": "07:00",
+        "outbound_layover": "2sa 20dk",
         "outbound_arrival_local": "2026-12-31 10:15",
         "return_layover": null,
         "baggage_included": "unknown",
@@ -664,7 +664,7 @@
       },
       "combined_total": null,
       "nye_available_with_quoted_pegasus_flight": true,
-      "warning": "Pegasus 05:25 • 1 aktarma, 3sa 55dk bekleme; bagaj paketi belirsiz. 21.35 gidişi 1 Ocak varışlıdır. Konaklama süresi hedeflenen 3–5 gecenin dışında.",
+      "warning": "Pegasus 07:00 • 1 aktarma, 2sa 20dk bekleme (aynı ücretli 05:25 seçeneğine göre daha kısa aktarma); bagaj paketi belirsiz. 21.35 gidişi 1 Ocak varışlıdır. Konaklama süresi hedeflenen 3–5 gecenin dışında.",
       "quote_at": "2026-10-31T15:24:54.800Z"
     },
     {
@@ -692,8 +692,8 @@
         "return_cost": 55797,
         "total": 105905.4,
         "connections": "SAW",
-        "outbound_departure": "05:25",
-        "outbound_layover": "3sa 55dk",
+        "outbound_departure": "07:00",
+        "outbound_layover": "2sa 20dk",
         "outbound_arrival_local": "2026-12-31 10:15",
         "return_layover": "2sa 40dk",
         "baggage_included": "unknown",
@@ -703,7 +703,7 @@
       },
       "combined_total": 133159.4,
       "nye_available_with_quoted_pegasus_flight": true,
-      "warning": "Pegasus 05:25 • 1 aktarma, 3sa 55dk bekleme; bagaj paketi belirsiz. 21.35 gidişi 1 Ocak varışlıdır.",
+      "warning": "Pegasus 07:00 • 1 aktarma, 2sa 20dk bekleme (aynı ücretli 05:25 seçeneğine göre daha kısa aktarma); bagaj paketi belirsiz. 21.35 gidişi 1 Ocak varışlıdır.",
       "quote_at": "2026-10-31T15:24:54.800Z"
     },
     {
@@ -730,8 +730,8 @@
         "return_cost": 29880,
         "total": 79988.4,
         "connections": "SAW",
-        "outbound_departure": "05:25",
-        "outbound_layover": "3sa 55dk",
+        "outbound_departure": "07:00",
+        "outbound_layover": "2sa 20dk",
         "outbound_arrival_local": "2026-12-31 10:15",
         "return_layover": "3sa 10dk",
         "baggage_included": "unknown",
@@ -741,7 +741,7 @@
       },
       "combined_total": 114470.4,
       "nye_available_with_quoted_pegasus_flight": true,
-      "warning": "Pegasus 05:25 • 1 aktarma, 3sa 55dk bekleme; bagaj paketi belirsiz. 21.35 gidişi 1 Ocak varışlıdır.",
+      "warning": "Pegasus 07:00 • 1 aktarma, 2sa 20dk bekleme (aynı ücretli 05:25 seçeneğine göre daha kısa aktarma); bagaj paketi belirsiz. 21.35 gidişi 1 Ocak varışlıdır.",
       "quote_at": "2026-10-31T15:24:54.800Z"
     }
   ],
@@ -2429,7 +2429,7 @@
         "flight_total": null,
         "outbound_cost": 33405.6,
         "return_cost": null,
-        "outbound_departure": "05:25"
+        "outbound_departure": "07:00"
       },
       {
         "adults": 2,
@@ -2438,7 +2438,7 @@
         "flight_total": 70603.6,
         "outbound_cost": 33405.6,
         "return_cost": 37198,
-        "outbound_departure": "05:25"
+        "outbound_departure": "07:00"
       },
       {
         "adults": 2,
@@ -2447,7 +2447,7 @@
         "flight_total": 53325.6,
         "outbound_cost": 33405.6,
         "return_cost": 19920,
-        "outbound_departure": "05:25"
+        "outbound_departure": "07:00"
       },
       {
         "adults": 3,
@@ -2510,7 +2510,7 @@
         "flight_total": null,
         "outbound_cost": 50108.4,
         "return_cost": null,
-        "outbound_departure": "05:25"
+        "outbound_departure": "07:00"
       },
       {
         "adults": 3,
@@ -2519,7 +2519,7 @@
         "flight_total": 105905.4,
         "outbound_cost": 50108.4,
         "return_cost": 55797,
-        "outbound_departure": "05:25"
+        "outbound_departure": "07:00"
       },
       {
         "adults": 3,
@@ -2528,7 +2528,7 @@
         "flight_total": 79988.4,
         "outbound_cost": 50108.4,
         "return_cost": 29880,
-        "outbound_departure": "05:25"
+        "outbound_departure": "07:00"
       }
     ]
   },
