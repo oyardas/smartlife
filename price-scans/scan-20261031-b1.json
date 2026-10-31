@@ -1,0 +1,821 @@
+{
+  "scan_time": "2026-10-31T09:16:39.825+03:00",
+  "scope": "31 Oct Belgrade price scan",
+  "historical_min": {
+    "2|2026-12-29|2027-01-02|parlamento ve aziz markos|airbnb|roomOnly": {
+      "p": 31580,
+      "name": "Parlamento ve Aziz Markos",
+      "advertiser": "Airbnb",
+      "attrs": [
+        "roomOnly"
+      ]
+    },
+    "2|2026-12-29|2027-01-03|olivia rooms|booking.com|freeCancellation,payAtProperty,roomOnly": {
+      "p": 37270,
+      "name": "Olivia Rooms",
+      "advertiser": "Booking.com",
+      "attrs": [
+        "roomOnly",
+        "freeCancellation",
+        "payAtProperty"
+      ]
+    },
+    "2|2026-12-29|2027-01-04|olivia rooms|booking.com|freeCancellation,payAtProperty,roomOnly": {
+      "p": 40763,
+      "name": "Olivia Rooms",
+      "advertiser": "Booking.com",
+      "attrs": [
+        "roomOnly",
+        "freeCancellation",
+        "payAtProperty"
+      ]
+    },
+    "2|2026-12-30|2027-01-02|city joy - sports center tasmajdan|trip.com|nonRefundable,roomOnly": {
+      "p": 25781,
+      "name": "City Joy - sports Center Tasmajdan",
+      "advertiser": "Trip.com",
+      "attrs": [
+        "roomOnly",
+        "nonRefundable"
+      ]
+    },
+    "2|2026-12-30|2027-01-03|parlamento ve aziz markos|airbnb|roomOnly": {
+      "p": 31580,
+      "name": "Parlamento ve Aziz Markos",
+      "advertiser": "Airbnb",
+      "attrs": [
+        "roomOnly"
+      ]
+    },
+    "2|2026-12-30|2027-01-04|öğrenci meydanı'ndaki stüdyo|airbnb|roomOnly": {
+      "p": 38308,
+      "name": "Öğrenci Meydanı'ndaki Stüdyo",
+      "advertiser": "Airbnb",
+      "attrs": [
+        "roomOnly"
+      ]
+    },
+    "2|2026-12-31|2027-01-02|hotel heritage|agoda|breakfastIncluded,freeCancellation": {
+      "p": 20078,
+      "name": "Hotel Heritage",
+      "advertiser": "Agoda",
+      "attrs": [
+        "breakfastIncluded",
+        "freeCancellation"
+      ]
+    },
+    "2|2026-12-31|2027-01-03|kopernikus hotel prag|zenhotels.com|breakfastIncluded,nonRefundable": {
+      "p": 18380,
+      "name": "Kopernikus Hotel Prag",
+      "advertiser": "ZenHotels.com",
+      "attrs": [
+        "breakfastIncluded",
+        "nonRefundable"
+      ]
+    },
+    "2|2026-12-31|2027-01-04|öğrenci meydanı'ndaki stüdyo|airbnb|roomOnly": {
+      "p": 29412,
+      "name": "Öğrenci Meydanı'ndaki Stüdyo",
+      "advertiser": "Airbnb",
+      "attrs": [
+        "roomOnly"
+      ]
+    },
+    "3|2026-12-29|2027-01-02|parlamento ve aziz markos|airbnb|roomOnly": {
+      "p": 34249,
+      "name": "Parlamento ve Aziz Markos",
+      "advertiser": "Airbnb",
+      "attrs": [
+        "roomOnly"
+      ]
+    },
+    "3|2026-12-29|2027-01-03|parlamento ve aziz markos|airbnb|roomOnly": {
+      "p": 42811,
+      "name": "Parlamento ve Aziz Markos",
+      "advertiser": "Airbnb",
+      "attrs": [
+        "roomOnly"
+      ]
+    },
+    "3|2026-12-29|2027-01-04|parlamento ve aziz markos|airbnb|roomOnly": {
+      "p": 51373,
+      "name": "Parlamento ve Aziz Markos",
+      "advertiser": "Airbnb",
+      "attrs": [
+        "roomOnly"
+      ]
+    },
+    "3|2026-12-30|2027-01-02|veneti suites|trip.com|nonRefundable,roomOnly": {
+      "p": 29763,
+      "name": "Veneti Suites",
+      "advertiser": "Trip.com",
+      "attrs": [
+        "roomOnly",
+        "nonRefundable"
+      ]
+    },
+    "3|2026-12-30|2027-01-03|parlamento ve aziz markos|airbnb|roomOnly": {
+      "p": 34249,
+      "name": "Parlamento ve Aziz Markos",
+      "advertiser": "Airbnb",
+      "attrs": [
+        "roomOnly"
+      ]
+    },
+    "3|2026-12-30|2027-01-04|kopernikus hotel prag|hotels.com|breakfastIncluded,nonRefundable": {
+      "p": 40326,
+      "name": "Kopernikus Hotel Prag",
+      "advertiser": "Hotels.com",
+      "attrs": [
+        "breakfastIncluded",
+        "nonRefundable"
+      ]
+    },
+    "3|2026-12-31|2027-01-02|apartment milan|booking.com|freeCancellation,payAtProperty,roomOnly": {
+      "p": 19259,
+      "name": "Apartment Milan",
+      "advertiser": "Booking.com",
+      "attrs": [
+        "roomOnly",
+        "freeCancellation",
+        "payAtProperty"
+      ]
+    },
+    "3|2026-12-31|2027-01-03|kopernikus hotel prag|stayforlong|breakfastIncluded,nonRefundable": {
+      "p": 23661,
+      "name": "Kopernikus Hotel Prag",
+      "advertiser": "Stayforlong",
+      "attrs": [
+        "breakfastIncluded",
+        "nonRefundable"
+      ]
+    },
+    "3|2026-12-31|2027-01-04|parlamento ve aziz markos|airbnb|roomOnly": {
+      "p": 34249,
+      "name": "Parlamento ve Aziz Markos",
+      "advertiser": "Airbnb",
+      "attrs": [
+        "roomOnly"
+      ]
+    },
+    "2|2026-12-29|2027-01-02|hotel rex|booking.com|breakfastIncluded,nonRefundable": {
+      "p": 24724,
+      "name": "Hotel Rex",
+      "advertiser": "Booking.com",
+      "attrs": [
+        "breakfastIncluded",
+        "nonRefundable"
+      ]
+    },
+    "2|2026-12-29|2027-01-03|hotel rex|booking.com|breakfastIncluded,nonRefundable": {
+      "p": 29903,
+      "name": "Hotel Rex",
+      "advertiser": "Booking.com",
+      "attrs": [
+        "breakfastIncluded",
+        "nonRefundable"
+      ]
+    },
+    "2|2026-12-29|2027-01-04|hotel rex|booking.com|breakfastIncluded,nonRefundable": {
+      "p": 33803,
+      "name": "Hotel Rex",
+      "advertiser": "Booking.com",
+      "attrs": [
+        "breakfastIncluded",
+        "nonRefundable"
+      ]
+    },
+    "2|2026-12-30|2027-01-02|arkabarka floating hostel|booking.com|breakfastIncluded,freeCancellation,payAtProperty": {
+      "p": 14497,
+      "name": "ArkaBarka Floating Hostel",
+      "advertiser": "Booking.com",
+      "attrs": [
+        "breakfastIncluded",
+        "freeCancellation",
+        "payAtProperty"
+      ]
+    },
+    "2|2026-12-30|2027-01-03|hotel rex|booking.com|breakfastIncluded,nonRefundable": {
+      "p": 24223,
+      "name": "Hotel Rex",
+      "advertiser": "Booking.com",
+      "attrs": [
+        "breakfastIncluded",
+        "nonRefundable"
+      ]
+    },
+    "2|2026-12-30|2027-01-04|hotel rex|booking.com|breakfastIncluded,nonRefundable": {
+      "p": 28123,
+      "name": "Hotel Rex",
+      "advertiser": "Booking.com",
+      "attrs": [
+        "breakfastIncluded",
+        "nonRefundable"
+      ]
+    },
+    "2|2026-12-31|2027-01-02|san art floating hostel & apartments|booking.com|breakfastIncluded,freeCancellation,payAtProperty": {
+      "p": 9649,
+      "name": "San Art Floating Hostel & Apartments",
+      "advertiser": "Booking.com",
+      "attrs": [
+        "breakfastIncluded",
+        "freeCancellation",
+        "payAtProperty"
+      ]
+    },
+    "2|2026-12-31|2027-01-03|arkabarka floating hostel|booking.com|breakfastIncluded,freeCancellation,payAtProperty": {
+      "p": 14206,
+      "name": "ArkaBarka Floating Hostel",
+      "advertiser": "Booking.com",
+      "attrs": [
+        "breakfastIncluded",
+        "freeCancellation",
+        "payAtProperty"
+      ]
+    },
+    "2|2026-12-31|2027-01-04|hotel rex|booking.com|breakfastIncluded,nonRefundable": {
+      "p": 22443,
+      "name": "Hotel Rex",
+      "advertiser": "Booking.com",
+      "attrs": [
+        "breakfastIncluded",
+        "nonRefundable"
+      ]
+    },
+    "3|2026-12-29|2027-01-02|arkabarka floating hostel|booking.com|breakfastIncluded,freeCancellation,payAtProperty": {
+      "p": 22947,
+      "name": "ArkaBarka Floating Hostel",
+      "advertiser": "Booking.com",
+      "attrs": [
+        "breakfastIncluded",
+        "freeCancellation",
+        "payAtProperty"
+      ]
+    },
+    "3|2026-12-29|2027-01-03|arkabarka floating hostel|booking.com|breakfastIncluded,freeCancellation,payAtProperty": {
+      "p": 28597,
+      "name": "ArkaBarka Floating Hostel",
+      "advertiser": "Booking.com",
+      "attrs": [
+        "breakfastIncluded",
+        "freeCancellation",
+        "payAtProperty"
+      ]
+    },
+    "3|2026-12-29|2027-01-04|arkabarka floating hostel|booking.com|breakfastIncluded,freeCancellation,payAtProperty": {
+      "p": 34014,
+      "name": "ArkaBarka Floating Hostel",
+      "advertiser": "Booking.com",
+      "attrs": [
+        "breakfastIncluded",
+        "freeCancellation",
+        "payAtProperty"
+      ]
+    },
+    "3|2026-12-30|2027-01-02|arkabarka floating hostel|booking.com|breakfastIncluded,freeCancellation,payAtProperty": {
+      "p": 17530,
+      "name": "ArkaBarka Floating Hostel",
+      "advertiser": "Booking.com",
+      "attrs": [
+        "breakfastIncluded",
+        "freeCancellation",
+        "payAtProperty"
+      ]
+    },
+    "3|2026-12-30|2027-01-03|arkabarka floating hostel|booking.com|breakfastIncluded,freeCancellation,payAtProperty": {
+      "p": 23180,
+      "name": "ArkaBarka Floating Hostel",
+      "advertiser": "Booking.com",
+      "attrs": [
+        "breakfastIncluded",
+        "freeCancellation",
+        "payAtProperty"
+      ]
+    },
+    "3|2026-12-30|2027-01-04|arkabarka floating hostel|booking.com|breakfastIncluded,freeCancellation,payAtProperty": {
+      "p": 28597,
+      "name": "ArkaBarka Floating Hostel",
+      "advertiser": "Booking.com",
+      "attrs": [
+        "breakfastIncluded",
+        "freeCancellation",
+        "payAtProperty"
+      ]
+    },
+    "3|2026-12-31|2027-01-02|san art floating hostel & apartments|booking.com|breakfastIncluded,freeCancellation,payAtProperty": {
+      "p": 12805,
+      "name": "San Art Floating Hostel & Apartments",
+      "advertiser": "Booking.com",
+      "attrs": [
+        "breakfastIncluded",
+        "freeCancellation",
+        "payAtProperty"
+      ]
+    },
+    "3|2026-12-31|2027-01-03|arkabarka floating hostel|booking.com|breakfastIncluded,freeCancellation,payAtProperty": {
+      "p": 17239,
+      "name": "ArkaBarka Floating Hostel",
+      "advertiser": "Booking.com",
+      "attrs": [
+        "breakfastIncluded",
+        "freeCancellation",
+        "payAtProperty"
+      ]
+    },
+    "3|2026-12-31|2027-01-04|arkabarka floating hostel|booking.com|breakfastIncluded,freeCancellation,payAtProperty": {
+      "p": 22657,
+      "name": "ArkaBarka Floating Hostel",
+      "advertiser": "Booking.com",
+      "attrs": [
+        "breakfastIncluded",
+        "freeCancellation",
+        "payAtProperty"
+      ]
+    }
+  },
+  "rows": [
+    {
+      "adults": 2,
+      "outbound": "2026-12-29",
+      "inbound": "2027-01-02",
+      "nights": 4,
+      "properties": 25,
+      "cheapest_central": {
+        "name": "Kopernikus Hotel Prag",
+        "id": "100-492601",
+        "amount": 29604,
+        "advertiser": "Trip.com",
+        "attrs": [
+          "breakfastIncluded",
+          "nonRefundable"
+        ],
+        "url": "https://www.trivago.com.tr/tr/lm/kopernikus-hotel-prag-belgrad?cip=234716015&currencyCode=TRY&search=100-492601%3B106-1527%3Bdr-20261229-20270102%3Bdrs-40%3Brc-1-2&cds=Lk9zY8xalRWSaC5dn7qGel5dsI%2FnN47dXZQ%2FpHBpAdAyywa9AlAjauE%2B3pLAo6MM6Q7TIWseczzQzO2WHRmkmpC8FWqBR4yeASl6BMMkEDO%2FhuwlXjKZ5YuaZvtkMm9ZCNDy07xBaaC8or3AHlFzc8u0fBZH6q0pow86aHBIE082mwm01%2FH%2BlNmcXjWiyqj2&cdsOrigin=DEAL_ON_DEALFINDER",
+        "rating": 8.6,
+        "distance": 0.5
+      },
+      "top_central": [
+        {
+          "name": "Kopernikus Hotel Prag",
+          "id": "100-492601",
+          "amount": 29604,
+          "advertiser": "Trip.com",
+          "attrs": [
+            "breakfastIncluded",
+            "nonRefundable"
+          ],
+          "url": "https://www.trivago.com.tr/tr/lm/kopernikus-hotel-prag-belgrad?cip=234716015&currencyCode=TRY&search=100-492601%3B106-1527%3Bdr-20261229-20270102%3Bdrs-40%3Brc-1-2&cds=Lk9zY8xalRWSaC5dn7qGel5dsI%2FnN47dXZQ%2FpHBpAdAyywa9AlAjauE%2B3pLAo6MM6Q7TIWseczzQzO2WHRmkmpC8FWqBR4yeASl6BMMkEDO%2FhuwlXjKZ5YuaZvtkMm9ZCNDy07xBaaC8or3AHlFzc8u0fBZH6q0pow86aHBIE082mwm01%2FH%2BlNmcXjWiyqj2&cdsOrigin=DEAL_ON_DEALFINDER",
+          "rating": 8.6,
+          "distance": 0.5
+        },
+        {
+          "name": "Olivia Rooms",
+          "id": "100-37008680",
+          "amount": 31408,
+          "advertiser": "Hotels.com",
+          "attrs": [
+            "nonRefundable",
+            "roomOnly"
+          ],
+          "url": "https://www.trivago.com.tr/tr/lm/otel-olivia-rooms-belgrad?cip=234716015&currencyCode=TRY&search=100-37008680%3B106-1527%3Bdr-20261229-20270102%3Bdrs-40%3Brc-1-2&cds=ufEac38hkYoNJZUd9gzAdq8BcKq8zLGUwN3ssGNtRAf78gzU9GjsaBPcCqtJpGn4GswvGVPVr7Cl4JM%2F5RcuyRfMhbZfyDuOvIHrdnDmbJZ3F1CBDW5UDjx2Nk5I7ZCikYyP5PReES4UT01svvd9l%2FeXrIcs%2FB96souaXxl7D6L8Q8dXTDqlK3TkdjtFQ3tChg%3D%3D&cdsOrigin=DEAL_ON_DEALFINDER",
+          "rating": 9.1,
+          "distance": 1.8
+        },
+        {
+          "name": "Parlamento ve Aziz Markos",
+          "id": "100-42151046",
+          "amount": 31795,
+          "advertiser": "Airbnb",
+          "attrs": [
+            "roomOnly"
+          ],
+          "url": "https://www.trivago.com.tr/tr/lm/tüm-ev-apart-daire-parlamento-ve-aziz-markos-belgrad?cip=234716015&currencyCode=TRY&search=100-42151046%3B106-1527%3Bdr-20261229-20270102%3Bdrs-40%3Brc-1-2&cds=RPB9LA0WRS3OFMcs%2B51AAwZj0eA8o%2BPPYzPvTpSBZdEbvjAJJwk5NHRQu0zgRzoRwhV0mXNFG4ZxbvFlds7b8CFypezdLOqQ%2FF4Qt39tnKVfWdT7onnKHotBc4zuENAX04sH1vF4iy0mZ7N8fw1xqDJiKAASLL7bJqnUKhPjzR%2FqTH%2F5g6SP&cdsOrigin=DEAL_ON_DEALFINDER",
+          "rating": 9.1,
+          "distance": 0.8
+        },
+        {
+          "name": "Olivia Rooms",
+          "id": "100-37008680",
+          "amount": 32970,
+          "advertiser": "Booking.com",
+          "attrs": [
+            "freeCancellation",
+            "payAtProperty",
+            "roomOnly"
+          ],
+          "url": "https://www.trivago.com.tr/tr/lm/otel-olivia-rooms-belgrad?cip=234716015&currencyCode=TRY&search=100-37008680%3B106-1527%3Bdr-20261229-20270102%3Bdrs-40%3Brc-1-2&cds=hIPvVXVqvP3EkALjvNHAjcHoV5DObrijMaZVxGBVUfUMyNZhhDQKjb1uiysztgzqtPfnxMWLBKWMJB0Ep1OGKghPXp9ZbrlIvYJQB1g6ymqQ9HSsBaPFMYVRSKhHQU8L0qFoxybZ5p3zAOk8gDfWLRzVj5hZOgLCVsBRSXHjo9LktEkiQTgYWOV04qkSSSgO&cdsOrigin=DEAL_ON_DEALFINDER",
+          "rating": 9.1,
+          "distance": 1.8
+        },
+        {
+          "name": "Joy 5 Hotel & SPA",
+          "id": "100-26844216",
+          "amount": 34698,
+          "advertiser": "Agoda",
+          "attrs": [
+            "nonRefundable",
+            "roomOnly"
+          ],
+          "url": "https://www.trivago.com.tr/tr/lm/joy-5-hotel-spa-belgrad?cip=234716015&currencyCode=TRY&search=100-26844216%3B106-1527%3Bdr-20261229-20270102%3Bdrs-40%3Brc-1-2&cds=fm9mcWqsxQLzywwE6O32%2FrBvSCrNsgTU%2BMpNEim38sQ34IcKhH%2BHf5ruAJ9CWXmSMN%2Fb%2BoDYlEo%2BDS0gV9izGnWFM6OpfPyzdmOzRKrRhbWGakbRO0i%2FYyQ50LStkI6nQQbjBIBUoxO1MYlkmk6g%2FDiHmf7o0k2U78mmkeWlKYRdL52Za0j5IWfWbDrU51Un0Q%3D%3D&cdsOrigin=DEAL_ON_DEALFINDER",
+          "rating": 8.5,
+          "distance": 2.3
+        }
+      ]
+    },
+    {
+      "adults": 2,
+      "outbound": "2026-12-29",
+      "inbound": "2027-01-03",
+      "nights": 5,
+      "properties": 25,
+      "cheapest_central": {
+        "name": "Kopernikus Hotel Prag",
+        "id": "100-492601",
+        "amount": 34942,
+        "advertiser": "Trip.com",
+        "attrs": [
+          "breakfastIncluded",
+          "nonRefundable"
+        ],
+        "url": "https://www.trivago.com.tr/tr/lm/kopernikus-hotel-prag-belgrad?cip=234716015&currencyCode=TRY&search=100-492601%3B106-1527%3Bdr-20261229-20270103%3Bdrs-40%3Brc-1-2&cds=ilabpAvwDC5ur6WFDjY2s6XWoedafNequCxC4lYPNuOSoQy4Vc0bu5BMBpOfO%2Fcaq4Dpm6amRp3QyIGtBU9A%2Fkar11bzk83qr8RrNVIfIjuBWWYZFFhLsPgJayeKZhbkSa0n9xYgYhyyv5Ms7YDzhbHip0GoONfD9aSk4UHYTFMXcj%2BTbRfIZiuUcaqSR5o%3D&cdsOrigin=DEAL_ON_DEALFINDER",
+        "rating": 8.6,
+        "distance": 0.5
+      },
+      "top_central": [
+        {
+          "name": "Kopernikus Hotel Prag",
+          "id": "100-492601",
+          "amount": 34942,
+          "advertiser": "Trip.com",
+          "attrs": [
+            "breakfastIncluded",
+            "nonRefundable"
+          ],
+          "url": "https://www.trivago.com.tr/tr/lm/kopernikus-hotel-prag-belgrad?cip=234716015&currencyCode=TRY&search=100-492601%3B106-1527%3Bdr-20261229-20270103%3Bdrs-40%3Brc-1-2&cds=ilabpAvwDC5ur6WFDjY2s6XWoedafNequCxC4lYPNuOSoQy4Vc0bu5BMBpOfO%2Fcaq4Dpm6amRp3QyIGtBU9A%2Fkar11bzk83qr8RrNVIfIjuBWWYZFFhLsPgJayeKZhbkSa0n9xYgYhyyv5Ms7YDzhbHip0GoONfD9aSk4UHYTFMXcj%2BTbRfIZiuUcaqSR5o%3D&cdsOrigin=DEAL_ON_DEALFINDER",
+          "rating": 8.6,
+          "distance": 0.5
+        },
+        {
+          "name": "Olivia Rooms",
+          "id": "100-37008680",
+          "amount": 37642,
+          "advertiser": "Booking.com",
+          "attrs": [
+            "freeCancellation",
+            "payAtProperty",
+            "roomOnly"
+          ],
+          "url": "https://www.trivago.com.tr/tr/lm/otel-olivia-rooms-belgrad?cip=234716015&currencyCode=TRY&search=100-37008680%3B106-1527%3Bdr-20261229-20270103%3Bdrs-40%3Brc-1-2&cds=izdJzqBhe5Qld%2BItD0fdIRmG8MRCKTCvyKkXNErKTGKhHtkgAgKSijVHpXvGJDBI81kYo3r29MKguSBye5U9Qlyy54bhdYsGeNxmpKacuLcctAQmy0V%2BNh%2F7tokKOoA1to9HS0C7Bgx47urVncJ82HANwLaQ5R7kvfjvSxTZ86KNiqe%2FWAPn4Hhf3SJrne%2Fc&cdsOrigin=DEAL_ON_DEALFINDER",
+          "rating": 9.1,
+          "distance": 1.8
+        },
+        {
+          "name": "Olivia Rooms",
+          "id": "100-37008680",
+          "amount": 37797,
+          "advertiser": "Hotels.com",
+          "attrs": [
+            "nonRefundable",
+            "roomOnly"
+          ],
+          "url": "https://www.trivago.com.tr/tr/lm/otel-olivia-rooms-belgrad?cip=234716015&currencyCode=TRY&search=100-37008680%3B106-1527%3Bdr-20261229-20270103%3Bdrs-40%3Brc-1-2&cds=42mGlAgyAj0MmElZsJ7jpFegHDcVUL3rRXR3PNiSGjcHuntbAG17SMNoDHg%2FLotMwKpKTSdWXFFc2hWH0L6fvDb9MJo7YzVf0yjMrzKVnQDp5xgnDq7hjDjJhy2%2Fl56HwatfGh5APtzKtf%2FT8%2BnlEXgdlCWXLohRe3DEMZOJ%2Fw8CsfYO37rAGJgbZ8pOYjM9wA%3D%3D&cdsOrigin=DEAL_ON_DEALFINDER",
+          "rating": 9.1,
+          "distance": 1.8
+        },
+        {
+          "name": "Parlamento ve Aziz Markos",
+          "id": "100-42151046",
+          "amount": 39744,
+          "advertiser": "Airbnb",
+          "attrs": [
+            "roomOnly"
+          ],
+          "url": "https://www.trivago.com.tr/tr/lm/tüm-ev-apart-daire-parlamento-ve-aziz-markos-belgrad?cip=234716015&currencyCode=TRY&search=100-42151046%3B106-1527%3Bdr-20261229-20270103%3Bdrs-40%3Brc-1-2&cds=OwaBWnzrct6Guql6r9DT5JAQPPPsJX4SWSKY84ctDBT6I%2BcXUm85EcaH9KpKHOvts85kDXW6DzpH73z0ikW8xCGVKx4T5wxECYO94H%2FccRo%2BLa5UPRktp2IsNd4dFUakIr9B8nG4zzNB1agVG8NgkrmyvglyUvlWMnOHqvn4iQabUNwYN%2Ba6Vg%3D%3D&cdsOrigin=DEAL_ON_DEALFINDER",
+          "rating": 9.1,
+          "distance": 0.8
+        },
+        {
+          "name": "Nobel Zira Hotel",
+          "id": "100-923059",
+          "amount": 40730,
+          "advertiser": "Booking.com",
+          "attrs": [
+            "breakfastIncluded",
+            "nonRefundable"
+          ],
+          "url": "https://www.trivago.com.tr/tr/lm/nobel-zira-hotel-belgrad?cip=234716015&currencyCode=TRY&search=100-923059%3B106-1527%3Bdr-20261229-20270103%3Bdrs-40%3Brc-1-2&cds=meFtfy3jHoMqtOEvENtSTaVtpPyYjE%2BcgQvLANkl8gtdz2gizrt1INaA4R2cmxggCdcCPAP0X4vqA4rPBQHza595V6VEE%2BV0ktLdIFaKfWx%2FV%2BFbUe8DOa8WXCqgtvyf1InAhYYY2LhdHT4bIk3TcLoHqo%2FyIdlVAtoLuNO1B4wNP1xbn8Il3ldOeg%3D%3D&cdsOrigin=DEAL_ON_DEALFINDER",
+          "rating": 8.7,
+          "distance": 1.8
+        }
+      ]
+    },
+    {
+      "adults": 2,
+      "outbound": "2026-12-29",
+      "inbound": "2027-01-04",
+      "nights": 6,
+      "properties": 25,
+      "cheapest_central": {
+        "name": "Kopernikus Hotel Prag",
+        "id": "100-492601",
+        "amount": 39523,
+        "advertiser": "Trip.com",
+        "attrs": [
+          "breakfastIncluded",
+          "nonRefundable"
+        ],
+        "url": "https://www.trivago.com.tr/tr/lm/kopernikus-hotel-prag-belgrad?cip=234716015&currencyCode=TRY&search=100-492601%3B106-1527%3Bdr-20261229-20270104%3Bdrs-40%3Brc-1-2&cds=Ysylweg2VyFsnGZs2ixwpcg5YtOo70LPmDwgK7ku%2FItZMOObnlIgS5D4W99LqIEr61WtzFugZDpSvCgt3DKSffspirCK%2FCucBji8na8oilHdO5wG8HcNoV8D84tA2RTv8aUmbs4FXHH%2BnEjPuQWB%2BCwKjBNZ3iVVTsFwOGTHK2PZw0yUnSRlNPBStK%2BNxXA%3D&cdsOrigin=DEAL_ON_DEALFINDER",
+        "rating": 8.6,
+        "distance": 0.5
+      },
+      "top_central": [
+        {
+          "name": "Kopernikus Hotel Prag",
+          "id": "100-492601",
+          "amount": 39523,
+          "advertiser": "Trip.com",
+          "attrs": [
+            "breakfastIncluded",
+            "nonRefundable"
+          ],
+          "url": "https://www.trivago.com.tr/tr/lm/kopernikus-hotel-prag-belgrad?cip=234716015&currencyCode=TRY&search=100-492601%3B106-1527%3Bdr-20261229-20270104%3Bdrs-40%3Brc-1-2&cds=Ysylweg2VyFsnGZs2ixwpcg5YtOo70LPmDwgK7ku%2FItZMOObnlIgS5D4W99LqIEr61WtzFugZDpSvCgt3DKSffspirCK%2FCucBji8na8oilHdO5wG8HcNoV8D84tA2RTv8aUmbs4FXHH%2BnEjPuQWB%2BCwKjBNZ3iVVTsFwOGTHK2PZw0yUnSRlNPBStK%2BNxXA%3D&cdsOrigin=DEAL_ON_DEALFINDER",
+          "rating": 8.6,
+          "distance": 0.5
+        },
+        {
+          "name": "Öğrenci Meydanı'ndaki Stüdyo",
+          "id": "100-45510860",
+          "amount": 45454,
+          "advertiser": "Airbnb",
+          "attrs": [
+            "roomOnly"
+          ],
+          "url": "https://www.trivago.com.tr/tr/lm/tüm-ev-apart-daire-öğrenci-meydanı-ndaki-stüdyo-belgrad?cip=234716015&currencyCode=TRY&search=100-45510860%3B106-1527%3Bdr-20261229-20270104%3Bdrs-40%3Brc-1-2&cds=PwxGK%2FxnT0SozN5LJ4f1GJ3PVQIi2STHnU%2F1EBG7feV00kAqhh9IkVX8UU9FhEF8vqZ1jONK6f%2FAbw%2FNhKYOUGro%2FFwxCO2yrcDsvwt4jQNRwcTcNa%2FpML%2F1PQvPmY%2BwfchsLGrfsttrXfV1yEiolSqipR1a%2BWyPbcrejaO7PvgrjqgNFqIzzhs%3D&cdsOrigin=DEAL_ON_DEALFINDER",
+          "rating": 9.4,
+          "distance": 0.5
+        },
+        {
+          "name": "Kopernikus Hotel Prag",
+          "id": "100-492601",
+          "amount": 46297,
+          "advertiser": "Booking.com",
+          "attrs": [
+            "breakfastIncluded",
+            "nonRefundable"
+          ],
+          "url": "https://www.trivago.com.tr/tr/lm/kopernikus-hotel-prag-belgrad?cip=234716015&currencyCode=TRY&search=100-492601%3B106-1527%3Bdr-20261229-20270104%3Bdrs-40%3Brc-1-2&cds=E%2Fk3VGnGgDsLfkSwfWwTP96RZfxXZuB5KEppg%2BNgc1jqYo4OdNPMRoFp0huOLFmFnGBEkS%2BNP6IMCSthnAsj1%2BcL5NV93X5Dlvyoec8ymNm3a%2BdRVb6heIdJ2nxl5oHUW7Bku15jOU%2F%2F%2F%2BeswLxztcnf%2Btg3G9SNbh3wL%2BJcPZ0sFz2N61HJpeih53g%2BFfk%3D&cdsOrigin=DEAL_ON_DEALFINDER",
+          "rating": 8.6,
+          "distance": 0.5
+        },
+        {
+          "name": "Belgrad'ın göbeğinde açık alanlı daire",
+          "id": "100-42262192",
+          "amount": 46915,
+          "advertiser": "Airbnb",
+          "attrs": [
+            "roomOnly"
+          ],
+          "url": "https://www.trivago.com.tr/tr/lm/tüm-ev-apart-daire-belgrad-ın-göbeğinde-açık-alanlı-daire?cip=234716015&currencyCode=TRY&search=100-42262192%3B106-1527%3Bdr-20261229-20270104%3Bdrs-40%3Brc-1-2&cds=wCIiMCU3HbUk1q1LJ7e4f43TmIIdqD1HATyIkmJsx%2Bx%2BqK6tCBeb0rbMMJcfA6ilSeruyOHQBS0jI9mSOcc8PAcYqdTvxyhBvI64liccTBbvdO30WzJM1k7qjL7Y%2B6%2BgOAnr9G2XDlIRCjUJi3w986xggKdZEPZoEqkrvwAdO8hnx%2FZ76bww&cdsOrigin=DEAL_ON_DEALFINDER",
+          "rating": 9.7,
+          "distance": 0.6
+        },
+        {
+          "name": "Parlamento ve Aziz Markos",
+          "id": "100-42151046",
+          "amount": 47693,
+          "advertiser": "Airbnb",
+          "attrs": [
+            "roomOnly"
+          ],
+          "url": "https://www.trivago.com.tr/tr/lm/tüm-ev-apart-daire-parlamento-ve-aziz-markos-belgrad?cip=234716015&currencyCode=TRY&search=100-42151046%3B106-1527%3Bdr-20261229-20270104%3Bdrs-40%3Brc-1-2&cds=OwJbPdAHwyrQdtrdQKpS8IjYh9C4NfYsQ7ePM9WjZE31aybn1ZlunDRVBj4kK3Aay%2F7PcdyNYtagWUU6%2Fm8%2F70%2FBUJIfrdrJ%2F1Ue11uE7A0ytokyvyKK2gr0HiV9qJCpLUVuIALt%2B%2F3kjktjHjYVIu%2FbGXmjxLhI3XCnEjGOhDr5KMFASZWd&cdsOrigin=DEAL_ON_DEALFINDER",
+          "rating": 9.1,
+          "distance": 0.8
+        }
+      ]
+    },
+    {
+      "adults": 2,
+      "outbound": "2026-12-30",
+      "inbound": "2027-01-02",
+      "nights": 3,
+      "properties": 25,
+      "cheapest_central": {
+        "name": "Omia",
+        "id": "100-18092318",
+        "amount": 24879,
+        "advertiser": "Trip.com",
+        "attrs": [
+          "freeCancellation",
+          "roomOnly"
+        ],
+        "url": "https://www.trivago.com.tr/tr/lm/otel-omia-belgrad?cip=234716015&currencyCode=TRY&search=100-18092318%3B106-1527%3Bdr-20261230-20270102%3Bdrs-40%3Brc-1-2&cds=LusBIpZjQ%2FB9lqplefWj431ATpzPEjFlmdSZAAVd387JTDFTkvNhxnlmemnYCgFAoajC5weWR4sjq60zmXfMO1Qve5IysqT%2FtR2HimaHVuuZTSWRN2vBHc8McBfcYjbOR2rVVLxRPO3lpgm52H9SB74Nat6exoqyypUAMW8Kd1kpbeMUwMFKW8oBRQ%2B8&cdsOrigin=DEAL_ON_DEALFINDER",
+        "rating": 8.8,
+        "distance": 1
+      },
+      "top_central": [
+        {
+          "name": "Omia",
+          "id": "100-18092318",
+          "amount": 24879,
+          "advertiser": "Trip.com",
+          "attrs": [
+            "freeCancellation",
+            "roomOnly"
+          ],
+          "url": "https://www.trivago.com.tr/tr/lm/otel-omia-belgrad?cip=234716015&currencyCode=TRY&search=100-18092318%3B106-1527%3Bdr-20261230-20270102%3Bdrs-40%3Brc-1-2&cds=LusBIpZjQ%2FB9lqplefWj431ATpzPEjFlmdSZAAVd387JTDFTkvNhxnlmemnYCgFAoajC5weWR4sjq60zmXfMO1Qve5IysqT%2FtR2HimaHVuuZTSWRN2vBHc8McBfcYjbOR2rVVLxRPO3lpgm52H9SB74Nat6exoqyypUAMW8Kd1kpbeMUwMFKW8oBRQ%2B8&cdsOrigin=DEAL_ON_DEALFINDER",
+          "rating": 8.8,
+          "distance": 1
+        },
+        {
+          "name": "Kopernikus Hotel Prag",
+          "id": "100-492601",
+          "amount": 25114,
+          "advertiser": "Trip.com",
+          "attrs": [
+            "breakfastIncluded",
+            "nonRefundable"
+          ],
+          "url": "https://www.trivago.com.tr/tr/lm/kopernikus-hotel-prag-belgrad?cip=234716015&currencyCode=TRY&search=100-492601%3B106-1527%3Bdr-20261230-20270102%3Bdrs-40%3Brc-1-2&cds=iyJVDSGTaA6yxtVWrEt0QHzUiQbeX9AxjNvuqu2luvn6chFIPEXnE1wbq55eF8AV3Nfds3Qc%2BPnXL0KrhuhImuKhnWSULuMdEiE1BX0pPcjXbO7mlVrdb9o0a3AVy24zF2rTQ6UlAydG5vwDg3VQCYsAwEMJfkwwZzzt9N6vGa%2FfExhex7vCEL%2FmKCncwuI%2F&cdsOrigin=DEAL_ON_DEALFINDER",
+          "rating": 8.6,
+          "distance": 0.5
+        },
+        {
+          "name": "City Nest Modern & Cozy Suites",
+          "id": "100-9903004",
+          "amount": 26178,
+          "advertiser": "Trip.com",
+          "attrs": [
+            "nonRefundable",
+            "roomOnly"
+          ],
+          "url": "https://www.trivago.com.tr/tr/lm/otel-city-nest-modern-cozy-suites-belgrad?cip=234716015&currencyCode=TRY&search=100-9903004%3B106-1527%3Bdr-20261230-20270102%3Bdrs-40%3Brc-1-2&cds=YKy0l6Bh8NmCtpbDk5CYdePAAASrY%2BCZHL%2BKGD4Mf2kKULnG0NtQQ8qOYkrQTdSZGIr05teDHY6HJn0gCWcqYqH5DIa26GmwhTWXsD9Lr8MUcWHQTrwSbkM0Qy7ILeH%2FEdhxoqyVgvt7R63rFPF82ydJclv3UTCPeQzrRVBmxzs0UoWnCRh45391hwfNq6CFxg%3D%3D&cdsOrigin=DEAL_ON_DEALFINDER",
+          "rating": 8.6,
+          "distance": 0.2
+        },
+        {
+          "name": "Joy 5 Hotel & SPA",
+          "id": "100-26844216",
+          "amount": 27842,
+          "advertiser": "Agoda",
+          "attrs": [
+            "nonRefundable",
+            "roomOnly"
+          ],
+          "url": "https://www.trivago.com.tr/tr/lm/joy-5-hotel-spa-belgrad?cip=234716015&currencyCode=TRY&search=100-26844216%3B106-1527%3Bdr-20261230-20270102%3Bdrs-40%3Brc-1-2&cds=R%2FXvocjGJsiUT7ZUXo3L0z3EyCXsrc8%2F933NmbpoWt8a891A%2FbLzPX4hIElSNmG1IUrjXzOh5B%2BPxIXibURQOTOKIj022DAjtUEBWKRMo5OdoFIs9eR2b6qVV8VpyQOSab2g2M7hBOZjPN%2BSvPW7ysU5mKWGGI3jkHjmH1JQEWO27Jj7NziyqdzeTIZXCrwz9M4%3D&cdsOrigin=DEAL_ON_DEALFINDER",
+          "rating": 8.5,
+          "distance": 2.3
+        },
+        {
+          "name": "Marquise Hotel",
+          "id": "100-9583388",
+          "amount": 28118,
+          "advertiser": "Hotels.com",
+          "attrs": [
+            "breakfastIncluded",
+            "freeCancellation"
+          ],
+          "url": "https://www.trivago.com.tr/tr/lm/marquise-hotel-belgrad?cip=234716015&currencyCode=TRY&search=100-9583388%3B106-1527%3Bdr-20261230-20270102%3Bdrs-40%3Brc-1-2&cds=gui%2FfmapB4XaqNB20ZgSKplnPZkeWwepQ8tTxNG8eAh4cOt09%2BcdlAIpZqJFG2ayQ3kjNUVcdfd91HWNlCeiWLHT82IxMaZbta%2BiQ0%2BSxiOtJJCzR3HQaZx3dH%2FgcX%2BWQD1aHfPC3w937Wgc%2BRAb%2F%2FYqfzSX%2BWNf4w5t3El%2F%2BQYUqCIoPfcFE8bQ%2FbfuGkkqxA%3D%3D&cdsOrigin=DEAL_ON_DEALFINDER",
+          "rating": 8.5,
+          "distance": 1
+        }
+      ]
+    },
+    {
+      "adults": 2,
+      "outbound": "2026-12-30",
+      "inbound": "2027-01-03",
+      "nights": 4,
+      "properties": 25,
+      "cheapest_central": {
+        "name": "Kopernikus Hotel Prag",
+        "id": "100-492601",
+        "amount": 30452,
+        "advertiser": "Trip.com",
+        "attrs": [
+          "breakfastIncluded",
+          "nonRefundable"
+        ],
+        "url": "https://www.trivago.com.tr/tr/lm/kopernikus-hotel-prag-belgrad?cip=234716015&currencyCode=TRY&search=100-492601%3B106-1527%3Bdr-20261230-20270103%3Bdrs-40%3Brc-1-2&cds=6dn%2Bd6%2FYempvP%2BWnEZ8qsryVpiCekZOMuhSfEJv03zCTzUYX8G9Qv4IxmfhWfB1SiL2YMccMRBr3vnya30CSwyfrVjFgIN53W4%2BMBJkAxNYjql5EjcSyhJJ%2FZFKjtenblK2jGwIFHtlpLtZy%2FtMAdDLlV6iX%2FbOrggkk793cQ2N8prlWrXtqhiOZ%2FlEwQHKW&cdsOrigin=DEAL_ON_DEALFINDER",
+        "rating": 8.6,
+        "distance": 0.5
+      },
+      "top_central": [
+        {
+          "name": "Kopernikus Hotel Prag",
+          "id": "100-492601",
+          "amount": 30452,
+          "advertiser": "Trip.com",
+          "attrs": [
+            "breakfastIncluded",
+            "nonRefundable"
+          ],
+          "url": "https://www.trivago.com.tr/tr/lm/kopernikus-hotel-prag-belgrad?cip=234716015&currencyCode=TRY&search=100-492601%3B106-1527%3Bdr-20261230-20270103%3Bdrs-40%3Brc-1-2&cds=6dn%2Bd6%2FYempvP%2BWnEZ8qsryVpiCekZOMuhSfEJv03zCTzUYX8G9Qv4IxmfhWfB1SiL2YMccMRBr3vnya30CSwyfrVjFgIN53W4%2BMBJkAxNYjql5EjcSyhJJ%2FZFKjtenblK2jGwIFHtlpLtZy%2FtMAdDLlV6iX%2FbOrggkk793cQ2N8prlWrXtqhiOZ%2FlEwQHKW&cdsOrigin=DEAL_ON_DEALFINDER",
+          "rating": 8.6,
+          "distance": 0.5
+        },
+        {
+          "name": "Parlamento ve Aziz Markos",
+          "id": "100-42151046",
+          "amount": 31795,
+          "advertiser": "Airbnb",
+          "attrs": [
+            "roomOnly"
+          ],
+          "url": "https://www.trivago.com.tr/tr/lm/tüm-ev-apart-daire-parlamento-ve-aziz-markos-belgrad?cip=234716015&currencyCode=TRY&search=100-42151046%3B106-1527%3Bdr-20261230-20270103%3Bdrs-40%3Brc-1-2&cds=btd0nJzkAzNYB3MUJ7iTdtJwSsZXCqHw1GP63sZSK3Zlcr5QuHCe37y4ciKP374h%2BUOiF%2FEI%2BvkzRroFWF4z9H020znIYhhrPgA6xjEwADcRVgoii4kOJLNX8xDnC%2BgMOXDCsx7Oc%2BlReyVDDH9D2l3an433rpZZq41AwAmPAOJxlCH%2B%2BPGMww%3D%3D&cdsOrigin=DEAL_ON_DEALFINDER",
+          "rating": 9.1,
+          "distance": 0.8
+        },
+        {
+          "name": "Olivia Rooms",
+          "id": "100-37008680",
+          "amount": 32725,
+          "advertiser": "Hotels.com",
+          "attrs": [
+            "nonRefundable",
+            "roomOnly"
+          ],
+          "url": "https://www.trivago.com.tr/tr/lm/otel-olivia-rooms-belgrad?cip=234716015&currencyCode=TRY&search=100-37008680%3B106-1527%3Bdr-20261230-20270103%3Bdrs-40%3Brc-1-2&cds=tELe%2BWQTfm%2B0rJRF2U%2F54zxdNfetY67hBIkOTYBfJGoaSocU4I1wmwHTfMtkRzx8PhoVZrkJEjrsfGiT8Y7tGdJEDWHqzkH8TqtFYimotphD5v0Z9P6nWk9W1o2YMaUWK6SjoiUDQglkCsVy1mz3wOKYS9yUqvNLNIEJSFv3jLnLB74RhDNllZRo2yH%2Brtua&cdsOrigin=DEAL_ON_DEALFINDER",
+          "rating": 9.1,
+          "distance": 1.8
+        },
+        {
+          "name": "Öğrenci Meydanı'ndaki Stüdyo",
+          "id": "100-45510860",
+          "amount": 33810,
+          "advertiser": "Airbnb",
+          "attrs": [
+            "roomOnly"
+          ],
+          "url": "https://www.trivago.com.tr/tr/lm/tüm-ev-apart-daire-öğrenci-meydanı-ndaki-stüdyo-belgrad?cip=234716015&currencyCode=TRY&search=100-45510860%3B106-1527%3Bdr-20261230-20270103%3Bdrs-40%3Brc-1-2&cds=4A%2B30IpFN%2B%2BThedBGZaBAFSBXsakkf7V%2BWiiq1giI4a9JJktWGLZ%2F90WLucG6jbH03N1CtvVZXdL03LJksDtUVKHvnjB5HEin1mnYMSmD5P0RLsP0H%2ByHmYS0cntdd55PMI%2FDFupQYFJMelzYU23uI6jp2fgRJbyweBoVHN5brtXkmq9xa4MfQ%3D%3D&cdsOrigin=DEAL_ON_DEALFINDER",
+          "rating": 9.4,
+          "distance": 0.5
+        },
+        {
+          "name": "Olivia Rooms",
+          "id": "100-37008680",
+          "amount": 34197,
+          "advertiser": "Booking.com",
+          "attrs": [
+            "freeCancellation",
+            "payAtProperty",
+            "roomOnly"
+          ],
+          "url": "https://www.trivago.com.tr/tr/lm/otel-olivia-rooms-belgrad?cip=234716015&currencyCode=TRY&search=100-37008680%3B106-1527%3Bdr-20261230-20270103%3Bdrs-40%3Brc-1-2&cds=zb3FyYLyWysriUqmv5JaDdr4Ta%2B17EUz9tOInG7qXuJxo6tDNOMLrx4fXm9IeUu5eedRa9%2BeQr%2Fu7Vq653pVnOvwVFf2U0cathWY3w%2FWSKh%2F9hTRVhCMeBnZnegALWcepkadhlf4QXELEML3sX04pZbGmd7tS4VxXjf%2Bq7JhnphPTFgCOX8D6U%2Fvx7vw7VP4&cdsOrigin=DEAL_ON_DEALFINDER",
+          "rating": 9.1,
+          "distance": 1.8
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "adults": 2,
+      "outbound": "2026-12-29",
+      "inbound": "2027-01-02",
+      "hotel": "Parlamento ve Aziz Markos",
+      "advertiser": "Airbnb",
+      "rate_attributes": [
+        "roomOnly"
+      ],
+      "previous_best": 31580,
+      "new_price": 31795,
+      "saving": -215,
+      "pct": -0.68,
+      "url": "https://www.trivago.com.tr/tr/lm/tüm-ev-apart-daire-parlamento-ve-aziz-markos-belgrad?cip=234716015&currencyCode=TRY&search=100-42151046%3B106-1527%3Bdr-20261229-20270102%3Bdrs-40%3Brc-1-2&cds=RPB9LA0WRS3OFMcs%2B51AAwZj0eA8o%2BPPYzPvTpSBZdEbvjAJJwk5NHRQu0zgRzoRwhV0mXNFG4ZxbvFlds7b8CFypezdLOqQ%2FF4Qt39tnKVfWdT7onnKHotBc4zuENAX04sH1vF4iy0mZ7N8fw1xqDJiKAASLL7bJqnUKhPjzR%2FqTH%2F5g6SP&cdsOrigin=DEAL_ON_DEALFINDER",
+      "strict_room_identical": false
+    },
+    {
+      "adults": 2,
+      "outbound": "2026-12-29",
+      "inbound": "2027-01-03",
+      "hotel": "Olivia Rooms",
+      "advertiser": "Booking.com",
+      "rate_attributes": [
+        "freeCancellation",
+        "payAtProperty",
+        "roomOnly"
+      ],
+      "previous_best": 37270,
+      "new_price": 37642,
+      "saving": -372,
+      "pct": -1,
+      "url": "https://www.trivago.com.tr/tr/lm/otel-olivia-rooms-belgrad?cip=234716015&currencyCode=TRY&search=100-37008680%3B106-1527%3Bdr-20261229-20270103%3Bdrs-40%3Brc-1-2&cds=izdJzqBhe5Qld%2BItD0fdIRmG8MRCKTCvyKkXNErKTGKhHtkgAgKSijVHpXvGJDBI81kYo3r29MKguSBye5U9Qlyy54bhdYsGeNxmpKacuLcctAQmy0V%2BNh%2F7tokKOoA1to9HS0C7Bgx47urVncJ82HANwLaQ5R7kvfjvSxTZ86KNiqe%2FWAPn4Hhf3SJrne%2Fc&cdsOrigin=DEAL_ON_DEALFINDER",
+      "strict_room_identical": false
+    },
+    {
+      "adults": 2,
+      "outbound": "2026-12-30",
+      "inbound": "2027-01-03",
+      "hotel": "Parlamento ve Aziz Markos",
+      "advertiser": "Airbnb",
+      "rate_attributes": [
+        "roomOnly"
+      ],
+      "previous_best": 31580,
+      "new_price": 31795,
+      "saving": -215,
+      "pct": -0.68,
+      "url": "https://www.trivago.com.tr/tr/lm/tüm-ev-apart-daire-parlamento-ve-aziz-markos-belgrad?cip=234716015&currencyCode=TRY&search=100-42151046%3B106-1527%3Bdr-20261230-20270103%3Bdrs-40%3Brc-1-2&cds=btd0nJzkAzNYB3MUJ7iTdtJwSsZXCqHw1GP63sZSK3Zlcr5QuHCe37y4ciKP374h%2BUOiF%2FEI%2BvkzRroFWF4z9H020znIYhhrPgA6xjEwADcRVgoii4kOJLNX8xDnC%2BgMOXDCsx7Oc%2BlReyVDDH9D2l3an433rpZZq41AwAmPAOJxlCH%2B%2BPGMww%3D%3D&cdsOrigin=DEAL_ON_DEALFINDER",
+      "strict_room_identical": false
+    }
+  ]
+}
