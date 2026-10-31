@@ -71,6 +71,22 @@
 .loyalty-result .negative{color:#ffc48c;font-weight:800}
 .loyalty-planner .watch-links{margin-top:11px}
 @media(max-width:690px){.loyalty-planner{padding:12px}.loyalty-inputs,.loyalty-metrics{grid-template-columns:1fr}.loyalty-head h3{font-size:1.06rem}}
+
+/* Quote-based heat map; missing or out-of-window cells must not be ranked. */
+.heat-cell{gap:5px;text-align:left;min-width:0}
+.heat-cell .hc-cost{font-size:clamp(.8rem,1.5vw,1rem)}
+.heat-cell .hc-note{font-size:.68rem;line-height:1.24}
+.heat-cell .hc-note.strong{font-weight:800;opacity:1}
+.heat-cell.heat-na{background:#202c3a;border:1px dashed #6b8298;color:#e9edf2}
+.heat-cell.heat-na .hc-note{color:#b3c1cf}
+.heat-cell.heat-na .hc-cost{color:#efd090}
+.heat-cell:focus-visible{outline:3px solid white;outline-offset:2px}
+.heat-low{font-size:.66rem;padding:3px 5px;border-radius:5px;background:#182d24;color:#a0e5bd}
+.heat-people{display:flex;gap:5px}
+.heat-people button{border:1px solid #536879;border-radius:8px;color:#e2edf2;background:#172333;min-height:40px;padding:7px 11px;cursor:pointer}
+.heat-people button[aria-pressed="true"]{background:#285a50;border-color:#80bca9;color:white}
+.heat-na-legend{padding:3px 7px;border-radius:7px;background:#202c3a;border:1px dashed #798b9e;color:#dbe6ef}
+@media(max-width:720px){.heatmap-head{gap:7px}.heat-people{width:100%}.heat-people button{flex:1}.heat-grid{grid-template-columns:64px repeat(3,minmax(95px,1fr));gap:4px}.heat-cell{padding:7px;min-height:110px}.heat-cell .hc-note{font-size:.62rem}.heatmap-wrap{padding:9px}}
 </style>
 </head>
 <body>
@@ -103,7 +119,7 @@
 </div>
 <div class="note" id="dateAdvice" style="margin-top:14px"></div>
 <div class="heatmap-wrap">
- <div class="heatmap-head"><div><h3>Tarih maliyet haritası</h3><div class="muted mini">3×3 kombinasyon; uçuş + seçili konaklama için planlama tahmini. Açık yeşil daha ekonomik, koyu turuncu/kırmızı daha pahalıdır.</div></div><div class="legend"><span>Ucuz</span><span class="legend-scale"><i class="heat-h1"></i><i class="heat-h2"></i><i class="heat-h3"></i><i class="heat-h4"></i><i class="heat-h5"></i></span><span>Pahalı</span></div></div>
+ <div class="heatmap-head"><div><h3>Tarih maliyet haritası</h3><div class="muted mini"><span id="heatMapSubtitle">Kaydedilmiş Pegasus ve Trivago uçuş + konaklama fiyatları yükleniyor. Fiyatı eksik tarihler hesaplanmaz.</span></div></div><div class="legend"><span>Ucuz</span><span class="legend-scale"><i class="heat-h1"></i><i class="heat-h2"></i><i class="heat-h3"></i><i class="heat-h4"></i><i class="heat-h5"></i></span><span>Pahalı</span><span class="heat-na-legend">Fiyat eksik</span></div><div class="heat-people" role="group" aria-label="Yolcu sayısı"><button type="button" data-heat-people="2" aria-pressed="false">2 kişi</button><button type="button" data-heat-people="3" aria-pressed="true">3 kişi</button></div></div>
  <div id="dateHeatGrid" class="heat-grid"></div>
  <div class="optimizer"><div class="note" id="optimizerWhy"></div><div class="note" id="optimizerSaving"></div></div>
 </div>
@@ -334,11 +350,11 @@ function compute(){
 function render(){
  if(state.doga&&state.people!==3)state.people=3;if(!state.doga&&state.people!==2)state.people=2;
  $('people').value=state.people;$('doga').checked=state.doga;$('dogaText').textContent=state.doga?'Evet, programa dahil':'Hayır, plan 2 kişilik';
- const n=nights(); $('heroPeople').textContent=state.people===3?'👨‍👩‍👧 3 kişi':'👫 2 kişi';$('heroDates').textContent='🗓 '+formatDate(state.outbound)+'–'+formatDate(state.inbound);$('sumPeople').textContent=state.people+' kişi';$('sumNights').textContent=n+' gece';$('sumFlight').textContent=state.flight?DATA.flights[state.flight].name:'Seçilmedi';$('sumStay').textContent=state.stay?DATA.stays[state.stay].name:'Seçilmedi';
+ watchPeople=state.people; const n=nights(); $('heroPeople').textContent=state.people===3?'👨‍👩‍👧 3 kişi':'👫 2 kişi';$('heroDates').textContent='🗓 '+formatDate(state.outbound)+'–'+formatDate(state.inbound);$('sumPeople').textContent=state.people+' kişi';$('sumNights').textContent=n+' gece';$('sumFlight').textContent=state.flight?DATA.flights[state.flight].name:'Seçilmedi';$('sumStay').textContent=state.stay?DATA.stays[state.stay].name:'Seçilmedi';
  const c=compute();$('bFlight').textContent=money(c.flight);$('bStay').textContent=money(c.stay);$('bFood').textContent=money(c.food);$('bRestaurant').textContent=(c.restaurant>=0?'+ ':'− ')+money(Math.abs(c.restaurant));$('bNye').textContent=money(c.nye);$('bTransport').textContent=money(c.transport);$('bActivity').textContent=money(c.activity);$('bBuffer').textContent=money(c.buffer);$('totalCost').textContent=money(c.total);$('perPerson').textContent='Kişi başı yaklaşık '+money(c.total/state.people);$('sumTotal').textContent=money(c.total);
  $('budgetNote').textContent=(state.people===2?'Doğa katılmadığı için kişi bazlı kalemler düşüyor; konaklama ise oda/apart bazlı olduğu için toplam tasarruf oransal olarak daha sınırlı. ':'')+(n>4?'Uzun konaklama uçuş esnekliğini artırır; ekstra gecenin maliyetini daha ucuz biletle karşılaştırın.':'Daha kısa konaklama oteli düşürür fakat yılbaşı uçuş fiyatı daha yüksek olabilir.');
- const direct=(state.outbound==='2026-12-31'&&state.inbound==='2027-01-03'); $('dateAdvice').innerHTML=direct?'<b>Direkt uçuş avantajı:</b> 31 Aralık–3 Ocak penceresi direkt uçuş ihtimalini artırıyor; ancak yılbaşı günü varış nedeniyle program daha sıkışık.':'<b>Dengeli pencere:</b> '+n+' gece; 30 Aralık civarı varış yılbaşı gecesinden önce şehre alışma payı bırakıyor. 4 Ocak dönüş seçimi, fiyat uygunsa bir tam gün daha kazandırıyor.';
- document.querySelectorAll('.day').forEach(x=>x.classList.toggle('off',!state.days[x.dataset.day]));renderProfile();renderRestaurants();renderRouteSummaries();renderChoiceFocus();renderFlightDetail();renderStayDetail();renderDateHeatmap(); updateMap();buildPrint();save();
+ const early=state.outbound==='2026-12-31'; $('dateAdvice').innerHTML=early?'<b>31 Aralık varışı:</b> Pegasus 07.00 kalkış / SAW aktarma ile 10.15 Belgrad varışı gözlendi. AJet direkt sefer için tarihli bagaj dahil fiyat teyit edilmedi.':'<b>Ek gün değerlendirmesi:</b> '+n+' gece. 29–30 Aralık gidişi ek zaman sağlayabilir; uçuş teklifi eksikse maliyet haritasında tahmini toplam üretilmez.';
+ document.querySelectorAll('.day').forEach(x=>x.classList.toggle('off',!state.days[x.dataset.day]));renderProfile();renderRestaurants();renderRouteSummaries();renderChoiceFocus();renderFlightDetail();renderStayDetail();renderDateHeatmap();if(watchSnapshot)renderWatchPanel(); updateMap();buildPrint();save();
 }
 function formatDate(s){const [y,m,d]=s.split('-');const mm={'12':'Ara','01':'Oca'};return Number(d)+' '+mm[m]}
 function setCustom(){if(state.profile!=='custom'){state.profile='custom'}}
@@ -370,17 +386,50 @@ function estimateStayForDates(outbound,inbound){
 function comboCost(outbound,inbound){return estimateFlightForDates(outbound,inbound)+estimateStayForDates(outbound,inbound)}
 function renderDateHeatmap(){
  const outs=['2026-12-29','2026-12-30','2026-12-31'],ins=['2027-01-02','2027-01-03','2027-01-04'];
- const combos=[];outs.forEach(o=>ins.forEach(i=>combos.push({o,i,c:comboCost(o,i)})));
- const min=Math.min(...combos.map(x=>x.c)),max=Math.max(...combos.map(x=>x.c));
- const rank=c=>{const r=(c-min)/(max-min||1);return r<.2?1:r<.4?2:r<.6?3:r<.8?4:5};
- let html='<div class="heat-label"></div>'+ins.map(i=>'<div class="heat-label">'+formatDate(i)+' dönüş</div>').join('');
- outs.forEach(o=>{html+='<div class="heat-label">'+formatDate(o)+' gidiş</div>';ins.forEach(i=>{const c=comboCost(o,i),sel=o===state.outbound&&i===state.inbound;const direct=o==='2026-12-31'&&i==='2027-01-03';html+='<button type="button" class="heat-cell heat-h'+rank(c)+(sel?' selected':'')+'" data-date-combo="'+o+'|'+i+'"><span class="hc-date">'+formatDate(o)+' → '+formatDate(i)+'</span><span class="hc-cost">'+money(c)+'</span><span class="hc-note">'+(direct?'Direkt uçuş avantajı':'uçuş + konaklama')+'</span></button>'})});
- $('dateHeatGrid').innerHTML=html;
- document.querySelectorAll('[data-date-combo]').forEach(b=>b.addEventListener('click',()=>{const [o,i]=b.dataset.dateCombo.split('|');state.outbound=o;state.inbound=i;$('outbound').value=o;$('inbound').value=i;setCustom();render()}));
- const best=combos.sort((a,b)=>a.c-b.c)[0],cur=comboCost(state.outbound,state.inbound),save=Math.max(0,cur-best.c);
- const direct=state.outbound==='2026-12-31'&&state.inbound==='2027-01-03';
- $('optimizerWhy').innerHTML='<b>Neden mevcut tarihler?</b><br>'+(direct?'31 Aralık–3 Ocak kombinasyonu direkt uçuş günlerine denk gelme avantajı taşıyor; ancak yılbaşı günü varış programı sıkıştırır.':'Seçiminiz '+nights()+' gece sağlar. 30 Aralık civarı geliş, yılbaşından önce yerleşme ve dinlenme payı bırakır; 4 Ocak dönüş ise düşük sezon gecesinden yararlanabilir.');
- $('optimizerSaving').innerHTML='<b>Daha ucuz seçenek:</b><br>'+formatDate(best.o)+' → '+formatDate(best.i)+' tahmini uçuş+konaklama '+money(best.c)+'. '+(save>1000?'<span class="saving">Mevcut seçime göre yaklaşık '+money(save)+' tasarruf potansiyeli.</span>':'Mevcut seçiminiz zaten en düşük maliyet bandına yakın.');
+ const source=watchSnapshot,rows=(source?.combinations||[]).filter(x=>x.adults===state.people);
+ const lookup=new Map(rows.map(x=>[x.outbound+'|'+x.inbound,x]));
+ const cells=outs.flatMap(o=>ins.map(i=>{
+  const q=lookup.get(o+'|'+i);
+  const cost=(q&&q.nights>=3&&q.nights<=5&&q.nye_available_with_quoted_pegasus_flight!==false&&
+   typeof q.flight?.total==='number'&&typeof q.hotel?.total==='number'&&
+   typeof q.combined_total==='number'&&Number.isFinite(q.combined_total))?q.combined_total:null;
+  return {o,i,q,cost};
+ }));
+ const priced=cells.filter(x=>x.cost!==null).sort((a,b)=>a.cost-b.cost);
+ const low=priced[0],hi=priced[priced.length-1];
+ const color=c=>{const t=(c-low.cost)/((hi.cost-low.cost)||1);return t<.2?1:t<.4?2:t<.6?3:t<.8?4:5};
+ document.querySelectorAll('[data-heat-people]').forEach(b=>b.setAttribute('aria-pressed',String(+b.dataset.heatPeople===state.people)));
+ if(source?.checked_at){
+  const d=new Date(source.checked_at);
+  $('heatMapSubtitle').textContent='Son kaydedilmiş uçuş + otel gözlemi: '+(Number.isNaN(d.getTime())?source.checked_at:d.toLocaleString('tr-TR',{timeZone:'Europe/Istanbul',day:'2-digit',month:'long',year:'numeric',hour:'2-digit',minute:'2-digit'}))+' • '+state.people+' kişi • Bagaj, oda ve son ödeme tutarları teyit edilmedi.';
+ }else $('heatMapSubtitle').textContent='Fiyat verileri yükleniyor; eski model tahminleri gösterilmiyor.';
+ let out='<div class="heat-label"></div>'+ins.map(i=>'<div class="heat-label">'+formatDate(i)+' dönüş</div>').join('');
+ outs.forEach(o=>{
+   out+='<div class="heat-label">'+formatDate(o)+' gidiş</div>';
+   ins.forEach(i=>{
+    const x=cells.find(t=>t.o===o&&t.i===i),q=x.q,sel=o===state.outbound&&i===state.inbound;
+    const nights=q?.nights??Math.round((dateParts(i)-dateParts(o))/86400000);
+    const fl=typeof q?.flight?.total==='number'?'Uçuş '+money(q.flight.total):'Uçuş fiyatı yok';
+    const ht=typeof q?.hotel?.total==='number'?'Konaklama '+money(q.hotel.total):'Otel fiyatı yok';
+    const desc=!q?'Kaydedilmiş teklif yok':(nights<3||nights>5)?'3–5 gece hedefi dışında':x.cost===null?'Eksik fiyat':'SAW aktarmalı';
+    const valid=x.cost!==null,cls=valid?'heat-h'+color(x.cost):'heat-na';
+    const badge=valid&&x.cost===low.cost?'<span class="heat-low">En düşük fiyatlı tam teklif</span>':'';
+    const direct=valid&&o==='2026-12-31'&&i==='2027-01-03'?'<span class="hc-note">AJet direkt tarife var, fiyat yok</span>':'';
+    const input=$('loyaltyCash')?.value,entered=input?loyaltyNum(input):null;
+    const points=valid&&o==='2026-12-31'&&i===$('loyaltyDate')?.value&&entered!==null&&Number.isFinite(entered)
+     ?'<span class="hc-note strong">Girilen puanlı senaryo: '+money(entered+q.hotel.total)+'</span>':'';
+    const label=watchEsc(formatDate(o)+' gidiş '+formatDate(i)+' dönüş '+nights+' gece '+(valid?'toplam '+money(x.cost):'fiyat eksik')+' '+fl+' '+ht);
+    out+='<button type="button" class="heat-cell '+cls+(sel?' selected':'')+'" aria-label="'+label+'" aria-pressed="'+sel+'" data-date-combo="'+o+'|'+i+'"><span class="hc-date">'+formatDate(o)+' → '+formatDate(i)+'</span><span class="hc-cost">'+(valid?money(x.cost):'Toplam eksik')+'</span><span class="hc-note">'+fl+'</span><span class="hc-note">'+ht+'</span><span class="hc-note strong">'+nights+' gece · '+desc+'</span>'+badge+direct+points+'</button>';
+   });
+ });
+ $('dateHeatGrid').innerHTML=out;
+ document.querySelectorAll('[data-date-combo]').forEach(b=>b.addEventListener('click',()=>{
+  const [o,i]=b.dataset.dateCombo.split('|');state.outbound=o;state.inbound=i;
+  $('outbound').value=o;$('inbound').value=i;setCustom();render();
+ }));
+ const cur=cells.find(x=>x.o===state.outbound&&x.i===state.inbound);
+ $('optimizerWhy').innerHTML='<b>Seçili tarih:</b> '+formatDate(state.outbound)+' → '+formatDate(state.inbound)+' • '+nights()+' gece. '+(cur?.cost!=null?'Kaydedilmiş Pegasus + Trivago toplamı <b>'+money(cur.cost)+'</b>.':'İki yön uçuş ve konaklamanın tamamı fiyatlanamadığı için toplam maliyet eksik.')+' Bagaj ve son ödeme doğrulanmadı.';
+ $('optimizerSaving').innerHTML=low?'<b>Fiyatı tam olan '+priced.length+' kombinasyonda en düşük:</b> '+formatDate(low.o)+' → '+formatDate(low.i)+' • <b>'+money(low.cost)+'</b> ('+watchEsc(low.q.hotel.name)+'). '+(cur?.cost!=null&&cur.cost>low.cost?'Mevcut tarihten <b>'+money(cur.cost-low.cost)+'</b> daha düşük teklif toplamı. ':'')+'Tesis, gün ve rezervasyon koşulları farklı olabilir; tarihsel indirim değildir. <a href="#fiyat-takibi">Teklif detayları ↗</a>':'İki yön uçuş + konaklama birlikte fiyatlanabilen bir tarih henüz bulunamadı.';
 }
 function renderChoiceFocus(){
  [['ucus','flight'],['konaklama','stay'],['yeme','food']].forEach(([id,key])=>{const sec=$(id);if(sec)sec.classList.toggle('focused',!!state.focus[key]&&!!state[key])});
@@ -522,8 +571,11 @@ function renderWatchPanel(){
  return '<div class="watch-row '+(marked?'best ':'')+(!ok?'invalid':'')+'"><div><strong>'+watchDate(q.outbound)+' → '+watchDate(q.inbound)+'</strong><small>'+q.nights+' gece'+(q.nights<3||q.nights>5?' • hedef süre dışı':'')+'</small></div><div><small>Trivago fiyat gözlemi • '+q.hotel.rating+'/10</small><strong>'+watchMoney(q.hotel.total)+'</strong><small>'+watchEsc(q.hotel.name)+'</small>'+freshHTML+'</div><div><small>Pegasus gidiş-dönüş</small><strong>'+watchMoney(q.flight.total)+'</strong><small>'+(q.flight.total!=null?((q.flight.outbound_departure||'—')+' • SAW aktarmalı'):'Eksik yön / fiyat yok')+'</small></div><div><small>Birleşik çekirdek toplam</small><strong>'+watchMoney(q.combined_total)+'</strong><small>Ek bagaj hariç / bilinmiyor</small></div><div><small>Uygunluk</small><strong>'+(marked?'Tarama kapsamındaki en ekonomik':ok?'Yılbaşına yetişir':'Karşılaştırma sınırlı')+'</strong><span class="watch-tag">'+warn+'</span></div></div>'
  }).join('');
 }
-document.querySelectorAll('[data-watch-people]').forEach(b=>b.addEventListener('click',()=>{watchPeople=Number(b.dataset.watchPeople);$('loyaltyCash').value='';renderWatchPanel()}));
-async function loadPriceAlert(){try{const r=await fetch('price-data.json?ts='+Date.now(),{cache:'no-store'});if(!r.ok)return;const d=await r.json();watchSnapshot=d;renderWatchPanel();if(!d.alert)return;const el=$('priceAlert');const t=$('priceAlertText');t.textContent=(d.label||'Yeni dip fiyat')+' • '+(d.new_price?money(d.new_price):'')+(d.previous_best?' • Önceki en iyi '+money(d.previous_best):'')+(d.saving?' • Tasarruf '+money(d.saving):'')+(d.saving_pct?' (%'+d.saving_pct+')':'')+(d.checked_at?' • '+d.checked_at:'');el.classList.remove('hidden')}catch(e){}}
+document.querySelectorAll('[data-heat-people]').forEach(b=>b.addEventListener('click',()=>{state.people=+b.dataset.heatPeople;state.doga=state.people===3;watchPeople=state.people;setCustom();$('loyaltyCash').value='';syncControls();render()}));
+$('loyaltyCash').addEventListener('input',renderDateHeatmap);
+$('loyaltyDate').addEventListener('change',renderDateHeatmap);
+document.querySelectorAll('[data-watch-people]').forEach(b=>b.addEventListener('click',()=>{watchPeople=Number(b.dataset.watchPeople);state.people=watchPeople;state.doga=watchPeople===3;setCustom();$('loyaltyCash').value='';syncControls();render()}));
+async function loadPriceAlert(){try{const r=await fetch('price-data.json?ts='+Date.now(),{cache:'no-store'});if(!r.ok)return;const d=await r.json();watchSnapshot=d;renderWatchPanel();renderDateHeatmap();if(!d.alert)return;const el=$('priceAlert');const t=$('priceAlertText');t.textContent=(d.label||'Yeni dip fiyat')+' • '+(d.new_price?money(d.new_price):'')+(d.previous_best?' • Önceki en iyi '+money(d.previous_best):'')+(d.saving?' • Tasarruf '+money(d.saving):'')+(d.saving_pct?' (%'+d.saving_pct+')':'')+(d.checked_at?' • '+d.checked_at:'');el.classList.remove('hidden')}catch(e){}}
 $('dismissPriceAlert').addEventListener('click',()=>$('priceAlert').classList.add('hidden'));
 window.addEventListener('load',()=>{load();initMap();loadPriceAlert();setTimeout(()=>map&&map.invalidateSize(),250)});window.addEventListener('resize',()=>map&&map.invalidateSize());
 </script>
