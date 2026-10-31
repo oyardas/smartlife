@@ -2865,6 +2865,354 @@
       ],
       "confirmed_threshold_hits": [],
       "notes": "11 matched-name, traveler count, stay dates, advertiser and rate attributes offers showed no drop; 31 Oct hotel snapshots only. Old flights untouched; no new dip alert."
+    },
+    {
+      "checked_at": "2026-10-31T15:24:54.800Z",
+      "source_status": "Pegasus 18 exact-date searches and Trivago 18 full-stay searches; Skyscanner monthly indicative checked and does not match target dates; checked luggage and specific room types unverified",
+      "quote_rows": [
+        {
+          "adults": 2,
+          "outbound": "2026-12-29",
+          "inbound": "2027-01-02",
+          "nights": 4,
+          "hotel_name": "Omia",
+          "hotel_price": 28592,
+          "hotel_advertiser": "ZenHotels.com",
+          "hotel_attributes": [
+            "nonRefundable",
+            "roomOnly"
+          ],
+          "flight_price": null,
+          "outbound_price": null,
+          "return_price": null,
+          "outbound_time": null,
+          "combined_total": null,
+          "nye_eligible": false
+        },
+        {
+          "adults": 2,
+          "outbound": "2026-12-29",
+          "inbound": "2027-01-03",
+          "nights": 5,
+          "hotel_name": "Kopernikus Hotel Prag",
+          "hotel_price": 34942,
+          "hotel_advertiser": "Trip.com",
+          "hotel_attributes": [
+            "breakfastIncluded",
+            "nonRefundable"
+          ],
+          "flight_price": null,
+          "outbound_price": null,
+          "return_price": 37198,
+          "outbound_time": null,
+          "combined_total": null,
+          "nye_eligible": false
+        },
+        {
+          "adults": 2,
+          "outbound": "2026-12-29",
+          "inbound": "2027-01-04",
+          "nights": 6,
+          "hotel_name": "Kopernikus Hotel Prag",
+          "hotel_price": 39523,
+          "hotel_advertiser": "Trip.com",
+          "hotel_attributes": [
+            "breakfastIncluded",
+            "nonRefundable"
+          ],
+          "flight_price": null,
+          "outbound_price": null,
+          "return_price": 19920,
+          "outbound_time": null,
+          "combined_total": null,
+          "nye_eligible": false
+        },
+        {
+          "adults": 2,
+          "outbound": "2026-12-30",
+          "inbound": "2027-01-02",
+          "nights": 3,
+          "hotel_name": "Omia",
+          "hotel_price": 24754,
+          "hotel_advertiser": "ZenHotels.com",
+          "hotel_attributes": [
+            "nonRefundable",
+            "roomOnly"
+          ],
+          "flight_price": null,
+          "outbound_price": 33405.6,
+          "return_price": null,
+          "outbound_time": "22:00",
+          "combined_total": null,
+          "nye_eligible": true
+        },
+        {
+          "adults": 2,
+          "outbound": "2026-12-30",
+          "inbound": "2027-01-03",
+          "nights": 4,
+          "hotel_name": "Kopernikus Hotel Prag",
+          "hotel_price": 30452,
+          "hotel_advertiser": "Trip.com",
+          "hotel_attributes": [
+            "breakfastIncluded",
+            "nonRefundable"
+          ],
+          "flight_price": 70603.6,
+          "outbound_price": 33405.6,
+          "return_price": 37198,
+          "outbound_time": "22:00",
+          "combined_total": 101055.6,
+          "nye_eligible": true
+        },
+        {
+          "adults": 2,
+          "outbound": "2026-12-30",
+          "inbound": "2027-01-04",
+          "nights": 5,
+          "hotel_name": "Kopernikus Hotel Prag",
+          "hotel_price": 27994,
+          "hotel_advertiser": "Agoda",
+          "hotel_attributes": [
+            "breakfastIncluded",
+            "nonRefundable"
+          ],
+          "flight_price": 53325.6,
+          "outbound_price": 33405.6,
+          "return_price": 19920,
+          "outbound_time": "22:00",
+          "combined_total": 81319.6,
+          "nye_eligible": true
+        },
+        {
+          "adults": 2,
+          "outbound": "2026-12-31",
+          "inbound": "2027-01-02",
+          "nights": 2,
+          "hotel_name": "Omia",
+          "hotel_price": 16503,
+          "hotel_advertiser": "ZenHotels.com",
+          "hotel_attributes": [
+            "nonRefundable",
+            "roomOnly"
+          ],
+          "flight_price": null,
+          "outbound_price": 33405.6,
+          "return_price": null,
+          "outbound_time": "05:25",
+          "combined_total": null,
+          "nye_eligible": true
+        },
+        {
+          "adults": 2,
+          "outbound": "2026-12-31",
+          "inbound": "2027-01-03",
+          "nights": 3,
+          "hotel_name": "Kopernikus Hotel Prag",
+          "hotel_price": 17535,
+          "hotel_advertiser": "Agoda",
+          "hotel_attributes": [
+            "breakfastIncluded",
+            "nonRefundable"
+          ],
+          "flight_price": 70603.6,
+          "outbound_price": 33405.6,
+          "return_price": 37198,
+          "outbound_time": "05:25",
+          "combined_total": 88138.6,
+          "nye_eligible": true
+        },
+        {
+          "adults": 2,
+          "outbound": "2026-12-31",
+          "inbound": "2027-01-04",
+          "nights": 4,
+          "hotel_name": "Kopernikus Hotel Prag",
+          "hotel_price": 21320,
+          "hotel_advertiser": "Agoda",
+          "hotel_attributes": [
+            "breakfastIncluded",
+            "nonRefundable"
+          ],
+          "flight_price": 53325.6,
+          "outbound_price": 33405.6,
+          "return_price": 19920,
+          "outbound_time": "05:25",
+          "combined_total": 74645.6,
+          "nye_eligible": true
+        },
+        {
+          "adults": 3,
+          "outbound": "2026-12-29",
+          "inbound": "2027-01-02",
+          "nights": 4,
+          "hotel_name": "Olivia Rooms",
+          "hotel_price": 33415,
+          "hotel_advertiser": "Hotels.com",
+          "hotel_attributes": [
+            "nonRefundable",
+            "roomOnly"
+          ],
+          "flight_price": null,
+          "outbound_price": null,
+          "return_price": null,
+          "outbound_time": null,
+          "combined_total": null,
+          "nye_eligible": false
+        },
+        {
+          "adults": 3,
+          "outbound": "2026-12-29",
+          "inbound": "2027-01-03",
+          "nights": 5,
+          "hotel_name": "Parlamento ve Aziz Markos",
+          "hotel_price": 43103,
+          "hotel_advertiser": "Airbnb",
+          "hotel_attributes": [
+            "roomOnly"
+          ],
+          "flight_price": null,
+          "outbound_price": null,
+          "return_price": 55797,
+          "outbound_time": null,
+          "combined_total": null,
+          "nye_eligible": false
+        },
+        {
+          "adults": 3,
+          "outbound": "2026-12-29",
+          "inbound": "2027-01-04",
+          "nights": 6,
+          "hotel_name": "Belgrad'ın Merkezinde, Lüks Stüdyo",
+          "hotel_price": 46349,
+          "hotel_advertiser": "Airbnb",
+          "hotel_attributes": [
+            "roomOnly"
+          ],
+          "flight_price": null,
+          "outbound_price": null,
+          "return_price": 29880,
+          "outbound_time": null,
+          "combined_total": null,
+          "nye_eligible": false
+        },
+        {
+          "adults": 3,
+          "outbound": "2026-12-30",
+          "inbound": "2027-01-02",
+          "nights": 3,
+          "hotel_name": "Veneti Suites",
+          "hotel_price": 28568,
+          "hotel_advertiser": "Trip.com",
+          "hotel_attributes": [
+            "nonRefundable",
+            "roomOnly"
+          ],
+          "flight_price": null,
+          "outbound_price": 50108.4,
+          "return_price": null,
+          "outbound_time": "22:00",
+          "combined_total": null,
+          "nye_eligible": true
+        },
+        {
+          "adults": 3,
+          "outbound": "2026-12-30",
+          "inbound": "2027-01-03",
+          "nights": 4,
+          "hotel_name": "Parlamento ve Aziz Markos",
+          "hotel_price": 34482,
+          "hotel_advertiser": "Airbnb",
+          "hotel_attributes": [
+            "roomOnly"
+          ],
+          "flight_price": 105905.4,
+          "outbound_price": 50108.4,
+          "return_price": 55797,
+          "outbound_time": "22:00",
+          "combined_total": 140387.4,
+          "nye_eligible": true
+        },
+        {
+          "adults": 3,
+          "outbound": "2026-12-30",
+          "inbound": "2027-01-04",
+          "nights": 5,
+          "hotel_name": "Parlamento ve Aziz Markos",
+          "hotel_price": 43103,
+          "hotel_advertiser": "Airbnb",
+          "hotel_attributes": [
+            "roomOnly"
+          ],
+          "flight_price": 79988.4,
+          "outbound_price": 50108.4,
+          "return_price": 29880,
+          "outbound_time": "22:00",
+          "combined_total": 123091.4,
+          "nye_eligible": true
+        },
+        {
+          "adults": 3,
+          "outbound": "2026-12-31",
+          "inbound": "2027-01-02",
+          "nights": 2,
+          "hotel_name": "Apartment Milan",
+          "hotel_price": 19342,
+          "hotel_advertiser": "Booking.com",
+          "hotel_attributes": [
+            "freeCancellation",
+            "payAtProperty",
+            "roomOnly"
+          ],
+          "flight_price": null,
+          "outbound_price": 50108.4,
+          "return_price": null,
+          "outbound_time": "05:25",
+          "combined_total": null,
+          "nye_eligible": true
+        },
+        {
+          "adults": 3,
+          "outbound": "2026-12-31",
+          "inbound": "2027-01-03",
+          "nights": 3,
+          "hotel_name": "Veneti Suites",
+          "hotel_price": 27254,
+          "hotel_advertiser": "Trip.com",
+          "hotel_attributes": [
+            "nonRefundable",
+            "roomOnly"
+          ],
+          "flight_price": 105905.4,
+          "outbound_price": 50108.4,
+          "return_price": 55797,
+          "outbound_time": "05:25",
+          "combined_total": 133159.4,
+          "nye_eligible": true
+        },
+        {
+          "adults": 3,
+          "outbound": "2026-12-31",
+          "inbound": "2027-01-04",
+          "nights": 4,
+          "hotel_name": "Parlamento ve Aziz Markos",
+          "hotel_price": 34482,
+          "hotel_advertiser": "Airbnb",
+          "hotel_attributes": [
+            "roomOnly"
+          ],
+          "flight_price": 79988.4,
+          "outbound_price": 50108.4,
+          "return_price": 29880,
+          "outbound_time": "05:25",
+          "combined_total": 114470.4,
+          "nye_eligible": true
+        }
+      ],
+      "matched_hotel_offers": 69,
+      "potential_hotel_drops": [],
+      "potential_flight_drops": [],
+      "notes": "No verified price drop; historical bests preserved in prior snapshots, this new flight+hotel search is not necessarily the same itinerary or room as historical best."
     }
   ]
 }
