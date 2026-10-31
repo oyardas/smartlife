@@ -2628,5 +2628,66 @@
       }
     ],
     "note": "İki ve üç kişi toplamları, tek kişi başlangıç fiyatının yolcu sayısıyla çarpılmasıdır. Aynı fiyattan koltuk sayısı teyit edilmedi; kesin bagaj dahil veya kombine satın alma toplamı değildir. 7 Ocak dönüşü, orijinal 2–4 Ocak karşılaştırma aralığının dışındadır."
+  },
+  "loyalty_model": {
+    "schema_version": 1,
+    "checked_at": "2026-10-31",
+    "site_visibility": "public_generic_rules_only",
+    "points_balance_not_stored": true,
+    "currency": "TRY",
+    "pegasus": {
+      "winter_international_one_way_reference_points": 25000,
+      "winter_domestic_one_way_reference_points": 10000,
+      "minimum_ticket_redemption_points": 2000,
+      "minimum_ancillary_redemption_points": 500,
+      "rules_source": "https://www.flypgs.com/pegasus-bolbol-uyelik-sozlesmesi",
+      "guidance_source": "https://www.flypgs.com/bolbol/bolbol-harca",
+      "conditions": [
+        "25.000 BolPuan, kış dönemi uluslararası tek yön için referans tutardır; ADB–SAW–BEG aktarmalı itinererin puan ücreti doğrulanmadı.",
+        "Vergi, check-in, hizmet bedeli ve bagaj dahil nihai tutar Pegasus ödeme ekranında doğrulanmalıdır.",
+        "İlk puan kullanımında yalnızca üyenin kendi adına bilet/ek hizmet alınabilir; üçüncü kişi için kullanımı ilk puanlı uçuşun tamamlanmasından sonra mümkündür.",
+        "BolPuan'ın sabit TL karşılığı yoktur; nihai nakit tutar yalnız Pegasus'un kişiye sunduğu tekliftir."
+      ]
+    },
+    "thy": {
+      "cash_and_miles_available_for_turkish_airlines_operated_flights": true,
+      "tax_exclusive_fare_max_pct": 50,
+      "conversion_not_fixed": true,
+      "ajet_not_eligible": true,
+      "source": "https://www.turkishairlines.com/tr-de/miles-and-smiles/mil-uygulamalari/cash-and-miles/",
+      "conditions": [
+        "2.000 mil için sabit TL indirimi varsayılmadı.",
+        "THY'nin kendi uçuşlarında Cash&Miles seçeneğinde gerçekleşen indirim ödeme ekranından doğrulanır.",
+        "AJet ve codeshare uçuşlarında Cash&Miles uygulanmaz."
+      ]
+    },
+    "compared_itineraries": [
+      {
+        "outbound": "2026-12-31",
+        "inbound": "2027-01-03",
+        "nights": 3,
+        "carrier": "Pegasus",
+        "type": "SAW aktarmalı",
+        "depart": "07:00",
+        "arrival": "31 Aralık 10:15",
+        "checked_at": "2026-10-31",
+        "baggage_verified": false,
+        "hotel_checked_at": "2026-10-31"
+      },
+      {
+        "outbound": "2026-12-31",
+        "inbound": "2027-01-04",
+        "nights": 4,
+        "carrier": "Pegasus",
+        "type": "SAW aktarmalı",
+        "depart": "07:00",
+        "arrival": "31 Aralık 10:15",
+        "checked_at": "2026-10-31",
+        "baggage_verified": false,
+        "hotel_checked_at": "2026-10-31"
+      }
+    ],
+    "historical_price_drop_eligible": false,
+    "warning": "Farklı günlerdeki ve farklı rota/üründeki fiyatlar karşılaştırılabilir tarihsel düşüş değildir. Puan sonrası indirim ancak aynı rezervasyonun Pegasus ödeme ekranında görülen tutarıyla hesaplanabilir."
   }
 }
