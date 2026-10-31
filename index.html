@@ -87,6 +87,21 @@
 .heat-people button[aria-pressed="true"]{background:#285a50;border-color:#80bca9;color:white}
 .heat-na-legend{padding:3px 7px;border-radius:7px;background:#202c3a;border:1px dashed #798b9e;color:#dbe6ef}
 @media(max-width:720px){.heatmap-head{gap:7px}.heat-people{width:100%}.heat-people button{flex:1}.heat-grid{grid-template-columns:64px repeat(3,minmax(95px,1fr));gap:4px}.heat-cell{padding:7px;min-height:110px}.heat-cell .hc-note{font-size:.62rem}.heatmap-wrap{padding:9px}}
+
+/* Separate 3-person transport cap – no unverified loyalty redemptions. */
+.three-budget-watch{background:#14202d;border:1px solid #4f6677;border-radius:14px;padding:15px;margin:0 0 18px}
+.three-budget-head{display:flex;justify-content:space-between;gap:14px;align-items:start;flex-wrap:wrap}
+.three-budget-head h3{font-size:1.3rem;margin:4px 0}.three-budget-head p{max-width:740px}
+.three-budget-total{font-size:1.55rem;font-weight:900;white-space:nowrap;color:#f0c576}.three-budget-total span{font-size:.7rem;font-weight:600;display:block;color:#aabac8;text-align:right}
+.three-budget-status{border:1px solid #71644b;background:#29251c;color:#f9ddb2;padding:11px;border-radius:9px;margin:12px 0;font-size:.83rem}
+.three-budget-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.three-budget-card{border:1px solid #3d5265;background:#0e1b28;border-radius:12px;padding:13px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.three-budget-card h4{margin:0;font-size:.95rem}.three-budget-card .three-price{font-size:1.24rem;font-weight:850;color:#b7d8ea}
+.three-budget-card .three-price small{font-size:.72rem;display:block;color:#b1c2d1;font-weight:500}
+.three-budget-card .three-chip{font-size:.7rem;color:#e5c990}
+.three-budget-card .three-note{font-size:.72rem;color:#bbcad5;line-height:1.35}
+.three-budget-card a{margin-top:auto;align-self:flex-start}
+@media(max-width:900px){.three-budget-cards{grid-template-columns:1fr}.three-budget-card{padding:12px}.three-budget-total span{text-align:left}}
 </style>
 </head>
 <body>
@@ -126,7 +141,12 @@
 </div></section>
 
 <section id="fiyat-takibi" class="wrap" aria-label="Gerçek fiyat taraması">
-<div class="watch-wrap">
+<div class="watch-wrap"><div class="three-budget-watch" id="budget50k" aria-label="Üç kişi 50 bin lira ulaşım bütçesi">
+ <div class="three-budget-head"><div><div class="kicker">3 KİŞİ • GİDİŞ–DÖNÜŞ • BÜTÇE İZLEME</div><h3>Hedef: 50.000 TL toplam ulaşım</h3><p class="mini muted">İzmir veya İstanbul çıkışlı Belgrad uçuşları. Konaklama bütçeye dahil değil; BolPuan ve THY milleri kullanılabilir ancak kalan TL tutarı teyit edilmeden indirim sayılmaz.</p></div><div class="three-budget-total">50.000 TL <span>üst sınır</span></div></div>
+ <div id="threeBudgetStatus" class="three-budget-status" role="status">Üç kişilik uygun fiyat bilgileri yükleniyor…</div>
+ <div id="threeBudgetCards" class="three-budget-cards"></div>
+ <div id="threeBudgetFoot" class="watch-foot"></div>
+</div>
   <div class="watch-head">
     <div><div class="kicker">FİYAT İZLEME • SON TARAMA</div><h3>Fiyat gözlemleri: uçuş ve konaklama</h3><div class="watch-status" id="watchStatus">Kaydedilen fiyat verisi yükleniyor…</div></div>
     <div class="watch-switch" role="group" aria-label="Yolcu sayısı"><button type="button" class="active" data-watch-people="3" aria-pressed="true">3 kişi</button><button type="button" data-watch-people="2" aria-pressed="false">2 kişi</button></div>
@@ -546,11 +566,25 @@ function renderLoyaltyPlanner(){
 }
 document.querySelectorAll('#loyaltyPlanner input').forEach(el=>el.addEventListener('input',renderLoyaltyPlanner));
 $('loyaltyDate').addEventListener('change',()=>{$('loyaltyCash').value='';renderLoyaltyPlanner()});
+function renderThreePersonBudget(){
+ const p=watchSnapshot?.three_person_transport_budget;
+ const root=$('budget50k');if(!root||!p)return;
+ const fmt=watchMoney;
+ $('threeBudgetStatus').textContent=p.verified_under_budget?'Üç kişi için 50.000 TL sınırı altında doğrulanmış ulaşım teklifi kaydı mevcut.':'Henüz 3 kişi için bagaj, İzmir bağlantısı ve puan sonrası kalan ödeme dahil 50.000 TL altı doğrulanmış teklif yok. Aşağıdaki tutarlar farklı kapsamlardaki fiyat gözlemleridir.';
+ $('threeBudgetCards').innerHTML=(p.offers||[]).map(o=>{
+  const complete=typeof o.combined_transport_3==='number',shown=complete?fmt(o.combined_transport_3):fmt(o.intl_price_3);
+  const label=complete?'Kayıtlı uluslararası + İzmir bağlantısı toplamı':'Yalnız İstanbul–Belgrad, üç kişi gösterge toplamı';
+  const link=typeof o.url==='string'&&/^https:\/\/(www\.flypgs\.com|firsatucus\.com|ucuzucak\.org)\//.test(o.url)?o.url:null;
+  return '<article class="three-budget-card"><h4>'+watchEsc(o.airline)+' · '+watchDate(o.outbound)+' → '+watchDate(o.inbound)+'</h4><div class="three-price">'+shown+'<small>'+label+'</small></div><div class="three-chip">'+watchEsc(o.routing)+' · '+o.nights+' gece</div><div class="three-note">'+watchEsc(o.route)+'</div><div class="three-note">'+watchEsc(o.limitations)+'</div>'+(complete?'<div class="three-note">50.000 TL hedefinden '+fmt(Math.max(0,o.combined_transport_3-p.budget_try))+' yüksek; puan indirimi ve bagaj henüz dahil değil.</div>':'<div class="three-note">İzmir bağlantısı ve diğer eksikler için kalan bütçe: en fazla '+fmt(o.threshold_remaining)+'.</div>')+'<div class="three-note">'+watchEsc(o.quote_basis)+'</div>'+(link?'<a class="btn" href="'+watchEsc(link)+'" target="_blank" rel="noopener noreferrer">Kaynağı aç ↗</a>':'')+'</article>';
+ }).join('');
+ $('threeBudgetFoot').textContent='Kontrol: '+p.price_as_of_label+' • Teklif fiyatları rezervasyon garantisi değildir • 3 kişilik aynı fiyattan koltuk ve ödül bilet bulunabilirliği ayrıca teyit edilir • Günlük kontrol '+p.watch_schedule_local+' • Mevcut tarihsel dip fiyat korunuyor; doğrulanmamış indirim alarmı kapalı.';
+}
 function renderWatchPanel(){
  const d=watchSnapshot;
  if(!d||!Array.isArray(d.combinations))return;
  renderFlexibleFlights();
  renderLoyaltyPlanner();
+ renderThreePersonBudget();
  document.querySelectorAll('[data-watch-people]').forEach(b=>{const on=Number(b.dataset.watchPeople)===watchPeople;b.classList.toggle('active',on);b.setAttribute('aria-pressed',String(on))});
  $('watchStatus').textContent='Son Pegasus+Trivago uçuş ve konaklama fiyat gözlemi: '+(d.checked_at||'Tarih belirtilmedi')+' • Konaklama son tekrar kontrol: '+(d.latest_hotel_scan?.checked_at||'—')+' • '+d.combinations.length+' senaryo • TL • Bagaj teyit edilmedi';
  const hs=d.latest_hotel_scan; if(hs){const x=hs.headline_comparisons||[];const stats=x.map(z=>z.adults+' kişi, '+z.hotel+': '+watchMoney(z.previous_quote)+' → '+watchMoney(z.new_quote)).join(' • ');$('watchLatestScan').textContent=(d.alert?'Doğrulanmış yeni fiyat düşüşü var. ':'Yeni doğrulanmış dip fiyat yok. ')+'Son konaklama kontrolü: '+hs.checked_at+' • '+hs.checked_combinations+' senaryo tarandı; '+hs.comparable_previous_property_offers+' aynı tesis/teklif koşulu karşılaştırılabildi. '+stats+'. Pegasus tarihli fiyatlar yeniden kontrol edildi; bagaj paketi, oda kategorisi ve son ödeme tutarı belirsiz. AJet direkt uçuş tarifesi var ancak hedef tarihte ücreti teyit edilmedi.';}
