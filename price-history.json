@@ -3266,5 +3266,38 @@
       "verified_price_drop": false,
       "notes": "Fiyatlar farklı teklif sağlayıcılarından, farklı tarifelerden veya tek yön göstergelerinden geliyor; aynı uçuş ve bagaj sınıfına ait eski doğrulanmış fiyatla eşleşme yapılamıyor."
     }
+  ],
+  "transport_budget_observations": [
+    {
+      "checked_at": "2026-10-31T20:47:46Z",
+      "budget": 50000,
+      "travelers": 3,
+      "currency": "TRY",
+      "proven_under_target": false,
+      "offers": [
+        {
+          "id": "lot-29-04",
+          "intl_price_3": 31989,
+          "combined_transport_3": null,
+          "source": "Fırsat Uçuş",
+          "confirmed_below_target": false
+        },
+        {
+          "id": "airserbia-30-02",
+          "intl_price_3": 34587,
+          "combined_transport_3": null,
+          "source": "Ucuz Uçak",
+          "confirmed_below_target": false
+        },
+        {
+          "id": "pegasus-27-01",
+          "intl_price_3": 49902,
+          "combined_transport_3": 58580.13,
+          "source": "Pegasus resmi uçuş araması",
+          "confirmed_below_target": false
+        }
+      ],
+      "notes": "Price indications for Istanbul departure exclude Izmir positioning, baggage and settlement. Pegasus 58580.13 includes four legs but excludes baggage, local transfers and BolBol redemption. No price-drop alert."
+    }
   ]
 }
