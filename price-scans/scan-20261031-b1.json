@@ -1620,6 +1620,267 @@
           "distance": 1.3
         }
       ]
+    },
+    {
+      "adults": 3,
+      "outbound": "2026-12-31",
+      "inbound": "2027-01-02",
+      "nights": 2,
+      "properties": 25,
+      "cheapest_central": {
+        "name": "Apartment Milan",
+        "id": "100-39200780",
+        "amount": 19342,
+        "advertiser": "Booking.com",
+        "attrs": [
+          "freeCancellation",
+          "payAtProperty",
+          "roomOnly"
+        ],
+        "url": "https://www.trivago.com.tr/tr/lm/tüm-ev-apart-daire-apartment-milan-belgrad?cip=234716015&currencyCode=TRY&search=100-39200780%3B106-1527%3Bdr-20261231-20270102%3Bdrs-40%3Brc-1-3&cds=gtokVITpgIs3yxiiaVSCgCwuk6pw7oo3GoUoltlrBWKilJXW6tST3EjkfiJ3ax1aFGgcsF7AgRCavjFZ15y15eIOz0TudtuZe7tPh9pYQbr%2FxB0ucP5CZhI4IMUnTrA4%2FLKJwGG0IpT7JRCaltJexrJln74G8L3p3mEAU5OFziroFEGbkyUJTyXTSh%2B6Oh5J8w%3D%3D&cdsOrigin=DEAL_ON_DEALFINDER",
+        "rating": 9.4,
+        "distance": 2.1
+      },
+      "top_central": [
+        {
+          "name": "Apartment Milan",
+          "id": "100-39200780",
+          "amount": 19342,
+          "advertiser": "Booking.com",
+          "attrs": [
+            "freeCancellation",
+            "payAtProperty",
+            "roomOnly"
+          ],
+          "url": "https://www.trivago.com.tr/tr/lm/tüm-ev-apart-daire-apartment-milan-belgrad?cip=234716015&currencyCode=TRY&search=100-39200780%3B106-1527%3Bdr-20261231-20270102%3Bdrs-40%3Brc-1-3&cds=gtokVITpgIs3yxiiaVSCgCwuk6pw7oo3GoUoltlrBWKilJXW6tST3EjkfiJ3ax1aFGgcsF7AgRCavjFZ15y15eIOz0TudtuZe7tPh9pYQbr%2FxB0ucP5CZhI4IMUnTrA4%2FLKJwGG0IpT7JRCaltJexrJln74G8L3p3mEAU5OFziroFEGbkyUJTyXTSh%2B6Oh5J8w%3D%3D&cdsOrigin=DEAL_ON_DEALFINDER",
+          "rating": 9.4,
+          "distance": 2.1
+        },
+        {
+          "name": "Nobel Palace Hotel",
+          "id": "100-3530880",
+          "amount": 21764,
+          "advertiser": "Stayforlong",
+          "attrs": [
+            "breakfastIncluded",
+            "nonRefundable"
+          ],
+          "url": "https://www.trivago.com.tr/tr/lm/nobel-palace-hotel-belgrad?cip=234716015&currencyCode=TRY&search=100-3530880%3B106-1527%3Bdr-20261231-20270102%3Bdrs-40%3Brc-1-3&cds=zgF89rPtWdZN8gbv2ECcY3CUkqM%2B9dsD9eZgdHsgud9aqVoSuxRyH2JyILnlpKnDXiuOpP4JQSaqNjBSr3Wog5llUqzEq5pEZMyIZEm3TnwrN1plwPFdbon1%2BygQjSR3ydtVyMHt5VFLg3PxC7U5f9G%2B0cwMuRsFOX%2BMwZxx%2B%2F9E2Fl32uUiC0ALD78C74drHg%3D%3D&cdsOrigin=DEAL_ON_DEALFINDER",
+          "rating": 8.7,
+          "distance": 1.7
+        },
+        {
+          "name": "Hotel Heritage",
+          "id": "100-4585888",
+          "amount": 21901,
+          "advertiser": "Hotels.com",
+          "attrs": [
+            "breakfastIncluded",
+            "nonRefundable"
+          ],
+          "url": "https://www.trivago.com.tr/tr/lm/hotel-heritage-belgrad?cip=234716015&currencyCode=TRY&search=100-4585888%3B106-1527%3Bdr-20261231-20270102%3Bdrs-40%3Brc-1-3&cds=aoD%2FUAZGTYLVlGJJN6mt2N1FSgHot53cugdcbkIwVBx3p8rhpbeWzVStW4HZ9WOOqjfNJN08uVJSV7hmlIauFr%2BJKJtlK4y2DcNVYAOsJ6yGdB1Kc1QqH9vvf%2Fs0vUIXSDf9la6txMfa5nJqQ5ZdSM%2FSo%2FUZUBYoCXfTMRLM5D%2FmBFmkBCan0N64qaV7WQ0CfjI%3D&cdsOrigin=DEAL_ON_DEALFINDER",
+          "rating": 9.3,
+          "distance": 2.2
+        },
+        {
+          "name": "Nobel Palace Hotel",
+          "id": "100-3530880",
+          "amount": 22245,
+          "advertiser": "Hotels.com",
+          "attrs": [
+            "breakfastIncluded",
+            "nonRefundable"
+          ],
+          "url": "https://www.trivago.com.tr/tr/lm/nobel-palace-hotel-belgrad?cip=234716015&currencyCode=TRY&search=100-3530880%3B106-1527%3Bdr-20261231-20270102%3Bdrs-40%3Brc-1-3&cds=xDAE2oNtUBYi8YWkr%2B%2FeXIdWkUPwDPGx4PDUo6HmBSn%2FuPvpCOk94kYSvodT%2BZG2DhGAmlRP75q5uCpcpoiPQgDfe0unKDWeKebdIMFvZffFE3WPKtMW4EQ9sh%2F96Ws9TQOXPuWjDREbuxJjXbq55Yi6jAqLrs0V0ciP1VPCr7B80zOj2PAn3tMfJpA2e3uGPQ%3D%3D&cdsOrigin=DEAL_ON_DEALFINDER",
+          "rating": 8.7,
+          "distance": 1.7
+        },
+        {
+          "name": "Apartment Dd",
+          "id": "100-39263016",
+          "amount": 22687,
+          "advertiser": "Booking.com",
+          "attrs": [
+            "freeCancellation",
+            "payAtProperty",
+            "roomOnly"
+          ],
+          "url": "https://www.trivago.com.tr/tr/lm/tüm-ev-apart-daire-apartment-dd-belgrad?cip=234716015&currencyCode=TRY&search=100-39263016%3B106-1527%3Bdr-20261231-20270102%3Bdrs-40%3Brc-1-3&cds=AvXMftLAKEdLMKwpgdsFcibGWihdzGDAACqSk5Dc5JUoZsB%2FVxbrEX6weQqR1nRxZf6u6tHIWtzX5DRoSBMpm9sFJM3kZIstrd28LReQIxU5u0l%2BzgChGebawU0T7FjSrqAA4qUY0cSZ%2BGVHk5fw8in4P1%2BFR9v4ieayKyGFVI%2BDi0BhjJ407dXlXdoinAIn%2BA%3D%3D&cdsOrigin=DEAL_ON_DEALFINDER",
+          "rating": 9.1,
+          "distance": 1.6
+        }
+      ]
+    },
+    {
+      "adults": 3,
+      "outbound": "2026-12-31",
+      "inbound": "2027-01-03",
+      "nights": 3,
+      "properties": 25,
+      "cheapest_central": {
+        "name": "Nobel Palace Hotel",
+        "id": "100-3530880",
+        "amount": 27967,
+        "advertiser": "Hotels.com",
+        "attrs": [
+          "breakfastIncluded",
+          "nonRefundable"
+        ],
+        "url": "https://www.trivago.com.tr/tr/lm/nobel-palace-hotel-belgrad?cip=234716015&currencyCode=TRY&search=100-3530880%3B106-1527%3Bdr-20261231-20270103%3Bdrs-40%3Brc-1-3&cds=EZNBtLaF8EZTccfmZhu4NRq8mDqG4xQxpRC9H5Jm1K6Kd9DrHVxdkuKw4prkLhU4erb4rgc6Hg2DV1z%2BsfZdwsK6LMhvmJGJ91fuTY19CVUthP8gzCYUVVY0Eco5WGmyvHJ5bMOYX%2BCl7DnXmYusvBNQrqs3phIbUScPTm%2FNLFUUppWnmLdXhkR4KiZ9MWdNy2Y%3D&cdsOrigin=DEAL_ON_DEALFINDER",
+        "rating": 8.7,
+        "distance": 1.7
+      },
+      "top_central": [
+        {
+          "name": "Nobel Palace Hotel",
+          "id": "100-3530880",
+          "amount": 27967,
+          "advertiser": "Hotels.com",
+          "attrs": [
+            "breakfastIncluded",
+            "nonRefundable"
+          ],
+          "url": "https://www.trivago.com.tr/tr/lm/nobel-palace-hotel-belgrad?cip=234716015&currencyCode=TRY&search=100-3530880%3B106-1527%3Bdr-20261231-20270103%3Bdrs-40%3Brc-1-3&cds=EZNBtLaF8EZTccfmZhu4NRq8mDqG4xQxpRC9H5Jm1K6Kd9DrHVxdkuKw4prkLhU4erb4rgc6Hg2DV1z%2BsfZdwsK6LMhvmJGJ91fuTY19CVUthP8gzCYUVVY0Eco5WGmyvHJ5bMOYX%2BCl7DnXmYusvBNQrqs3phIbUScPTm%2FNLFUUppWnmLdXhkR4KiZ9MWdNy2Y%3D&cdsOrigin=DEAL_ON_DEALFINDER",
+          "rating": 8.7,
+          "distance": 1.7
+        },
+        {
+          "name": "Hotel Heritage",
+          "id": "100-4585888",
+          "amount": 30589,
+          "advertiser": "Hotels.com",
+          "attrs": [
+            "breakfastIncluded",
+            "nonRefundable"
+          ],
+          "url": "https://www.trivago.com.tr/tr/lm/hotel-heritage-belgrad?cip=234716015&currencyCode=TRY&search=100-4585888%3B106-1527%3Bdr-20261231-20270103%3Bdrs-40%3Brc-1-3&cds=bzfONRTOj3f8R%2FCN63WuBLuFuEGna996wIOKX%2FW0PBi5gSMSlzcI20%2FmvJsi7AV72LUIRippHX2RSLO9PpX0183r0mqHWwgt5VFgRb5twjKyQTWMaij%2BxEel%2Bvqz%2FeQ9%2FLLeDR3KB8i14kevnqw7gtil%2BksS5mZdUlUXX6syvIHuhQEsh%2BYgq%2BSRUQjjxPDIlw%3D%3D&cdsOrigin=DEAL_ON_DEALFINDER",
+          "rating": 9.3,
+          "distance": 2.2
+        },
+        {
+          "name": "Joy 5 Hotel & SPA",
+          "id": "100-26844216",
+          "amount": 32179,
+          "advertiser": "Agoda",
+          "attrs": [
+            "nonRefundable",
+            "roomOnly"
+          ],
+          "url": "https://www.trivago.com.tr/tr/lm/joy-5-hotel-spa-belgrad?cip=234716015&currencyCode=TRY&search=100-26844216%3B106-1527%3Bdr-20261231-20270103%3Bdrs-40%3Brc-1-3&cds=XeORrirfiX6I91O5bjVAmalzXvrks79qZ0m6eta0d02INKqt78x%2BtFaONdmH8n5MGe4o9I1lCsR5MFOSHQOm8829pIs6C7PW7CMTZqZQItUCD7SSnr1zwAJWP7FI8qi0WiSA7PbV5eO9yYv4J3%2FuPZy65ruGPxmh8kymzqzzyQkTe4OwLRrHNT6p%2BjwiVj66sE8%3D&cdsOrigin=DEAL_ON_DEALFINDER",
+          "rating": 8.5,
+          "distance": 2.3
+        },
+        {
+          "name": "Metropol Palace",
+          "id": "100-2269790",
+          "amount": 32671,
+          "advertiser": "Hotels.com",
+          "attrs": [
+            "nonRefundable",
+            "roomOnly"
+          ],
+          "url": "https://www.trivago.com.tr/tr/lm/otel-metropol-palace-belgrad?cip=234716015&currencyCode=TRY&search=100-2269790%3B106-1527%3Bdr-20261231-20270103%3Bdrs-40%3Brc-1-3&cds=Bx%2Btc7pFI%2BVZfZazWLzqI%2B3eMr7Z8Ww0TiDExvL%2FNT18dhj8fLY73%2FIwMcwx84aguSFJNOyHjcDY56BOUxhkeq9Lej0WqL6OoyyZTVFg8UH4hhxA6TFK9a2rmU8%2FklJ5ffF0hfVN2Qj5nOn7Sm3B9LQEGGaQYUY2hPjEu9O9w%2Bj6n%2FJDTl30y%2FzzpSnDANu4qA%3D%3D&cdsOrigin=DEAL_ON_DEALFINDER",
+          "rating": 8.9,
+          "distance": 1.3
+        },
+        {
+          "name": "Nobel Palace Hotel",
+          "id": "100-3530880",
+          "amount": 35682,
+          "advertiser": "Booking.com",
+          "attrs": [
+            "breakfastIncluded",
+            "nonRefundable"
+          ],
+          "url": "https://www.trivago.com.tr/tr/lm/nobel-palace-hotel-belgrad?cip=234716015&currencyCode=TRY&search=100-3530880%3B106-1527%3Bdr-20261231-20270103%3Bdrs-40%3Brc-1-3&cds=ZoD366SRLOoUmfD1W%2FTQZBUufYc%2BJTZXzzksqw%2FF%2Blqp9CDYe8%2BmzOwAsfIavusURQSlyT%2BsXaK%2BGaNKVr5Mow%2FFPU8nHN2zsJFTB%2BLvOEBkUF0aLXVuLeWkI%2F%2BRzUSo6rpcdGnEOZVwSR3mFrRpPWL8ykqgBkdzz1w0BGHC1k07HFrDjwskOYTvhgClod8vB0k%3D&cdsOrigin=DEAL_ON_DEALFINDER",
+          "rating": 8.7,
+          "distance": 1.7
+        }
+      ]
+    },
+    {
+      "adults": 3,
+      "outbound": "2026-12-31",
+      "inbound": "2027-01-04",
+      "nights": 4,
+      "properties": 25,
+      "cheapest_central": {
+        "name": "Parlamento ve Aziz Markos",
+        "id": "100-42151046",
+        "amount": 34482,
+        "advertiser": "Airbnb",
+        "attrs": [
+          "roomOnly"
+        ],
+        "url": "https://www.trivago.com.tr/tr/lm/tüm-ev-apart-daire-parlamento-ve-aziz-markos-belgrad?cip=234716015&currencyCode=TRY&search=100-42151046%3B106-1527%3Bdr-20261231-20270104%3Bdrs-40%3Brc-1-3&cds=2R3kud8YxvjR7qyxdG1yOAK4tMihISOitw0Boe9qJnqqaAe22u2fes5s0SYpllJBCX6WvCtMbCcVn0x19rKVa86YY6fkSbkMKH0DdJIaWyA6ctVJhAH%2B8zBCkujjzJ%2Fus%2FWdTX63DhM6KeVEWKem3Ffu3ruJJK0q2ZVrjC7G9n5m3goa93IiLg%3D%3D&cdsOrigin=DEAL_ON_DEALFINDER",
+        "rating": 9.1,
+        "distance": 0.8
+      },
+      "top_central": [
+        {
+          "name": "Parlamento ve Aziz Markos",
+          "id": "100-42151046",
+          "amount": 34482,
+          "advertiser": "Airbnb",
+          "attrs": [
+            "roomOnly"
+          ],
+          "url": "https://www.trivago.com.tr/tr/lm/tüm-ev-apart-daire-parlamento-ve-aziz-markos-belgrad?cip=234716015&currencyCode=TRY&search=100-42151046%3B106-1527%3Bdr-20261231-20270104%3Bdrs-40%3Brc-1-3&cds=2R3kud8YxvjR7qyxdG1yOAK4tMihISOitw0Boe9qJnqqaAe22u2fes5s0SYpllJBCX6WvCtMbCcVn0x19rKVa86YY6fkSbkMKH0DdJIaWyA6ctVJhAH%2B8zBCkujjzJ%2Fus%2FWdTX63DhM6KeVEWKem3Ffu3ruJJK0q2ZVrjC7G9n5m3goa93IiLg%3D%3D&cdsOrigin=DEAL_ON_DEALFINDER",
+          "rating": 9.1,
+          "distance": 0.8
+        },
+        {
+          "name": "Hotel Heritage",
+          "id": "100-4585888",
+          "amount": 39092,
+          "advertiser": "Stayforlong",
+          "attrs": [
+            "breakfastIncluded",
+            "nonRefundable"
+          ],
+          "url": "https://www.trivago.com.tr/tr/lm/hotel-heritage-belgrad?cip=234716015&currencyCode=TRY&search=100-4585888%3B106-1527%3Bdr-20261231-20270104%3Bdrs-40%3Brc-1-3&cds=hBKpgVuMONVcoK7GGBE%2Fc9H2OPyJeHz%2F8Smy31eEeo6FJEDkjkKkb%2BDbfGWyJ3taioEM3P5NyoADIQNZY7wsu1pXYKNDD0MZm11cjIfFvB%2FB8K3ufWV3dtvNFvBalWkru00S9wssyJ3d8TeWJk8Cjwud0qX6iOTrxhFucgARLzK%2F8eAZiGQlbYyp3Cy2gIrDz4U%3D&cdsOrigin=DEAL_ON_DEALFINDER",
+          "rating": 9.3,
+          "distance": 2.2
+        },
+        {
+          "name": "Hotel Heritage",
+          "id": "100-4585888",
+          "amount": 41729,
+          "advertiser": "Hotels.com",
+          "attrs": [
+            "breakfastIncluded",
+            "nonRefundable"
+          ],
+          "url": "https://www.trivago.com.tr/tr/lm/hotel-heritage-belgrad?cip=234716015&currencyCode=TRY&search=100-4585888%3B106-1527%3Bdr-20261231-20270104%3Bdrs-40%3Brc-1-3&cds=2P5spi40dWvbD8f1Tv5L8AOdrEIO0A0sfvjPB66QLm6gZzgp93803zI%2Fcad%2FM%2B8U%2Bqx2UCDXoNHmyfpLW4kUlXTe9nuX8Tzv7E3l1E3I3a3HiJPGrwkYYD59zeIMIE%2Fnpcmi3PoUVJe1xX0qh0FLOlNXlnRACfuLidNWhrL%2FcaV4nGBc%2BvP0miefLMamiWPkbA%3D%3D&cdsOrigin=DEAL_ON_DEALFINDER",
+          "rating": 9.3,
+          "distance": 2.2
+        },
+        {
+          "name": "City Nest Modern & Cozy Suites",
+          "id": "100-9903004",
+          "amount": 45259,
+          "advertiser": "Trip.com",
+          "attrs": [
+            "nonRefundable",
+            "roomOnly"
+          ],
+          "url": "https://www.trivago.com.tr/tr/lm/otel-city-nest-modern-cozy-suites-belgrad?cip=234716015&currencyCode=TRY&search=100-9903004%3B106-1527%3Bdr-20261231-20270104%3Bdrs-40%3Brc-1-3&cds=kNZ4xCfMBzY1cQMtqskdX4tRH4RrjLXjut%2BvJSjCQ50rPgynad66oPYUx3STkHe%2BrJgG9APR6DfWZjM5g6jTNI0w17qFQDImbpZiAG3jN52FR7Mq%2F9BeLb45FPTuUWC9qZeT%2BELAJle7h%2BMmPLK2HKs5jK5x8TrNt8KQbePVo8ZtGP9MGGyaVKTtYHs1uSvaoPE%3D&cdsOrigin=DEAL_ON_DEALFINDER",
+          "rating": 8.6,
+          "distance": 0.2
+        },
+        {
+          "name": "Skadarlija ❥House of The Greats Apartmanları❥",
+          "id": "100-42445024",
+          "amount": 45543,
+          "advertiser": "Airbnb",
+          "attrs": [
+            "roomOnly"
+          ],
+          "url": "https://www.trivago.com.tr/tr/lm/tüm-ev-apart-daire-skadarlija-house-of-the-greats-apartmanları-belgrad?cip=234716015&currencyCode=TRY&search=100-42445024%3B106-1527%3Bdr-20261231-20270104%3Bdrs-40%3Brc-1-3&cds=Q2wHE2X2XNZK3c1G9769SQ9tXXp9itXw%2Bhv7Te3PFz9q6y14URM%2Bf00pYTuxi6sH9hF3TDj6kP0an6I9HHNfXtYXIzlvUZfGE4WCSkSuFLNFkbQ0kBtGIRxgRWMn6GymDzzZXA3Qf7G07b%2FkHlSz0ehJTNaZ4o7IgoQ2iBKUctTSeIPcBe5aXxPg&cdsOrigin=DEAL_ON_DEALFINDER",
+          "rating": 9.4,
+          "distance": 0.4
+        }
+      ]
     }
   ],
   "checks": [
@@ -1753,6 +2014,58 @@
       "saving": -233,
       "pct": -0.68,
       "url": "https://www.trivago.com.tr/tr/lm/tüm-ev-apart-daire-parlamento-ve-aziz-markos-belgrad?cip=234716015&currencyCode=TRY&search=100-42151046%3B106-1527%3Bdr-20261230-20270103%3Bdrs-40%3Brc-1-3&cds=scBnbub0FEa6SfwISwdvlPwnbuKVbzXylJzo3g91%2Bw5joqu2DIHE%2FggniI3%2Fv0Sy4Ue3wqoMFDK%2FexPV4OUmvEdCFdZxfiKe1BQHYH6wFAeuGA06ry%2BFbdBRhWfMXcfLh%2F%2B5oWxm%2BY7KiYTS0Y%2B%2ByB7GrHGrJbqUc2va%2FIDtHM7G12i%2BSa7SKA%3D%3D&cdsOrigin=DEAL_ON_DEALFINDER",
+      "strict_room_identical": false
+    },
+    {
+      "adults": 3,
+      "outbound": "2026-12-31",
+      "inbound": "2027-01-02",
+      "hotel": "San Art Floating Hostel & Apartments",
+      "advertiser": "Booking.com",
+      "rate_attributes": [
+        "breakfastIncluded",
+        "freeCancellation",
+        "payAtProperty"
+      ],
+      "previous_best": 12805,
+      "new_price": 12833,
+      "saving": -28,
+      "pct": -0.22,
+      "url": "https://www.trivago.com.tr/tr/lm/san-art-floating-hostel-apartments-belgrad?cip=234716015&currencyCode=TRY&search=100-2289696%3B106-1527%3Bdr-20261231-20270102%3Bdrs-40%3Brc-1-3&cds=4lEUisZxNiQkq7%2FgPNvtZ0RlyHoUf4WjT5PHR2TCC6f0KmhI4ELx0FImBNnod0zRvtLREj03dyAnpZjKdTULHHKFYwQpmjYpgOCrq0hk4voXmNJPwr4j83858chPVSoDkuDDu0GDGT2UzocfXxG%2Fa%2BlS47AQ0wRZ3icqz3llPMSTs8hTC0qwNhe5nJj6eoyc&cdsOrigin=DEAL_ON_DEALFINDER",
+      "strict_room_identical": false
+    },
+    {
+      "adults": 3,
+      "outbound": "2026-12-31",
+      "inbound": "2027-01-02",
+      "hotel": "Apartment Milan",
+      "advertiser": "Booking.com",
+      "rate_attributes": [
+        "freeCancellation",
+        "payAtProperty",
+        "roomOnly"
+      ],
+      "previous_best": 19259,
+      "new_price": 19342,
+      "saving": -83,
+      "pct": -0.43,
+      "url": "https://www.trivago.com.tr/tr/lm/tüm-ev-apart-daire-apartment-milan-belgrad?cip=234716015&currencyCode=TRY&search=100-39200780%3B106-1527%3Bdr-20261231-20270102%3Bdrs-40%3Brc-1-3&cds=gtokVITpgIs3yxiiaVSCgCwuk6pw7oo3GoUoltlrBWKilJXW6tST3EjkfiJ3ax1aFGgcsF7AgRCavjFZ15y15eIOz0TudtuZe7tPh9pYQbr%2FxB0ucP5CZhI4IMUnTrA4%2FLKJwGG0IpT7JRCaltJexrJln74G8L3p3mEAU5OFziroFEGbkyUJTyXTSh%2B6Oh5J8w%3D%3D&cdsOrigin=DEAL_ON_DEALFINDER",
+      "strict_room_identical": false
+    },
+    {
+      "adults": 3,
+      "outbound": "2026-12-31",
+      "inbound": "2027-01-04",
+      "hotel": "Parlamento ve Aziz Markos",
+      "advertiser": "Airbnb",
+      "rate_attributes": [
+        "roomOnly"
+      ],
+      "previous_best": 34249,
+      "new_price": 34482,
+      "saving": -233,
+      "pct": -0.68,
+      "url": "https://www.trivago.com.tr/tr/lm/tüm-ev-apart-daire-parlamento-ve-aziz-markos-belgrad?cip=234716015&currencyCode=TRY&search=100-42151046%3B106-1527%3Bdr-20261231-20270104%3Bdrs-40%3Brc-1-3&cds=2R3kud8YxvjR7qyxdG1yOAK4tMihISOitw0Boe9qJnqqaAe22u2fes5s0SYpllJBCX6WvCtMbCcVn0x19rKVa86YY6fkSbkMKH0DdJIaWyA6ctVJhAH%2B8zBCkujjzJ%2Fus%2FWdTX63DhM6KeVEWKem3Ffu3ruJJK0q2ZVrjC7G9n5m3goa93IiLg%3D%3D&cdsOrigin=DEAL_ON_DEALFINDER",
       "strict_room_identical": false
     }
   ]
