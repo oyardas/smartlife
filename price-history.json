@@ -2999,7 +2999,7 @@
           "flight_price": null,
           "outbound_price": 33405.6,
           "return_price": null,
-          "outbound_time": "05:25",
+          "outbound_time": "07:00",
           "combined_total": null,
           "nye_eligible": true
         },
@@ -3018,7 +3018,7 @@
           "flight_price": 70603.6,
           "outbound_price": 33405.6,
           "return_price": 37198,
-          "outbound_time": "05:25",
+          "outbound_time": "07:00",
           "combined_total": 88138.6,
           "nye_eligible": true
         },
@@ -3037,7 +3037,7 @@
           "flight_price": 53325.6,
           "outbound_price": 33405.6,
           "return_price": 19920,
-          "outbound_time": "05:25",
+          "outbound_time": "07:00",
           "combined_total": 74645.6,
           "nye_eligible": true
         },
@@ -3167,7 +3167,7 @@
           "flight_price": null,
           "outbound_price": 50108.4,
           "return_price": null,
-          "outbound_time": "05:25",
+          "outbound_time": "07:00",
           "combined_total": null,
           "nye_eligible": true
         },
@@ -3186,7 +3186,7 @@
           "flight_price": 105905.4,
           "outbound_price": 50108.4,
           "return_price": 55797,
-          "outbound_time": "05:25",
+          "outbound_time": "07:00",
           "combined_total": 133159.4,
           "nye_eligible": true
         },
@@ -3204,7 +3204,7 @@
           "flight_price": 79988.4,
           "outbound_price": 50108.4,
           "return_price": 29880,
-          "outbound_time": "05:25",
+          "outbound_time": "07:00",
           "combined_total": 114470.4,
           "nye_eligible": true
         }
@@ -3212,7 +3212,7 @@
       "matched_hotel_offers": 69,
       "potential_hotel_drops": [],
       "potential_flight_drops": [],
-      "notes": "No verified price drop; historical bests preserved in prior snapshots, this new flight+hotel search is not necessarily the same itinerary or room as historical best."
+      "notes": "No verified price drop; historical bests preserved in prior snapshots, this new flight+hotel search is not necessarily the same itinerary or room as historical best. At the same Pegasus morning fare, the 07:00 departure was preferred to 05:25 because SAW layover is shorter (2h20 vs 3h55)."
     }
   ]
 }
