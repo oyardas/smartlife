@@ -53,6 +53,24 @@
 .watch-flex-card .watch-flex-caption{font-size:.74rem;color:#b5c6d2}
 .watch-flex-card a{margin-top:auto;align-self:flex-start}
 @media(max-width:750px){.watch-flex-list{grid-template-columns:1fr}.watch-flex-box{padding:11px}.watch-flex-card{padding:11px}}
+
+/* Generic loyalty scenario calculator; user balances never embedded in repository. */
+.loyalty-planner{margin:16px 0;padding:17px;border:1px solid #527e8a;border-radius:16px;background:linear-gradient(145deg,#152632,#101b25)}
+.loyalty-head{display:flex;gap:12px;justify-content:space-between;align-items:flex-start;flex-wrap:wrap}
+.loyalty-head h3{font-size:1.17rem;margin:5px 0}.loyalty-head p{max-width:690px;margin:0 0 12px}
+.loyalty-inputs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:13px 0}
+.loyalty-inputs label{display:flex;flex-direction:column;gap:6px;color:#ced8e1;font-size:.77rem;min-width:0}
+.loyalty-inputs input,.loyalty-inputs select{background:#0c1620;color:#fff;border:1px solid #52697a;padding:10px 11px;border-radius:9px;width:100%;min-height:44px;font-size:1rem}
+.loyalty-inputs :is(input,select):focus-visible{outline:2px solid #95cfda;outline-offset:2px}
+.loyalty-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
+.loyalty-metric{padding:10px;border-radius:10px;border:1px solid #365061;background:#12202b}
+.loyalty-metric small{display:block;color:#b0c4cf;font-size:.71rem}
+.loyalty-metric strong{display:block;font-size:1.05rem;margin-top:5px}
+.loyalty-result{padding:11px 13px;border-radius:9px;background:#10252a;border:1px solid #2c5d63;margin-top:11px;font-size:.82rem}
+.loyalty-result .positive{color:#91e2bd;font-weight:800}
+.loyalty-result .negative{color:#ffc48c;font-weight:800}
+.loyalty-planner .watch-links{margin-top:11px}
+@media(max-width:690px){.loyalty-planner{padding:12px}.loyalty-inputs,.loyalty-metrics{grid-template-columns:1fr}.loyalty-head h3{font-size:1.06rem}}
 </style>
 </head>
 <body>
@@ -103,7 +121,23 @@
   <div id="watchFlexibleList" class="watch-flex-list"></div>
   <div id="watchFlexibleSource" class="watch-foot"></div>
 </div>
-  <div class="watch-overview" id="watchOverview">Fiyatlar gösterilecek.</div><div class="watch-foot" id="watchLatestScan" style="margin-top:10px"></div><div class="watch-foot" id="watchNightTradeoff" style="margin-top:10px"></div>
+  <div id="loyaltyPlanner" class="loyalty-planner">
+  <div class="loyalty-head">
+    <div><div class="kicker">BOLBOL + MILES&SMILES • PUAN ETKİSİ</div><h3>Uçuşu puanla ödersem ne değişir?</h3><p class="mini muted">Hesaplama, yukarıdaki 2 / 3 kişi seçimine göre otomatik güncellenir. Puan bakiyeniz sunucuya gönderilmez ve GitHub dosyalarına kaydedilmez.</p></div>
+    <a href="https://www.flypgs.com/bolbol/bolbol-harca" target="_blank" rel="noopener noreferrer" class="btn">Pegasus puanla bilet ↗</a>
+  </div>
+  <div class="loyalty-inputs">
+    <label>Tarih kombinasyonu<select id="loyaltyDate"><option value="2027-01-04">31 Aralık – 4 Ocak (4 gece)</option><option value="2027-01-03">31 Aralık – 3 Ocak (3 gece)</option></select></label>
+    <label>BolPuan bakiyeniz (isteğe bağlı)<input id="loyaltyPoints" inputmode="decimal" type="text" autocomplete="off" placeholder="Puan sayısını girin"/></label>
+    <label>Bu bilet için kullanacağınız BolPuan<input id="loyaltyRedeemed" inputmode="numeric" type="number" min="0" step="1" placeholder="Ör. 25000"/></label>
+    <label>Pegasus'ta puan sonrası kalan toplam TL<input id="loyaltyCash" inputmode="decimal" type="text" autocomplete="off" placeholder="Ödeme ekranındaki tutar"/></label>
+  </div>
+  <div class="loyalty-metrics" id="loyaltyMetrics" aria-live="polite">Hesaplama yükleniyor…</div>
+  <div class="loyalty-result" id="loyaltyResult" aria-live="polite"></div>
+  <div class="watch-foot" id="loyaltyDisclaimer">Puanların TL karşılığı varsayılmaz. Ödül koltuğu, aktarma bacakları, bagaj, vergi ve son ödeme ekranı kontrol edilmelidir.</div>
+  <div class="watch-links"><a href="https://www.flypgs.com/pegasus-bolbol-uyelik-sozlesmesi" target="_blank" rel="noopener noreferrer">BolBol resmi kurallar ↗</a><a href="https://www.turkishairlines.com/tr-de/miles-and-smiles/mil-uygulamalari/cash-and-miles/" target="_blank" rel="noopener noreferrer">THY Cash&amp;Miles kuralları ↗</a></div>
+</div>
+<div class="watch-overview" id="watchOverview">Fiyatlar gösterilecek.</div><div class="watch-foot" id="watchLatestScan" style="margin-top:10px"></div><div class="watch-foot" id="watchNightTradeoff" style="margin-top:10px"></div>
   <div id="watchList" class="watch-list"></div>
   <div class="watch-foot">Tabloda <b>29 Ekim uçuş+konaklama referansları</b> ile <b>31 Ekim Trivago konaklama teklifleri</b> tarihleri belirtilerek ayrı gösterilir. Uçuş ve yeni konaklama verileri tek bir güncel toplam fiyat değildir. Uçuşlarda bagaj hakkı ve nihai ödeme toplamı teyit edilmedi. Tüm havayollarını kapsayan en düşük fiyat iddiası değildir. Yukarıdaki tarih ısı haritası ise hâlâ ayrı bir <b>planlama modeli</b>dir.</div>
   <div class="watch-links"><a class="btn" href="https://www.flypgs.com/" target="_blank" rel="noopener">Pegasus'ta kontrol et ↗</a><a class="btn" href="https://ajet.com/" target="_blank" rel="noopener">AJet direkt uçuşları ↗</a><a class="btn" href="https://www.trivago.com.tr/" target="_blank" rel="noopener">Trivago konaklama ↗</a><a class="btn" href="https://skyscanner.net/g/referrals/v1/flights/home?mediaPartnerId=2850210&amp;utm_term=skyscanner_chatgpt_app_data" target="_blank" rel="noopener">Skyscanner karşılaştır ↗</a></div>
@@ -425,10 +459,49 @@ function renderFlexibleFlights(){
  }).join('');
  $('watchFlexibleSource').textContent='Fiyat kaynak kontrolü: '+d.checked_at+' • Fırsat Uçuş sayfa veri zamanı: '+d.source_snapshot_at+' • '+d.note+' Yeni doğrulanmış dip fiyat alarmı oluşturulmadı.';
 }
+function loyaltyNum(raw){
+ const s=String(raw??'').trim().replace(/\s/g,'').replace(',','.');
+ if(s==='')return null;
+ const n=Number(s);
+ return Number.isFinite(n)&&n>=0?n:NaN;
+}
+function renderLoyaltyPlanner(){
+ const el=$('loyaltyPlanner'),d=watchSnapshot;
+ if(!el||!d||!d.loyalty_model)return;
+ const inbound=$('loyaltyDate').value||'2027-01-04';
+ const q=d.combinations.find(v=>v.adults===watchPeople&&v.outbound==='2026-12-31'&&v.inbound===inbound);
+ if(!q)return;
+ const pf=q.flight?.total,stay=q.hotel?.total,normal=pf+stay;
+ const mb=d.loyalty_model.pegasus,points=loyaltyNum($('loyaltyPoints').value);
+ const redeemed=loyaltyNum($('loyaltyRedeemed').value),cash=loyaltyNum($('loyaltyCash').value);
+ const metric=(label,value)=>'<div class="loyalty-metric"><small>'+watchEsc(label)+'</small><strong>'+watchEsc(value)+'</strong></div>';
+ $('loyaltyMetrics').innerHTML=metric(watchPeople+' kişi / uçuş (nakit referansı)',watchMoney(pf))+metric(q.nights+' gece / '+q.hotel.name,watchMoney(stay))+metric('Puan kullanmadan toplam',watchMoney(normal));
+ let status='Puanla gerçek tasarrufu hesaplamak için Pegasus ödeme ekranında bu yolcu sayısı ve tarihler için gösterilen <b>puan sonrası kalan TL</b> tutarını girin. Ödül bilet için <b>25.000 BolPuan</b>, kış dönemi uluslararası tek yön referansıdır; aktarmalı uçuşun kesin puan ihtiyacı değildir.';
+ if(Number.isNaN(points)||Number.isNaN(redeemed)||Number.isNaN(cash)){
+   status='<span class="negative">Geçerli, sıfır veya daha büyük bir sayı girin.</span>';
+ }else if(points!==null&&redeemed!==null&&redeemed>points){
+   status='<span class="negative">Kullanılacak puan, mevcut BolPuan bakiyesini aşamaz.</span>';
+ }else{
+   if(points!==null)status+=' <b>Girilen bakiye:</b> '+new Intl.NumberFormat('tr-TR',{maximumFractionDigits:1}).format(points)+' BolPuan.';
+   if(points!==null&&redeemed!==null)status+=' <b>Kalan puan:</b> '+new Intl.NumberFormat('tr-TR',{maximumFractionDigits:1}).format(points-redeemed)+'.';
+   if(cash!==null){
+      const difference=pf-cash;
+      const newTrip=cash+stay;
+      status=(difference>=0?'<span class="positive">Nakit uçuş giderinde hesaplanan fark: '+watchMoney(difference)+' ('+(pf>0?(100*difference/pf).toFixed(1).replace('.',','):'0')+'%).</span>':'<span class="negative">Puanlı ödeme nakit referansından '+watchMoney(-difference)+' daha yüksek görünüyor.</span>')+
+       ' <b>Puanlı ödeme ile tahmini seyahat toplamı:</b> '+watchMoney(newTrip)+'. Konaklama aynı eski fiyat gözlemine dayanır; bagaj ve yeni otel fiyatları ayrıca doğrulanmalıdır.'+
+       (redeemed===null?' <b>Harcanan BolPuan sayısını da ekleyerek kalan bakiyeyi görün.</b>':'');
+   }
+ }
+ $('loyaltyResult').innerHTML=status;
+ $('loyaltyDisclaimer').textContent='Uçuş/konaklama tutarları '+d.loyalty_model.checked_at+' tarihli fiyat gözlemidir. Vergi ve bagaj dahil kesin rezervasyon tutarı olmayabilir. İlk puan kullanımında yalnızca üyenin kendi adına bilet alınabilir; diğer yolcular için Pegasus BolBol şartları geçerlidir. THY Cash&Miles en fazla vergi hariç bilet bedelinin %50’sine uygulanabilir; sabit mil/TL oranı yoktur ve AJet uçuşlarında kullanılamaz. Her iki puan programının TL faydası, resmi ödeme ekranı olmadan kesinleştirilemez.';
+}
+document.querySelectorAll('#loyaltyPlanner input').forEach(el=>el.addEventListener('input',renderLoyaltyPlanner));
+$('loyaltyDate').addEventListener('change',()=>{$('loyaltyCash').value='';renderLoyaltyPlanner()});
 function renderWatchPanel(){
  const d=watchSnapshot;
  if(!d||!Array.isArray(d.combinations))return;
  renderFlexibleFlights();
+ renderLoyaltyPlanner();
  document.querySelectorAll('[data-watch-people]').forEach(b=>{const on=Number(b.dataset.watchPeople)===watchPeople;b.classList.toggle('active',on);b.setAttribute('aria-pressed',String(on))});
  $('watchStatus').textContent='Son Pegasus+Trivago uçuş ve konaklama fiyat gözlemi: '+(d.checked_at||'Tarih belirtilmedi')+' • Konaklama son tekrar kontrol: '+(d.latest_hotel_scan?.checked_at||'—')+' • '+d.combinations.length+' senaryo • TL • Bagaj teyit edilmedi';
  const hs=d.latest_hotel_scan; if(hs){const x=hs.headline_comparisons||[];const stats=x.map(z=>z.adults+' kişi, '+z.hotel+': '+watchMoney(z.previous_quote)+' → '+watchMoney(z.new_quote)).join(' • ');$('watchLatestScan').textContent=(d.alert?'Doğrulanmış yeni fiyat düşüşü var. ':'Yeni doğrulanmış dip fiyat yok. ')+'Son konaklama kontrolü: '+hs.checked_at+' • '+hs.checked_combinations+' senaryo tarandı; '+hs.comparable_previous_property_offers+' aynı tesis/teklif koşulu karşılaştırılabildi. '+stats+'. Pegasus tarihli fiyatlar yeniden kontrol edildi; bagaj paketi, oda kategorisi ve son ödeme tutarı belirsiz. AJet direkt uçuş tarifesi var ancak hedef tarihte ücreti teyit edilmedi.';}
@@ -449,7 +522,7 @@ function renderWatchPanel(){
  return '<div class="watch-row '+(marked?'best ':'')+(!ok?'invalid':'')+'"><div><strong>'+watchDate(q.outbound)+' → '+watchDate(q.inbound)+'</strong><small>'+q.nights+' gece'+(q.nights<3||q.nights>5?' • hedef süre dışı':'')+'</small></div><div><small>Trivago fiyat gözlemi • '+q.hotel.rating+'/10</small><strong>'+watchMoney(q.hotel.total)+'</strong><small>'+watchEsc(q.hotel.name)+'</small>'+freshHTML+'</div><div><small>Pegasus gidiş-dönüş</small><strong>'+watchMoney(q.flight.total)+'</strong><small>'+(q.flight.total!=null?((q.flight.outbound_departure||'—')+' • SAW aktarmalı'):'Eksik yön / fiyat yok')+'</small></div><div><small>Birleşik çekirdek toplam</small><strong>'+watchMoney(q.combined_total)+'</strong><small>Ek bagaj hariç / bilinmiyor</small></div><div><small>Uygunluk</small><strong>'+(marked?'Tarama kapsamındaki en ekonomik':ok?'Yılbaşına yetişir':'Karşılaştırma sınırlı')+'</strong><span class="watch-tag">'+warn+'</span></div></div>'
  }).join('');
 }
-document.querySelectorAll('[data-watch-people]').forEach(b=>b.addEventListener('click',()=>{watchPeople=Number(b.dataset.watchPeople);renderWatchPanel()}));
+document.querySelectorAll('[data-watch-people]').forEach(b=>b.addEventListener('click',()=>{watchPeople=Number(b.dataset.watchPeople);$('loyaltyCash').value='';renderWatchPanel()}));
 async function loadPriceAlert(){try{const r=await fetch('price-data.json?ts='+Date.now(),{cache:'no-store'});if(!r.ok)return;const d=await r.json();watchSnapshot=d;renderWatchPanel();if(!d.alert)return;const el=$('priceAlert');const t=$('priceAlertText');t.textContent=(d.label||'Yeni dip fiyat')+' • '+(d.new_price?money(d.new_price):'')+(d.previous_best?' • Önceki en iyi '+money(d.previous_best):'')+(d.saving?' • Tasarruf '+money(d.saving):'')+(d.saving_pct?' (%'+d.saving_pct+')':'')+(d.checked_at?' • '+d.checked_at:'');el.classList.remove('hidden')}catch(e){}}
 $('dismissPriceAlert').addEventListener('click',()=>$('priceAlert').classList.add('hidden'));
 window.addEventListener('load',()=>{load();initMap();loadPriceAlert();setTimeout(()=>map&&map.invalidateSize(),250)});window.addEventListener('resize',()=>map&&map.invalidateSize());
