@@ -39,6 +39,20 @@
 .watch-foot{margin-top:11px;font-size:.78rem;color:#a5b8c8;line-height:1.55}
 .watch-links{display:flex;gap:9px;flex-wrap:wrap;margin-top:12px}.watch-links a{font-size:.78rem}
 @media(max-width:780px){.watch-wrap{padding:11px}.watch-row{grid-template-columns:1fr 1fr;gap:10px}.watch-row>div:first-child{grid-column:span 2;padding-bottom:8px;border-bottom:1px solid #344455}.watch-row>div:last-child{grid-column:span 2;padding-top:7px;border-top:1px solid #344455}.watch-switch button{min-width:90px}.watch-overview{line-height:1.6}}
+
+/* Separate indicative flight quotes: never replace confirmed flight + hotel baseline. */
+.watch-flex-box{margin:14px 0 16px;padding:15px;border:1px solid #586278;background:#131c29;border-radius:14px}
+.watch-flex-heading{display:flex;gap:12px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap}
+.watch-flex-heading h3{margin:4px 0 6px;font-size:1.12rem}.watch-flex-heading p{margin:3px 0 10px}
+.watch-flex-summary{padding:12px;border:1px solid #375a64;background:#172833;border-radius:10px;font-size:.85rem}
+.watch-flex-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:11px}
+.watch-flex-card{padding:13px;border:1px solid #35475b;border-radius:12px;background:#111c28;display:flex;flex-direction:column;gap:6px;min-width:0}
+.watch-flex-card.featured{border-color:#79b6a7;background:#192f2e}.watch-flex-card.muted-card{border-style:dashed}
+.watch-flex-card .watch-flex-price{color:#a3eed3;font-size:1.3rem;font-weight:900}
+.watch-flex-card .watch-flex-price small{font-size:.74rem;color:#c3d4dc;font-weight:500}
+.watch-flex-card .watch-flex-caption{font-size:.74rem;color:#b5c6d2}
+.watch-flex-card a{margin-top:auto;align-self:flex-start}
+@media(max-width:750px){.watch-flex-list{grid-template-columns:1fr}.watch-flex-box{padding:11px}.watch-flex-card{padding:11px}}
 </style>
 </head>
 <body>
@@ -80,9 +94,15 @@
 <section id="fiyat-takibi" class="wrap" aria-label="Gerçek fiyat taraması">
 <div class="watch-wrap">
   <div class="watch-head">
-    <div><div class="kicker">FİYAT İZLEME • SON TARAMA</div><h3>Tarama anındaki gerçek fiyat teklifleri</h3><div class="watch-status" id="watchStatus">Kaydedilen fiyat verisi yükleniyor…</div></div>
+    <div><div class="kicker">FİYAT İZLEME • SON TARAMA</div><h3>Fiyat gözlemleri: uçuş ve konaklama</h3><div class="watch-status" id="watchStatus">Kaydedilen fiyat verisi yükleniyor…</div></div>
     <div class="watch-switch" role="group" aria-label="Yolcu sayısı"><button type="button" class="active" data-watch-people="3" aria-pressed="true">3 kişi</button><button type="button" data-watch-people="2" aria-pressed="false">2 kişi</button></div>
   </div>
+  <div class="watch-flex-box" aria-label="Esnek tarih uçak bileti fiyatları">
+  <div class="watch-flex-heading"><div><div class="kicker">ESNEK TARİH • 31 EKİM KONTROLÜ</div><h3>En uygun görünen gidiş-dönüş uçuşlar</h3><p class="mini muted">2 veya 3 kişi için fiyat göstergeleri. Önceki Pegasus + Trivago tablosuyla karıştırılmamalıdır.</p></div><span class="watch-tag">Bagaj / ödeme toplamı doğrulanmadı</span></div>
+  <div id="watchFlexibleSummary" class="watch-flex-summary" role="status">Yeni esnek uçuş teklifleri yükleniyor…</div>
+  <div id="watchFlexibleList" class="watch-flex-list"></div>
+  <div id="watchFlexibleSource" class="watch-foot"></div>
+</div>
   <div class="watch-overview" id="watchOverview">Fiyatlar gösterilecek.</div><div class="watch-foot" id="watchLatestScan" style="margin-top:10px"></div><div class="watch-foot" id="watchNightTradeoff" style="margin-top:10px"></div>
   <div id="watchList" class="watch-list"></div>
   <div class="watch-foot">Tabloda <b>29 Ekim uçuş+konaklama referansları</b> ile <b>31 Ekim Trivago konaklama teklifleri</b> tarihleri belirtilerek ayrı gösterilir. Uçuş ve yeni konaklama verileri tek bir güncel toplam fiyat değildir. Uçuşlarda bagaj hakkı ve nihai ödeme toplamı teyit edilmedi. Tüm havayollarını kapsayan en düşük fiyat iddiası değildir. Yukarıdaki tarih ısı haritası ise hâlâ ayrı bir <b>planlama modeli</b>dir.</div>
@@ -389,9 +409,26 @@ let watchSnapshot=null,watchPeople=3;
 function watchEsc(x){return String(x==null?'':x).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 function watchMoney(x){return (typeof x==='number'&&Number.isFinite(x))?new Intl.NumberFormat('tr-TR',{style:'currency',currency:'TRY',maximumFractionDigits:0}).format(x):'—'}
 function watchDate(x){const m=x.slice(5,7)==='12'?'Ara':'Oca';return Number(x.slice(8,10))+' '+m}
+function renderFlexibleFlights(){
+ const d=watchSnapshot && watchSnapshot.flexible_flight_scan;
+ if(!d || !Array.isArray(d.offers))return;
+ const obs=d.offers.filter(o=>o.category==='cached_roundtrip').sort((a,b)=>a.price_per_adult-b.price_per_adult);
+ const best=obs[0];
+ $('watchFlexibleSummary').innerHTML=best?
+  '<b>Kaydedilen en düşük tek kaynaklı gidiş-dönüş fiyat göstergesi:</b> '+watchDate(best.outbound)+' → '+watchDate(best.inbound)+' • <strong>'+watchMoney(best.price_per_adult*watchPeople)+'</strong> / '+watchPeople+' kişi ('+watchMoney(best.price_per_adult)+'/kişi). <span class="watch-tag">Önbellek fiyatı; yılbaşı öncesi varış, bagaj ve ödeme ekranı doğrulanmadı.</span>':
+  'Bu aralıkta doğrulanabilir gidiş-dönüş fiyat göstergesi bulunamadı.';
+ $('watchFlexibleList').innerHTML=[...d.offers].sort((a,b)=>a.order-b.order).map(o=>{
+  const amount=(typeof o.price_per_adult==='number')?watchMoney(o.price_per_adult*watchPeople):'Ücret bulunamadı';
+  const flag=({cached_roundtrip:'Önbelleğe alınmış gidiş-dönüş teklifi',search_index_only:'Arama dizini kaydı · sayfada yeniden doğrulanmadı',assembled_indicative:'İki ayrı tek yön toplamı · satın alınabilir bilet değil',schedule_only:'Direkt tarife · fiyat teyitsiz'})[o.category]||'Gösterge';
+  const safe=typeof o.url==='string' && /^https:\/\/(firsatucus\.com|skyscanner\.net|ajet\.com)\//.test(o.url) ? o.url : null;
+  return '<article class="watch-flex-card '+(o.id===best?.id?'featured ':'')+(o.category!=='cached_roundtrip'?'muted-card':'')+'"><div><strong>'+watchDate(o.outbound)+' → '+watchDate(o.inbound)+'</strong> · '+o.nights+' gece</div><div class="watch-flex-price">'+amount+'</div><div class="watch-flex-caption">'+watchEsc(o.airline)+' · '+watchEsc(o.routing)+'</div><div class="watch-flex-caption">'+watchEsc(flag)+'</div><div class="watch-flex-caption">'+watchEsc(o.source)+'</div><div class="watch-flex-caption">Bireysel referans: '+watchMoney(o.price_per_adult)+' · Bagaj bilinmiyor · '+(o.arrival_before_new_year==='scheduled'?'Tarifeye göre yılbaşı öncesi varış':'Varış saati doğrulanmadı')+'</div>'+(safe?'<a class="btn" href="'+watchEsc(safe)+'" target="_blank" rel="noopener noreferrer">Kaynağı / bileti kontrol et ↗</a>':'')+'</article>';
+ }).join('');
+ $('watchFlexibleSource').textContent='Fiyat kaynak kontrolü: '+d.checked_at+' • Fırsat Uçuş sayfa veri zamanı: '+d.source_snapshot_at+' • '+d.note+' Yeni doğrulanmış dip fiyat alarmı oluşturulmadı.';
+}
 function renderWatchPanel(){
  const d=watchSnapshot;
  if(!d||!Array.isArray(d.combinations))return;
+ renderFlexibleFlights();
  document.querySelectorAll('[data-watch-people]').forEach(b=>{const on=Number(b.dataset.watchPeople)===watchPeople;b.classList.toggle('active',on);b.setAttribute('aria-pressed',String(on))});
  $('watchStatus').textContent='Son Pegasus+Trivago uçuş ve konaklama fiyat gözlemi: '+(d.checked_at||'Tarih belirtilmedi')+' • Konaklama son tekrar kontrol: '+(d.latest_hotel_scan?.checked_at||'—')+' • '+d.combinations.length+' senaryo • TL • Bagaj teyit edilmedi';
  const hs=d.latest_hotel_scan; if(hs){const x=hs.headline_comparisons||[];const stats=x.map(z=>z.adults+' kişi, '+z.hotel+': '+watchMoney(z.previous_quote)+' → '+watchMoney(z.new_quote)).join(' • ');$('watchLatestScan').textContent=(d.alert?'Doğrulanmış yeni fiyat düşüşü var. ':'Yeni doğrulanmış dip fiyat yok. ')+'Son konaklama kontrolü: '+hs.checked_at+' • '+hs.checked_combinations+' senaryo tarandı; '+hs.comparable_previous_property_offers+' aynı tesis/teklif koşulu karşılaştırılabildi. '+stats+'. Pegasus tarihli fiyatlar yeniden kontrol edildi; bagaj paketi, oda kategorisi ve son ödeme tutarı belirsiz. AJet direkt uçuş tarifesi var ancak hedef tarihte ücreti teyit edilmedi.';}
