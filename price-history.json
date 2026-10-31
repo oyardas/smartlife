@@ -3214,5 +3214,57 @@
       "potential_flight_drops": [],
       "notes": "No verified price drop; historical bests preserved in prior snapshots, this new flight+hotel search is not necessarily the same itinerary or room as historical best. At the same Pegasus morning fare, the 07:00 departure was preferred to 05:25 because SAW layover is shorter (2h20 vs 3h55)."
     }
+  ],
+  "flight_indicative_observations": [
+    {
+      "checked_at": "2026-10-31",
+      "source": "Fırsat Uçuş + Skyscanner indicative",
+      "source_snapshot_at": "2026-10-30 06:47 (Türkiye saati; Fırsat Uçuş rota sayfası)",
+      "offers": [
+        {
+          "id": "fu-31dec-3jan",
+          "outbound": "2026-12-31",
+          "inbound": "2027-01-03",
+          "category": "cached_roundtrip",
+          "price_per_adult": 16154,
+          "baggage_included": "unknown"
+        },
+        {
+          "id": "fu-29dec-2jan",
+          "outbound": "2026-12-29",
+          "inbound": "2027-01-02",
+          "category": "cached_roundtrip",
+          "price_per_adult": 16725,
+          "baggage_included": "unknown"
+        },
+        {
+          "id": "fu-30dec-3jan-index",
+          "outbound": "2026-12-30",
+          "inbound": "2027-01-03",
+          "category": "search_index_only",
+          "price_per_adult": 18855,
+          "baggage_included": "unknown"
+        },
+        {
+          "id": "ajet-31dec-3jan",
+          "outbound": "2026-12-31",
+          "inbound": "2027-01-03",
+          "category": "schedule_only",
+          "price_per_adult": null,
+          "baggage_included": "unknown"
+        },
+        {
+          "id": "sky-31dec-7jan",
+          "outbound": "2026-12-31",
+          "inbound": "2027-01-07",
+          "category": "assembled_indicative",
+          "price_per_adult": 11229,
+          "baggage_included": "unknown"
+        }
+      ],
+      "comparable_with_previous_pgs_trivago": false,
+      "verified_price_drop": false,
+      "notes": "Fiyatlar farklı teklif sağlayıcılarından, farklı tarifelerden veya tek yön göstergelerinden geliyor; aynı uçuş ve bagaj sınıfına ait eski doğrulanmış fiyatla eşleşme yapılamıyor."
+    }
   ]
 }
