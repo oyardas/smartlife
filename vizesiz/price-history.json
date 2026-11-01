@@ -32,7 +32,7 @@
       "adults": 3,
       "flight": {
         "carrier": "Pegasus",
-        "amount_try": 31073.4,
+        "amount_try": 31034.4,
         "quoted_for_three_adults": true,
         "includes_adb_saw_segments": "SAW aktarması varsa Pegasus'un aynı arama sonucundaki iki bacak; ayrı bağlantı bedeli eklenmedi",
         "depart_local": "30 Ara 09:20 (SAW aktarma 6sa40dk)",
@@ -58,7 +58,7 @@
         "source_name": "trivago 3 yetişkin, 1 oda, tam konaklama teklif göstergesi",
         "deal_url": "https://www.trivago.com.tr/tr/lm/hotel-ultra-star-üsküp?cip=234716015&currencyCode=TRY&search=100-5025878%3B106-1527%3Bdr-20261230-20270104%3Bdrs-40%3Brc-1-3&cds=R15X6oQ1LU%2B5K3iGlEUs7mO2Qi%2BPW0GMZ6RzHQDJdPqCE0GbGI2PRZsfHitkZQvN31HDtjOKnaID7A%2FpCy6urjIKHW50YQ5admTkE%2Fog1uV1TM1QQTDf2XNRtMQMLGchp4GwNEB1yFz7VrAZNdLjMBf0WgWkETuQbb0Je6NOaS9GhvarogsJs1PaG3pXKnzJMg%3D%3D&cdsOrigin=DEAL_ON_DEALFINDER"
       },
-      "shown_flight_plus_hotel_try": 42224.4,
+      "shown_flight_plus_hotel_try": 42185.4,
       "planning_estimate_try": {
         "food_total_range": [
           13000,
@@ -87,7 +87,7 @@
       "adults": 3,
       "flight": {
         "carrier": "Pegasus",
-        "amount_try": 29861.4,
+        "amount_try": 31196.4,
         "quoted_for_three_adults": true,
         "includes_adb_saw_segments": "SAW aktarması varsa Pegasus'un aynı arama sonucundaki iki bacak; ayrı bağlantı bedeli eklenmedi",
         "depart_local": "30 Ara 19:05 (SAW aktarma 2sa40dk)",
@@ -113,7 +113,7 @@
         "source_name": "trivago 3 yetişkin, 1 oda, tam konaklama teklif göstergesi",
         "deal_url": "https://www.trivago.com.tr/tr/lm/hotel-italia-tirana?cip=234716015&currencyCode=TRY&search=100-3445432%3B106-1527%3Bdr-20261230-20270104%3Bdrs-40%3Brc-1-3&cds=4gYiRQoLFslgBrEh6yfTLdaHlVy%2Bu5RW%2F9d1lQnFc5qdU3ltPj9GspWf4G0mlDCi6bgq8v2HMkWLuGL9KK8P4L%2FB9dffo34jjzP7ETRLEPdaFBd%2FDl3toin2Td3vCeKbQoDIMiEpEqvKL8tkeVYmDUJ2tjtG2aI3xvFD9FGBDRUFDGrX4vg8qlYIV2WgMqTnfA%3D%3D&cdsOrigin=DEAL_ON_DEALFINDER"
       },
-      "shown_flight_plus_hotel_try": 45194.4,
+      "shown_flight_plus_hotel_try": 46529.4,
       "planning_estimate_try": {
         "food_total_range": [
           14000,
@@ -350,6 +350,51 @@
       "type": "first_independent_visa_free_observation",
       "verified_price_drop": false,
       "comment": "Alternatif tarihlerin daha düşük olması önceki aynı ürünün indirim gördüğünü kanıtlamaz."
+    },
+    {
+      "checked_on": "2026-11-01 akşam (Türkiye saati)",
+      "type": "visa_free_same_date_recheck",
+      "source": "Pegasus 3 yetişkin tarihli uçuş araması + Trivago 3 yetişkin / 1 oda 5 gece fiyatı",
+      "comparison_dates": "2026-12-30 → 2027-01-04",
+      "flights": {
+        "Üsküp": {
+          "previous": 31073.4,
+          "current": 31034.4,
+          "delta": -39,
+          "hotel": 11151,
+          "combined": 42185.4
+        },
+        "Tiran": {
+          "previous": 29861.4,
+          "current": 31196.4,
+          "delta": 1335,
+          "hotel": 15333,
+          "combined": 46529.4
+        },
+        "Priştine / Prizren": {
+          "previous": 27926.4,
+          "current": 27926.4,
+          "delta": 0,
+          "hotel": 17556,
+          "combined": 45482.4
+        },
+        "Girne / KKTC": {
+          "previous": 22122,
+          "current": 22122,
+          "delta": 0,
+          "hotel": 27878,
+          "combined": 50000
+        },
+        "Saraybosna": {
+          "previous": 34628.4,
+          "current": 34628.4,
+          "delta": 0,
+          "hotel": 18974,
+          "combined": 53602.4
+        }
+      },
+      "qualifying_alert": false,
+      "reason": "Bagaj+transfer dahil son ödeme teklifi doğrulanmadı. Aynı tarihlerde Üsküp yalnız 39 TL ucuzladı (önce 31.073,40 TL, şimdi 31.034,40 TL); Tiran 1.335 TL pahalılaştı. %10 veya 3.000 TL doğrulanmış eşdeğer indirim yok. Diğer fiyatlar değişmedi. Özel tarihli 28-29 Aralık / 2 Ocak ön teklifler değişmedi ve geçmiş korunuyor."
     }
   ],
   "sources": {
@@ -359,5 +404,7 @@
     "montenegro": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/turkey",
     "kosovo_entry": "https://mzv.gov.cz/pristina/cz/informace_pro_vstup_do_zeme_turistika/upozorneni_pro_cechy_cestujici_do_kosova.html",
     "georgia_insurance": "https://australia.mfa.gov.ge/en/news/629860-information-on-the-mandatory-health-insurance-policy-for-all-tourists-entering-georgia"
-  }
+  },
+  "last_check_slot": "2026-11-01 akşam (Europe/Istanbul)",
+  "verified_price_drop": false
 }
