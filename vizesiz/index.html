@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Vizesiz Yılbaşı 2026/27 | 3 Yetişkin – Maliyet Panosu</title>
+<style>
+:root{--bg:#0c111b;--panel:#141d2b;--panel2:#1b2738;--line:#2f3e53;--text:#f2f5f8;--muted:#aab9cb;--accent:#eabf73;--green:#89d0ae;--red:#f1a5a1;--blue:#8fd1ea}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:linear-gradient(155deg,#0c111b 0%,#111a29 60%,#0c111b 100%);color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.5}
+a{color:var(--blue)}
+a:hover{text-decoration:none}
+.wrap{max-width:1240px;margin:auto;padding:0 22px}
+header{border-bottom:1px solid var(--line);background:#111a28}
+header .wrap{display:flex;justify-content:space-between;gap:20px;align-items:center;padding-top:14px;padding-bottom:14px;flex-wrap:wrap}
+.kicker{color:var(--accent);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;font-weight:800}
+.back{font-size:.9rem}
+.hero{padding:52px 0 30px}
+h1{font-size:clamp(2rem,5vw,4rem);letter-spacing:-.045em;line-height:1.08;margin:.3rem 0 .8rem;max-width:950px}
+.hero p{color:var(--muted);max-width:950px}
+.pills{display:flex;flex-wrap:wrap;gap:9px;margin:20px 0}
+.pill{border:1px solid #42546b;border-radius:100px;padding:6px 12px;background:#182235;font-size:.81rem}
+.alert{border:1px solid #715846;background:#2b241f;border-radius:15px;padding:15px 20px;margin:18px 0;color:#ffdbb2}
+.alert strong{color:#ffdea8}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px;margin:26px 0}
+.stat{border:1px solid var(--line);background:linear-gradient(150deg,#1b2838,#121a28);padding:15px;border-radius:13px}
+.stat span{display:block;color:var(--muted);font-size:.75rem}
+.stat strong{display:block;font-size:1.32rem;margin-top:3px}
+section{margin:34px 0 48px}
+h2{font-size:1.64rem;letter-spacing:-.02em;margin-bottom:7px}
+.lead{color:var(--muted);font-size:.91rem;margin:3px 0 20px}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+button{border:1px solid #42546b;color:var(--text);background:#1a283a;padding:9px 12px;cursor:pointer;border-radius:10px;font:inherit}
+button[aria-pressed="true"]{background:#3b3324;border-color:#c19b58;color:#ffdfa9}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.card{padding:18px;border:1px solid var(--line);border-radius:16px;background:var(--panel)}
+.card .top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.card h3{font-size:1.19rem;margin:0}
+.night{font-size:.73rem;color:var(--muted)}
+.prices{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin:16px 0}
+.price{border-radius:10px;background:var(--panel2);padding:12px}
+.price span{display:block;color:var(--muted);font-size:.72rem}
+.price b{font-size:1.12rem;white-space:nowrap}
+.price.total{grid-column:1/-1;background:#302a22;border:1px solid #6c5737}
+.price.total b{color:#ffdfa1;font-size:1.5rem}
+.itinerary{font-size:.82rem;border-top:1px dashed #3a495c;padding-top:12px}
+.itinerary p{margin:5px 0}
+.itinerary strong{color:#d6e0ed}
+.fullbudget{border-top:1px solid #394657;padding-top:12px;margin-top:12px;font-weight:700}
+.fullbudget em{display:block;font-style:normal;font-weight:400;color:var(--muted);font-size:.75rem}
+.note{color:#cbd6e2;font-size:.78rem;margin:10px 0 0}
+.actions{display:flex;flex-wrap:wrap;gap:9px;margin-top:14px}
+.actions a{text-decoration:none;display:inline-flex;align-items:center;background:#23374c;border:1px solid #3d5a72;border-radius:8px;padding:7px 11px;font-size:.81rem}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:#141c28}
+table{width:100%;border-collapse:collapse;min-width:750px}
+th,td{padding:13px 15px;text-align:left;border-bottom:1px solid #2c3b4f;vertical-align:top}
+th{font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);background:#1a2636}
+td{font-size:.85rem}
+tbody tr:last-child td{border:0}
+.small{font-size:.77rem;color:var(--muted)}
+.highlight{color:var(--green);font-weight:700}
+footer{background:#111a28;border-top:1px solid var(--line);padding:25px 0 38px;color:var(--muted);font-size:.81rem}
+.sources a{margin-right:14px}
+.badge{font-size:.7rem;background:#383020;border:1px solid #795f3f;color:#f4ca8d;padding:4px 8px;border-radius:6px;white-space:nowrap}
+@media(max-width:780px){.cards{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{padding-top:30px}.wrap{padding:0 14px}}
+@media(max-width:400px){.stats{grid-template-columns:1fr 1fr}.price b{font-size:1rem}.card{padding:13px}.stat strong{font-size:1.05rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{body{background:#fff;color:#111}header,footer,.toolbar,.actions{display:none}.card,.stat,.tablewrap{break-inside:avoid;background:#fff;color:#111}.price,.price.total{background:#fff}.small,.lead,.note{color:#555}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><span class="kicker">Yılbaşı 2026 / 2027 · 3 yetişkin</span><a class="back" href="../">← Belgrad planlayıcısı (mevcut sayfa)</a></div></header>
+<main class="wrap">
+<div class="hero">
+<div class="kicker">Vizesiz destinasyonlar · İzmir çıkışlı</div>
+<h1>Üç kişi için en uygun yılbaşı seyahatleri</h1>
+<p>29–31 Aralık 2026 gidiş, 2–4 Ocak 2027 dönüş ve esnek tarihler karşılaştırılıyor. Bütün uçak fiyatları <b>3 yetişkinin toplam gidiş-dönüş</b> tutarıdır. İstanbul aktarması varsa İzmir bacakları aynı Pegasus rota teklifinin içindedir.</p>
+<div class="pills"><span class="pill">3 yetişkin</span><span class="pill">Gidiş + dönüş</span><span class="pill">Ulaşım nakit hedefi: ≤ 50.000 TL</span><span class="pill">Vizesiz / T.C. kimliği uygunluğu</span><span class="pill" id="checked">Kaydedilen kontrol yükleniyor…</span></div>
+<div class="alert"><strong>Fiyat doğrulama seviyesi: Ön teklif / kesin rezervasyon değil.</strong> Pegasus fiyatlarında ücret paketi, bagaj ve ödeme sayfasındaki kesin tutar; otellerde aynı tarifeyle üç kişilik oda, ısıtma ve nihai vergi/ücretler teyitsiz. Bu nedenle aşağıdaki 50.000 TL altı havayolu sonuçları <b>bagaj + transfer dahil bütçe garantisi değildir.</b> Onaylı fiyat düşüşü alarmı yoktur.</div>
+<div id="stats" class="stats"></div>
+</div>
+<section id="plans"><h2>Karşılaştırmalı seyahat paketleri</h2><p class="lead">Öncelikli senaryo: 30 Aralık 2026 – 4 Ocak 2027 (5 gece, 6 takvim günü). Seyahat bütçesi tahminleri; uçak+otel fiyatlarına ek olarak yemek, yerel transfer/turlar ve bagaj rezervinden oluşur.</p><div class="toolbar"><button type="button" data-sort="total" aria-pressed="true">Uçuş + otele göre</button><button type="button" data-sort="air" aria-pressed="false">Uçak fiyatına göre</button><button type="button" data-sort="hotel" aria-pressed="false">Otel fiyatına göre</button></div><div class="cards" id="cards"></div></section>
+<section id="flex"><h2>Esnek tarih fırsatları</h2><p class="lead">Aşağıdaki alternatifler önceki aynı üründe doğrulanmış fiyat düşüşü anlamına gelmez; farklı gidiş/dönüş günlerine ait ayrı tekliflerdir. Özellikle 02.01 sabahı 04:55 Ercan dönüşü transfer ve uyku konforu bakımından dikkat gerektirir.</p><div class="tablewrap"><table><thead><tr><th>Yer / tarihler</th><th>3 kişi uçuş</th><th>Konaklama</th><th>Uçuş + otel</th><th>Operasyonel uyarı</th></tr></thead><tbody id="alternates"></tbody></table></div></section>
+<section id="rules"><h2>Giriş koşulları ve puan kullanımı</h2><p class="lead">Giriş koşulları seyahatten önce resmî kaynaktan tekrar kontrol edilmelidir. KKTC için geçerli T.C. kimliği yeterli olabilir; Kosova, Kuzey Makedonya, Arnavutluk, Bosna-Hersek ve Sırbistan kısa süreli Türk bordo pasaport seyahatlerinde vize muafiyetine sahiptir. Karadağ, 1 Kasım 2026 itibarıyla standart bordo pasaport için vize istediğinden vizesiz listede değildir.</p><div class="alert">46.079,9 Pegasus BolPuan ile 2.000 THY mili farklı sadakat sistemleridir. Ödül koltuğu ve nakit+puan tutarı kişisel hesap/ödeme adımında teyit edilmeden TL indirimi hesaplanmamıştır. Baggage Light paketinde yeterli bagaj hakkı bulunduğu varsayılmamıştır.</div></section>
+</main>
+<footer><div class="wrap"><div>Veri: Pegasus tarihli üç yetişkin uçuş aramaları + trivago üç yetişkin / bir oda fiyat göstergeleri. Bu sayfa bağımsızdır; mevcut Belgrad fiyat geçmişi ve ana planlayıcı dosyaları değiştirilmedi.</div><p class="sources"><a href="https://www.flypgs.com/" target="_blank" rel="noopener noreferrer">Pegasus</a><a href="https://www.trivago.com.tr/" target="_blank" rel="noopener noreferrer">trivago</a><a href="https://www.mfa.gov.tr/turk-vatandaslarinin-tabi-oldugu-vize-uygulamalari.tr.mfa" target="_blank" rel="noopener noreferrer">T.C. Dışişleri</a><a href="https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/turkey" target="_blank" rel="noopener noreferrer">Karadağ vize bilgisi</a><a href="price-history.json">Tarihli ham veriler</a></p></div></footer>
+<script>
+"use strict";
+const $=id=>document.getElementById(id);
+const fmt=v=>new Intl.NumberFormat("tr-TR",{style:"currency",currency:"TRY",minimumFractionDigits:0,maximumFractionDigits:2}).format(v);
+const esc=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+let trips=[];
+function total(t){let p=t.planning_estimate_try;return [t.shown_flight_plus_hotel_try+p.food_total_range[0]+p.ground_and_excursions_total_range[0]+p.baggage_reserve_range[0],t.shown_flight_plus_hotel_try+p.food_total_range[1]+p.ground_and_excursions_total_range[1]+p.baggage_reserve_range[1]]}
+function card(t){const f=t.flight,h=t.hotel,[lo,hi]=total(t);let hotelLink=h.deal_url||"https://www.trivago.com.tr/";return '<article class="card">'+
+'<div class="top"><div><h3>'+esc(t.destination)+'</h3><div class="night">'+esc(t.dates.depart)+' → '+esc(t.dates.return)+' · '+t.dates.nights+' gece · 3 yetişkin</div></div><span class="badge">ÖN TEKLİF</span></div>'+
+'<div class="prices"><div class="price"><span>3 kişi gidiş-dönüş uçuş</span><b>'+fmt(f.amount_try)+'</b></div><div class="price"><span>'+t.dates.nights+' gece konaklama · 3 kişi araması</span><b>'+fmt(h.full_stay_amount_try)+'</b></div><div class="price total"><span>Uçuş + otel (ek masraflar hariç)</span><b>'+fmt(t.shown_flight_plus_hotel_try)+'</b></div></div>'+
+'<div class="itinerary"><p><strong>Gidiş:</strong> '+esc(f.depart_local)+' → '+esc(f.arrival_local)+'</p><p><strong>Dönüş:</strong> '+esc(f.return_depart_local)+' → '+esc(f.return_arrival_local)+'</p><p><strong>Otel:</strong> '+esc(h.name)+' · puan '+esc(h.review_score)+' · '+esc(h.advertiser)+'</p></div>'+
+'<div class="fullbudget">Tahmini tüm tatil: '+fmt(lo)+' – '+fmt(hi)+'<em>Üç kişi toplamı; yeme-içme, yerel ulaşım, gezi ve bagaj payı dahil <b>planlama tahmini</b>; teklif değildir.</em></div>'+
+'<p class="note">'+esc(t.notes)+'</p>'+
+'<div class="actions"><a target="_blank" rel="noopener noreferrer" href="'+esc(f.search_url)+'">Uçuşu kontrol et ↗</a><a target="_blank" rel="noopener noreferrer" href="'+esc(hotelLink)+'">Otel teklifini aç ↗</a></div></article>'}
+function render(sort){const k=sort==="air"?(t=>t.flight.amount_try):sort==="hotel"?(t=>t.hotel.full_stay_amount_try):(t=>t.shown_flight_plus_hotel_try);
+$('cards').innerHTML=[...trips].sort((a,b)=>k(a)-k(b)).map(card).join("");
+document.querySelectorAll('[data-sort]').forEach(x=>x.setAttribute('aria-pressed',x.dataset.sort===sort?'true':'false'))}
+document.querySelectorAll('[data-sort]').forEach(x=>x.addEventListener('click',()=>render(x.dataset.sort)));
+fetch('price-history.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error("HTTP "+r.status);return r.json()}).then(d=>{
+trips=d.trips||[];
+$('checked').textContent="Kontrol: "+d.observed_on+" (İstanbul)";
+const main=[...trips].sort((a,b)=>a.shown_flight_plus_hotel_try-b.shown_flight_plus_hotel_try);
+const air=[...trips].sort((a,b)=>a.flight.amount_try-b.flight.amount_try);
+$('stats').innerHTML='<div class="stat"><span>En ucuz 3 kişi uçak gidiş-dönüş</span><strong>'+fmt(air[0].flight.amount_try)+'</strong><span>'+esc(air[0].destination)+'</span></div>'+
+'<div class="stat"><span>En ucuz uçuş + 5 gece otel</span><strong>'+fmt(main[0].shown_flight_plus_hotel_try)+'</strong><span>'+esc(main[0].destination)+'</span></div>'+
+'<div class="stat"><span>Karşılaştırılan destinasyon</span><strong>'+trips.length+'</strong><span>İzmir çıkış · 3 yetişkin</span></div>'+
+'<div class="stat"><span>Doğrulanmış bagaj dahil alarm</span><strong>YOK</strong><span>Son ödeme / oda teyidi bekleniyor</span></div>';
+$('alternates').innerHTML=(d.alternates||[]).map(a=>'<tr><td><b>'+esc(a.destination)+'</b><br><span class="small">'+esc(a.dates)+' · '+a.nights+' gece</span></td><td>'+fmt(a.flight_try)+'</td><td>'+fmt(a.hotel_try)+'<br><span class="small">'+esc(a.hotel)+'</span></td><td><b class="highlight">'+fmt(a.flight_plus_hotel_try)+'</b></td><td class="small">'+esc(a.warning)+'<br>'+esc(a.flight_detail)+'</td></tr>').join('');
+render("total");
+}).catch(e=>{$('stats').innerHTML='<div class="alert">Fiyat veri dosyası yüklenemedi: '+esc(e.message)+'. <a href="price-history.json">JSON verisini açın.</a></div>'});
+</script>
+</body>
+</html>
