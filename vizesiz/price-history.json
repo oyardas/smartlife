@@ -10,7 +10,7 @@
   "verified_comparable_drop": false,
   "alert": false,
   "comparison_rules": "Yalnız aynı kişi sayısı/rota/gün/flight no/fare package/baggage ile doğrulanmış aynı üründe fiyat değişimi alarm koşulunu sağlar. Farklı tarihler yeni alternatif olabilir, fiyat düşüşü değildir.",
-  "visa_note": "Karadağ için 1 Kasım 2026 itibarıyla bordo pasaporta vize gerekir. Diğer ülke koşulları T.C. Dışişleri'nden ayrıca kontrol edilmeli.",
+  "visa_note": "Karadağ için 1 Kasım 2026 itibarıyla bordo pasaporta vize gerekir. Diğer ülke koşulları T.C. Dışişleri'nden ayrıca kontrol edilmeli. Kosova'da yabancı ziyaretçiler için girişten sonra 3 gün içinde adres bildirimi; Gürcistan'da 2026'da min. 30.000 GEL kapsamlı sağlık ve kaza sigortası gerekir.",
   "points_note": "Pegasus BolPuan ve THY Miles&Smiles farklı programlardır; nakit indirimi hesaplanmadı.",
   "global_caveats": [
     "Pegasus 3 yetişkin fiyatları gidiş+dönüş yön tutarlarının toplamıdır; ödeme ekranı tutarı, bagaj paketi ve ek ücretler teyit edilmedi.",
@@ -356,6 +356,8 @@
     "air": "https://www.flypgs.com/",
     "hotel": "https://www.trivago.com.tr/",
     "visa": "https://www.mfa.gov.tr/turk-vatandaslarinin-tabi-oldugu-vize-uygulamalari.tr.mfa",
-    "montenegro": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/turkey"
+    "montenegro": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/turkey",
+    "kosovo_entry": "https://mzv.gov.cz/pristina/cz/informace_pro_vstup_do_zeme_turistika/upozorneni_pro_cechy_cestujici_do_kosova.html",
+    "georgia_insurance": "https://australia.mfa.gov.ge/en/news/629860-information-on-the-mandatory-health-insurance-policy-for-all-tourists-entering-georgia"
   }
 }
