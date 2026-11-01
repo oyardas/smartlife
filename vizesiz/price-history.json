@@ -1,0 +1,361 @@
+{
+  "schema_version": 1,
+  "board": "Vizesiz Yılbaşı — 3 Yetişkin",
+  "currency": "TRY",
+  "observed_on": "2026-11-01",
+  "observation_timezone": "Europe/Istanbul",
+  "status": "indicative_quotes_not_final_checkout",
+  "flight_total_budget_try": 50000,
+  "verified_all_in_transport_offer": false,
+  "verified_comparable_drop": false,
+  "alert": false,
+  "comparison_rules": "Yalnız aynı kişi sayısı/rota/gün/flight no/fare package/baggage ile doğrulanmış aynı üründe fiyat değişimi alarm koşulunu sağlar. Farklı tarihler yeni alternatif olabilir, fiyat düşüşü değildir.",
+  "visa_note": "Karadağ için 1 Kasım 2026 itibarıyla bordo pasaporta vize gerekir. Diğer ülke koşulları T.C. Dışişleri'nden ayrıca kontrol edilmeli.",
+  "points_note": "Pegasus BolPuan ve THY Miles&Smiles farklı programlardır; nakit indirimi hesaplanmadı.",
+  "global_caveats": [
+    "Pegasus 3 yetişkin fiyatları gidiş+dönüş yön tutarlarının toplamıdır; ödeme ekranı tutarı, bagaj paketi ve ek ücretler teyit edilmedi.",
+    "Pegasus SAW aktarmalı tek-aramalı ADB üzerinden fiyatlandırılmıştır; ayrı İzmir–İstanbul biletinin bedeli eklenmemiştir.",
+    "Trivago 3 yetişkin / tek oda gösterimi, en ucuz oda çeşidinin üç kişiye yasal ve fiilî uygunluğunu garanti etmez. Otelin üçlü oda tipi olsa da aynı tarife eşleşmesi teyitsizdir.",
+    "Uçak + otel toplamında yeme-içme, yerel ulaşım, tur, sigorta, bagaj ve şehir vergisi yoktur.",
+    "Varış-kalkış saatleri havaalanlarının yerel saatleridir. Gece bağlantıları ve tatil günleri ayrıca teyit edilmeli.",
+    "Planlama rezervasyon değildir; erişilebilir tek sepet 3 yetişkin fiyatı doğrulanmadan uçuş bütçesi kesin sağlandı denemez."
+  ],
+  "trips": [
+    {
+      "destination": "Üsküp",
+      "origin": "İzmir ADB",
+      "dates": {
+        "depart": "2026-12-30",
+        "return": "2027-01-04",
+        "nights": 5
+      },
+      "adults": 3,
+      "flight": {
+        "carrier": "Pegasus",
+        "amount_try": 31073.4,
+        "quoted_for_three_adults": true,
+        "includes_adb_saw_segments": "SAW aktarması varsa Pegasus'un aynı arama sonucundaki iki bacak; ayrı bağlantı bedeli eklenmedi",
+        "depart_local": "30 Ara 09:20 (SAW aktarma 6sa40dk)",
+        "arrival_local": "30 Ara 16:35",
+        "return_depart_local": "4 Oca 11:30",
+        "return_arrival_local": "4 Oca 18:15",
+        "checked_out": false,
+        "baggage": "bilinmiyor",
+        "fare_bundle": "bilinmiyor",
+        "price_verified_at_payment": false,
+        "source_name": "Pegasus Airlines 3 yetişkin tarihli uçuş araması",
+        "search_url": "https://www.flypgs.com/"
+      },
+      "hotel": {
+        "name": "Hotel Ultra Star",
+        "full_stay_amount_try": 11151,
+        "review_score": 8.1,
+        "advertiser": "Booking.com",
+        "search_adults": 3,
+        "search_rooms": 1,
+        "room_capacity_for_this_rate_verified": false,
+        "heating_at_this_rate_verified": false,
+        "source_name": "trivago 3 yetişkin, 1 oda, tam konaklama teklif göstergesi",
+        "deal_url": "https://www.trivago.com.tr/tr/lm/hotel-ultra-star-üsküp?cip=234716015&currencyCode=TRY&search=100-5025878%3B106-1527%3Bdr-20261230-20270104%3Bdrs-40%3Brc-1-3&cds=R15X6oQ1LU%2B5K3iGlEUs7mO2Qi%2BPW0GMZ6RzHQDJdPqCE0GbGI2PRZsfHitkZQvN31HDtjOKnaID7A%2FpCy6urjIKHW50YQ5admTkE%2Fog1uV1TM1QQTDf2XNRtMQMLGchp4GwNEB1yFz7VrAZNdLjMBf0WgWkETuQbb0Je6NOaS9GhvarogsJs1PaG3pXKnzJMg%3D%3D&cdsOrigin=DEAL_ON_DEALFINDER"
+      },
+      "shown_flight_plus_hotel_try": 42224.4,
+      "planning_estimate_try": {
+        "food_total_range": [
+          13000,
+          17000
+        ],
+        "ground_and_excursions_total_range": [
+          4000,
+          7000
+        ],
+        "baggage_reserve_range": [
+          2000,
+          5000
+        ]
+      },
+      "notes": "Aynı-gün varış için uçuş 16.829,4 + dönüş 14.244 TL. Daha ucuz 22:00 gidiş 31 Aralık sabahı varır ve 11 saat aktarma bekletir; bu sürümde dahil edilmedi. Üç kişilik oda tipi tesiste var, fakat görünen ücretin tam o oda tipine ait olduğu kesin değil.",
+      "fully_verified_bookable": false
+    },
+    {
+      "destination": "Tiran",
+      "origin": "İzmir ADB",
+      "dates": {
+        "depart": "2026-12-30",
+        "return": "2027-01-04",
+        "nights": 5
+      },
+      "adults": 3,
+      "flight": {
+        "carrier": "Pegasus",
+        "amount_try": 29861.4,
+        "quoted_for_three_adults": true,
+        "includes_adb_saw_segments": "SAW aktarması varsa Pegasus'un aynı arama sonucundaki iki bacak; ayrı bağlantı bedeli eklenmedi",
+        "depart_local": "30 Ara 19:05 (SAW aktarma 2sa40dk)",
+        "arrival_local": "30 Ara 22:40",
+        "return_depart_local": "4 Oca 11:05",
+        "return_arrival_local": "4 Oca 18:15",
+        "checked_out": false,
+        "baggage": "bilinmiyor",
+        "fare_bundle": "bilinmiyor",
+        "price_verified_at_payment": false,
+        "source_name": "Pegasus Airlines 3 yetişkin tarihli uçuş araması",
+        "search_url": "https://www.flypgs.com/"
+      },
+      "hotel": {
+        "name": "Hotel Italia",
+        "full_stay_amount_try": 15333,
+        "review_score": 8.4,
+        "advertiser": "Booking.com",
+        "search_adults": 3,
+        "search_rooms": 1,
+        "room_capacity_for_this_rate_verified": false,
+        "heating_at_this_rate_verified": false,
+        "source_name": "trivago 3 yetişkin, 1 oda, tam konaklama teklif göstergesi",
+        "deal_url": "https://www.trivago.com.tr/tr/lm/hotel-italia-tirana?cip=234716015&currencyCode=TRY&search=100-3445432%3B106-1527%3Bdr-20261230-20270104%3Bdrs-40%3Brc-1-3&cds=YCiHfaOpiHf1keM5qSq2asoFZCg2IZgG91EdPsS8H5wjliy2w62R2pjNiRKk2%2BzNPPWqVrq5VVK0K&cdsOrigin=DEAL_ON_DEALFINDER"
+      },
+      "shown_flight_plus_hotel_try": 45194.4,
+      "planning_estimate_try": {
+        "food_total_range": [
+          14000,
+          19000
+        ],
+        "ground_and_excursions_total_range": [
+          5000,
+          8000
+        ],
+        "baggage_reserve_range": [
+          2000,
+          5000
+        ]
+      },
+      "notes": "Aynı akşam 22:40 varış, üç kişilik odanın fiyatla eşleşmesi / ısıtması / vergi toplamı teyitsiz.",
+      "fully_verified_bookable": false
+    },
+    {
+      "destination": "Priştine / Prizren",
+      "origin": "İzmir ADB",
+      "dates": {
+        "depart": "2026-12-30",
+        "return": "2027-01-04",
+        "nights": 5
+      },
+      "adults": 3,
+      "flight": {
+        "carrier": "Pegasus",
+        "amount_try": 27926.4,
+        "quoted_for_three_adults": true,
+        "includes_adb_saw_segments": "SAW aktarması varsa Pegasus'un aynı arama sonucundaki iki bacak; ayrı bağlantı bedeli eklenmedi",
+        "depart_local": "30 Ara 07:55 (SAW aktarma 2sa15dk)",
+        "arrival_local": "30 Ara 10:55",
+        "return_depart_local": "4 Oca 12:00",
+        "return_arrival_local": "4 Oca 18:15",
+        "checked_out": false,
+        "baggage": "bilinmiyor",
+        "fare_bundle": "bilinmiyor",
+        "price_verified_at_payment": false,
+        "source_name": "Pegasus Airlines 3 yetişkin tarihli uçuş araması",
+        "search_url": "https://www.flypgs.com/"
+      },
+      "hotel": {
+        "name": "Prishtina City Apartments",
+        "full_stay_amount_try": 17556,
+        "review_score": 9.4,
+        "advertiser": "Hotels.com",
+        "search_adults": 3,
+        "search_rooms": 1,
+        "room_capacity_for_this_rate_verified": false,
+        "heating_at_this_rate_verified": false,
+        "source_name": "trivago 3 yetişkin, 1 oda, tam konaklama teklif göstergesi",
+        "deal_url": "https://www.trivago.com.tr/tr/lm/konaklama-hizmeti-verilen-apart-daire-prishtina-city-apartments-priština?cip=234716015&currencyCode=TRY&search=100-41522312%3B106-1527%3Bdr-20261230-20270103%3Bdrs-40%3Brc-1-3"
+      },
+      "shown_flight_plus_hotel_try": 45482.4,
+      "planning_estimate_try": {
+        "food_total_range": [
+          13000,
+          18000
+        ],
+        "ground_and_excursions_total_range": [
+          5000,
+          8000
+        ],
+        "baggage_reserve_range": [
+          2000,
+          5000
+        ]
+      },
+      "notes": "Tesiste en az bir 3 kişi kapasiteli deluxe daire var; Trivago'daki fiyatın ilgili daire kategorisi için olduğu kesinleştirilmedi. Prizren günübirlik plan.",
+      "fully_verified_bookable": false
+    },
+    {
+      "destination": "Girne / KKTC",
+      "origin": "İzmir ADB",
+      "dates": {
+        "depart": "2026-12-30",
+        "return": "2027-01-04",
+        "nights": 5
+      },
+      "adults": 3,
+      "flight": {
+        "carrier": "Pegasus",
+        "amount_try": 22122,
+        "quoted_for_three_adults": true,
+        "includes_adb_saw_segments": "SAW aktarması varsa Pegasus'un aynı arama sonucundaki iki bacak; ayrı bağlantı bedeli eklenmedi",
+        "depart_local": "30 Ara 22:55 (direkt)",
+        "arrival_local": "30 Ara 23:15",
+        "return_depart_local": "4 Oca 21:30",
+        "return_arrival_local": "4 Oca 23:55",
+        "checked_out": false,
+        "baggage": "bilinmiyor",
+        "fare_bundle": "bilinmiyor",
+        "price_verified_at_payment": false,
+        "source_name": "Pegasus Airlines 3 yetişkin tarihli uçuş araması",
+        "search_url": "https://www.flypgs.com/"
+      },
+      "hotel": {
+        "name": "Homelike Guest house",
+        "full_stay_amount_try": 27878,
+        "review_score": 8.1,
+        "advertiser": "Booking.com",
+        "search_adults": 3,
+        "search_rooms": 1,
+        "room_capacity_for_this_rate_verified": false,
+        "heating_at_this_rate_verified": false,
+        "source_name": "trivago 3 yetişkin, 1 oda, tam konaklama teklif göstergesi",
+        "deal_url": "https://www.trivago.com.tr/tr/lm/otel-homelike-guest-house-girne?cip=234716015&currencyCode=TRY&search=100-20967386%3B106-1527%3Bdr-20261230-20270104%3Bdrs-40%3Brc-1-3&cds=VAWABm0kZpy%2B2WRKQPu7P3U5RTXVugQE2s6lyQbrwpl7WTGTqELSDm7a62Lo238TfXxKZFOLEF4fBr6wKsvp%2FPqE6BH16u4CEoQM3Ttti1aKhh4C5bBjYKUz%2BQRC0dai78VuSImPJdQ14CXxNnZHccDFRgQFyu7OlPNg%2FK7779%2BrV9COw7KaMkIlWQNztqftYw%3D%3D&cdsOrigin=DEAL_ON_DEALFINDER"
+      },
+      "shown_flight_plus_hotel_try": 50000,
+      "planning_estimate_try": {
+        "food_total_range": [
+          16000,
+          22000
+        ],
+        "ground_and_excursions_total_range": [
+          6000,
+          10000
+        ],
+        "baggage_reserve_range": [
+          2000,
+          5000
+        ]
+      },
+      "notes": "Direkt uçuş; Girne için Ercan transferi gerekiyor. Tesiste üçlü oda var, ancak karşılaştırmadaki ücretin aynı oda ve tarife için olduğu teyitsiz. Ücret iadesiz oda göstergesi.",
+      "fully_verified_bookable": false
+    },
+    {
+      "destination": "Saraybosna",
+      "origin": "İzmir ADB",
+      "dates": {
+        "depart": "2026-12-30",
+        "return": "2027-01-04",
+        "nights": 5
+      },
+      "adults": 3,
+      "flight": {
+        "carrier": "Pegasus",
+        "amount_try": 34628.4,
+        "quoted_for_three_adults": true,
+        "includes_adb_saw_segments": "SAW aktarması varsa Pegasus'un aynı arama sonucundaki iki bacak; ayrı bağlantı bedeli eklenmedi",
+        "depart_local": "30 Ara 07:55 (SAW aktarma 3sa15dk)",
+        "arrival_local": "30 Ara 12:15",
+        "return_depart_local": "4 Oca 13:00",
+        "return_arrival_local": "4 Oca 21:10",
+        "checked_out": false,
+        "baggage": "bilinmiyor",
+        "fare_bundle": "bilinmiyor",
+        "price_verified_at_payment": false,
+        "source_name": "Pegasus Airlines 3 yetişkin tarihli uçuş araması",
+        "search_url": "https://www.flypgs.com/"
+      },
+      "hotel": {
+        "name": "Hotel Aziza",
+        "full_stay_amount_try": 18974,
+        "review_score": 9.2,
+        "advertiser": "Booking.com",
+        "search_adults": 3,
+        "search_rooms": 1,
+        "room_capacity_for_this_rate_verified": false,
+        "heating_at_this_rate_verified": false,
+        "source_name": "trivago 3 yetişkin, 1 oda, tam konaklama teklif göstergesi",
+        "deal_url": "https://www.trivago.com.tr/tr/lm/hotel-aziza-saraybosna?cip=234716015&currencyCode=TRY&search=100-6537594%3B106-1527%3Bdr-20261230-20270104%3Bdrs-40%3Brc-1-3"
+      },
+      "shown_flight_plus_hotel_try": 53602.4,
+      "planning_estimate_try": {
+        "food_total_range": [
+          13000,
+          19000
+        ],
+        "ground_and_excursions_total_range": [
+          5000,
+          8000
+        ],
+        "baggage_reserve_range": [
+          2000,
+          5000
+        ]
+      },
+      "notes": "Üç kişiye uygun oda ve aynı ücret düzeyi henüz teyitsiz; yılbaşı merkez yoğunluğu olabilir.",
+      "fully_verified_bookable": false
+    }
+  ],
+  "alternates": [
+    {
+      "destination": "Girne / KKTC",
+      "dates": "2026-12-28 → 2027-01-02",
+      "nights": 5,
+      "adults": 3,
+      "flight_try": 18363,
+      "hotel": "Homelike Guest house",
+      "hotel_try": 27878,
+      "flight_plus_hotel_try": 46241,
+      "flight_detail": "28 Ara 18:55 → 19:15 direkt / 2 Oca 04:55 → 07:20 direkt",
+      "warning": "Dönüş 04:55, Girne'den gece yarısı transfer gerekir; 28 Aralık esnek tarih."
+    },
+    {
+      "destination": "Girne / KKTC",
+      "dates": "2026-12-29 → 2027-01-02",
+      "nights": 4,
+      "adults": 3,
+      "flight_try": 21372,
+      "hotel": "Homelike Guest house",
+      "hotel_try": 22303,
+      "flight_plus_hotel_try": 43675,
+      "flight_detail": "29 Ara 22:55 → 23:15 direkt / 2 Oca 04:55 → 07:20 direkt",
+      "warning": "Dönüş 04:55 ve daha kısa tatil."
+    },
+    {
+      "destination": "Üsküp",
+      "dates": "2026-12-29 → 2027-01-02",
+      "nights": 4,
+      "adults": 3,
+      "flight_try": 31904.4,
+      "hotel": "Hotel Ultra Star",
+      "hotel_try": 8921,
+      "flight_plus_hotel_try": 40825.4,
+      "flight_detail": "29 Ara 05:15; varış 10:35 için 4sa45dk SAW aktarma / 2 Oca 10:50 → 16:40 SAW aktarma",
+      "warning": "Uçuş ve otel bagaj/oda dahil nihai ödeme teklifleri değildir."
+    }
+  ],
+  "history": [
+    {
+      "checked_on": "2026-10-31",
+      "type": "existing_Belgrade_history_preserved",
+      "source_repo_paths": [
+        "/price-data.json",
+        "/price-history.json"
+      ],
+      "note": "Belgrad geçmişi ve ana sayfa hiç değiştirilmedi."
+    },
+    {
+      "checked_on": "2026-11-01",
+      "type": "first_independent_visa_free_observation",
+      "verified_price_drop": false,
+      "comment": "Alternatif tarihlerin daha düşük olması önceki aynı ürünün indirim gördüğünü kanıtlamaz."
+    }
+  ],
+  "sources": {
+    "air": "https://www.flypgs.com/",
+    "hotel": "https://www.trivago.com.tr/",
+    "visa": "https://www.mfa.gov.tr/turk-vatandaslarinin-tabi-oldugu-vize-uygulamalari.tr.mfa",
+    "montenegro": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/turkey"
+  }
+}
