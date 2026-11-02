@@ -10,7 +10,7 @@
   "verified_comparable_drop": false,
   "alert": false,
   "comparison_rules": "Yalnız aynı kişi sayısı/rota/gün/flight no/fare package/baggage ile doğrulanmış aynı üründe fiyat değişimi alarm koşulunu sağlar. Farklı tarihler yeni alternatif olabilir, fiyat düşüşü değildir.",
-  "visa_note": "T.C. Dışişleri genel vize tablosu 2 Kasım 2026 kontrolünde Karadağ için Türk umuma mahsus pasaport hamillerini vizeye tabi olarak belirtiyor; ülke-özel eski bilgilendirme sayfasıyla çelişebileceğinden rota hariç tutuldu. Gürcistan'da 2026'dan beri kimlik veya bordo pasaportla giriş için en az 30.000 GEL teminatlı sağlık ve kaza sigortası; Kosova'da adres bildirimi kuralı ayrıca teyit edilmeli.",
+  "visa_note": "Karadağ Hükümeti 31 Ekim 2026 resmî duyurusuna göre Türkiye'nin bordo pasaportlu vatandaşlarına 1 Kasım 2026'dan itibaren vize gereklidir; eski T.C. Dışişleri ülke bilgilendirme sayfası güncel kararla çelişebilir. Gürcistan 1 Ocak 2026'dan beri en az 30.000 GEL teminatlı sağlık+kaza sigortası ister. Kosova otel/tesis harici kiralık konaklamada 3 gün içinde adres bildirimi ister.",
   "points_note": "BolPuan (kullanıcı beyanı 46.079,9) ve THY 2.000 Mil farklı programlardır, birleştirilemez. Pegasus'ta en az 2.000 BolPuan ile kısmi ödeme mümkündür; başkaları adına ilk kez puan kullanımı için kendi adına puanla satın alma + ilgili uçuşu tamamlama koşulu vardır. THY Cash&Miles yalnız uygun THY seferlerinde vergi hariç ücretin %50'sine kadar kullanılabilir; gerçek TL indirimi/ödül koltuğu/puan sonrası 3 kişi bakiye ödeme teyitsiz.",
   "global_caveats": [
     "Pegasus 3 yetişkin fiyatları gidiş+dönüş yön tutarlarının toplamıdır; ödeme ekranı tutarı, bagaj paketi ve ek ücretler teyit edilmedi.",
@@ -203,13 +203,13 @@
       "adults": 3,
       "flight": {
         "carrier": "Pegasus",
-        "amount_try": 22608,
+        "amount_try": 23250,
         "quoted_for_three_adults": true,
         "includes_adb_saw_segments": "SAW aktarması varsa Pegasus'un aynı arama sonucundaki iki bacak; ayrı bağlantı bedeli eklenmedi",
-        "depart_local": "30 Ara 20:30 (direkt)",
+        "depart_local": "30 Ara 20:30",
         "arrival_local": "30 Ara 20:50",
-        "return_depart_local": "4 Oca 15:50",
-        "return_arrival_local": "4 Oca 18:15",
+        "return_depart_local": "4 Oca 11:55",
+        "return_arrival_local": "4 Oca 14:20",
         "checked_out": false,
         "baggage": "bilinmiyor",
         "fare_bundle": "bilinmiyor",
@@ -231,7 +231,7 @@
         "deal_url": "https://www.trivago.com.tr/tr/lm/otel-homelike-guest-house-girne?cip=234716015&currencyCode=TRY&search=100-20967386%3B106-1527%3Bdr-20261230-20270104%3Bdrs-40%3Brc-1-3&cds=VAWABm0kZpy%2B2WRKQPu7P3U5RTXVugQE2s6lyQbrwpl7WTGTqELSDm7a62Lo238TfXxKZFOLEF4fBr6wKsvp%2FPqE6BH16u4CEoQM3Ttti1aKhh4C5bBjYKUz%2BQRC0dai78VuSImPJdQ14CXxNnZHccDFRgQFyu7OlPNg%2FK7779%2BrV9COw7KaMkIlWQNztqftYw%3D%3D&cdsOrigin=DEAL_ON_DEALFINDER",
         "last_independently_observed_on": "2026-11-02"
       },
-      "shown_flight_plus_hotel_try": 50486,
+      "shown_flight_plus_hotel_try": 51128,
       "planning_estimate_try": {
         "food_total_range": [
           16000,
@@ -246,7 +246,7 @@
           5000
         ]
       },
-      "notes": "2 Kasım en düşük 3-yetişkin gidiş+dönüş rota tutarı 22.608 TL; 30 Ara 20:30–20:50, 4 Oca 15:50–18:15 direkt. 1 Kasım en düşük rota tutarı 22.122 TL idi, ancak uçuş saatleri farklı olduğu için aynı ürün fiyat değişimi değildir. Ercan–Girne transferi ve 3 kişilik odanın aynı tarifeye uygunluğu teyitsiz; odada üçlü seçenek tesiste mevcut.",
+      "notes": "2 Kasım akşam en düşük 3 yetişkin direkt gidiş 13.659 TL + dönüş 9.591 TL=23.250 TL. 30 Ara 20:30–20:50; 4 Oca 11:55–14:20. Önceki en düşükte farklı dönüş saati vardı, birebir eşdeğer fiyat düşüşü veya artışı değildir. Ercan–Girne transferi ve üç yetişkinin yatak düzeni/ısıtma/final ücretler teyitsiz.",
       "fully_verified_bookable": false
     },
     {
@@ -263,10 +263,10 @@
         "amount_try": 34628.4,
         "quoted_for_three_adults": true,
         "includes_adb_saw_segments": "SAW aktarması varsa Pegasus'un aynı arama sonucundaki iki bacak; ayrı bağlantı bedeli eklenmedi",
-        "depart_local": "30 Ara 07:55 (SAW aktarma 3sa15dk)",
+        "depart_local": "30 Ara 09:20 (SAW aktarma 1sa50dk)",
         "arrival_local": "30 Ara 12:15",
         "return_depart_local": "4 Oca 13:00",
-        "return_arrival_local": "4 Oca 21:10",
+        "return_arrival_local": "4 Oca 19:10",
         "checked_out": false,
         "baggage": "bilinmiyor",
         "fare_bundle": "bilinmiyor",
@@ -276,19 +276,19 @@
         "search_quote_observed_on": "2026-11-02"
       },
       "hotel": {
-        "name": "Hotel Aziza",
-        "full_stay_amount_try": 18974,
-        "review_score": 9.2,
+        "name": "Apartment Hill Sa",
+        "full_stay_amount_try": 19621,
+        "review_score": 8.6,
         "advertiser": "Booking.com",
         "search_adults": 3,
         "search_rooms": 1,
         "room_capacity_for_this_rate_verified": false,
         "heating_at_this_rate_verified": false,
         "source_name": "trivago 3 yetişkin, 1 oda, tam konaklama teklif göstergesi",
-        "deal_url": "https://www.trivago.com.tr/tr/lm/hotel-aziza-saraybosna?cip=234716015&currencyCode=TRY&search=100-6537594%3B106-1527%3Bdr-20261230-20270104%3Bdrs-40%3Brc-1-3&cds=1SED9ypNOVu3ZQPt1qGt5wAsD3D9iB57NynVUCGrRrn2Cy5DRJXEVIZbZ0NjQhO7PxQibm4bWqD4ajD%2F8K4XeU3y3LxoPughalR2APgFiZXObTMX%2BDK1PzpI88rCsb8opbf6ntbjwFe0YgmgR7SYn0zo70f%2B5Cin9k0Sl%2FHlptGYeXi9nWGyRUqYBLvXJ5Yx&cdsOrigin=DEAL_ON_DEALFINDER",
-        "last_independently_observed_on": "2026-11-01"
+        "deal_url": "https://www.trivago.com.tr/tr/lm/tüm-ev-apart-daire-apartment-hill-sa-saraybosna?cip=234716015&currencyCode=TRY&search=100-41309132%3B106-1527%3Bdr-20261230-20270104%3Bdrs-40%3Brc-1-3&cds=jHAtYAMxo6BrUo4wCpKoRkmHZJNnPb2LNbZ8SU38kjy%2FwR6Nkg%2BmjOF1iPExnq75ah4mvziS60epVQLGy11a3at3TkPiA9IXAVRMB2yxZbIslAxXGkzFhMei0kDW9i2sesX5EJuR%2FE%2BMzbnawG3%2Bm6p5BKZfUpIUrdCmHo66exSsvRjHzAbO4%2B5cHJ5yW2AqpQ%3D%3D&cdsOrigin=DEAL_ON_DEALFINDER",
+        "last_independently_observed_on": "2026-11-02"
       },
-      "shown_flight_plus_hotel_try": 53602.4,
+      "shown_flight_plus_hotel_try": 54249.4,
       "planning_estimate_try": {
         "food_total_range": [
           13000,
@@ -303,7 +303,7 @@
           5000
         ]
       },
-      "notes": "Üç kişiye uygun oda ve aynı ücret düzeyi henüz teyitsiz; yılbaşı merkez yoğunluğu olabilir. 2 Kasım otel yeniden taramasında aynı Hotel Aziza 25 sonuç içinde görünmedi; 18.974 TL fiyatı 1 Kasım gözlemidir, 2 Kasım canlı teklif gibi değerlendirilmemelidir.",
+      "notes": "2 Kasım akşam beş gece için Apartment Hill Sa 19.621 TL Booking.com geri ödemesiz ön teklifi (8,6 puan/11 yorum); eski Hotel Aziza 18.974 TL kaydı 1 Kasım'a aittir ve mevcut aramada bulunamadı. Farklı mülkün fiyatı düşüş sayılmaz. Üç yetişkin kapasitesi ve ısıtma kesin teyitsiz.",
       "fully_verified_bookable": false
     }
   ],
@@ -313,24 +313,24 @@
       "dates": "2026-12-28 → 2027-01-02",
       "nights": 5,
       "adults": 3,
-      "flight_try": 18363,
+      "flight_try": 21843,
       "hotel": "Homelike Guest house",
       "hotel_try": 27878,
-      "flight_plus_hotel_try": 46241,
-      "flight_detail": "28 Ara 18:55 → 19:15 direkt / 2 Oca 04:55 → 07:20 direkt",
-      "warning": "Dönüş 04:55, Girne'den gece yarısı transfer gerekir; 28 Aralık esnek tarih."
+      "flight_plus_hotel_try": 49721,
+      "flight_detail": "28 Ara 08:00–08:20 (veya 14:55–15:15) direkt / 2 Oca 04:55–07:20 direkt",
+      "warning": "Gidiş-geliş tarihleri esnek; dönüş 2 Ocak 04:55, Girne'den gece transferi şart. Ücret bagaj ve kesin ödeme teyitsiz."
     },
     {
       "destination": "Girne / KKTC",
       "dates": "2026-12-29 → 2027-01-02",
       "nights": 4,
       "adults": 3,
-      "flight_try": 21372,
+      "flight_try": 24258,
       "hotel": "Homelike Guest house",
       "hotel_try": 22303,
-      "flight_plus_hotel_try": 43675,
-      "flight_detail": "29 Ara 22:55 → 23:15 direkt / 2 Oca 04:55 → 07:20 direkt",
-      "warning": "Dönüş 04:55 ve daha kısa tatil."
+      "flight_plus_hotel_try": 46561,
+      "flight_detail": "29 Ara 22:55–23:15 direkt / 2 Oca 04:55–07:20 direkt",
+      "warning": "Gidiş-geliş tarihleri esnek; dönüş 2 Ocak 04:55, Girne'den gece transferi şart. Ücret bagaj ve kesin ödeme teyitsiz."
     },
     {
       "destination": "Üsküp",
@@ -494,13 +494,126 @@
       "qualified_price_drop": false,
       "reason": "No same-flight/same-fare/baggage-verified 3,000 TRY or 10% discount. Light package baggage+transfers+points checkout unverified. No alert.",
       "belgrade_history_unchanged": true
+    },
+    {
+      "checked_on": "2026-11-02 akşam (Europe/Istanbul)",
+      "type": "visa_free_evening_recheck",
+      "observed_date": "2026-11-02",
+      "scope": "3 adults, ADB to destination, 2026-12-30 departure and 2027-01-04 return; Pegasus flight quote + Trivago hotel indicative",
+      "quote_status": "three-adult flight route quote, not confirmed 3 seats at checkout or baggage/airport ground transport; hotel 3 adults/1 room search not verified same tariff occupancy",
+      "main_5night": {
+        "Üsküp": {
+          "flight_3adults": 31034.4,
+          "hotel_5n": 11151,
+          "combined": 42185.4,
+          "prior_flight": 31034.4,
+          "prior_hotel": 11151,
+          "hotel_name": "Hotel Ultra Star"
+        },
+        "Tiran": {
+          "flight_3adults": 31196.4,
+          "hotel_5n": 15333,
+          "combined": 46529.4,
+          "prior_flight": 31196.4,
+          "prior_hotel": 15333,
+          "hotel_name": "Hotel Italia"
+        },
+        "Priştine / Prizren": {
+          "flight_3adults": 27926.4,
+          "hotel_5n": 17556,
+          "combined": 45482.4,
+          "prior_flight": 27926.4,
+          "prior_hotel": 17556,
+          "hotel_name": "Prishtina City Apartments"
+        },
+        "Girne / KKTC": {
+          "flight_3adults": 23250,
+          "hotel_5n": 27878,
+          "combined": 51128,
+          "prior_flight": 22608,
+          "prior_hotel": 27878,
+          "hotel_name": "Homelike Guest house"
+        },
+        "Saraybosna": {
+          "flight_3adults": 34628.4,
+          "hotel_5n": 19621,
+          "combined": 54249.4,
+          "prior_flight": 34628.4,
+          "prior_hotel": 18974,
+          "hotel_name": "Apartment Hill Sa"
+        }
+      },
+      "flex": [
+        {
+          "dest": "Girne / KKTC",
+          "dates": "2026-12-28→2027-01-02",
+          "flight_3adults": 21843,
+          "hotel_5n": 27878,
+          "combined": 49721,
+          "return_early": "02 Oca 04:55"
+        },
+        {
+          "dest": "Girne / KKTC",
+          "dates": "2026-12-29→2027-01-02",
+          "flight_3adults": 24258,
+          "hotel_4n": 22303,
+          "combined": 46561,
+          "return_early": "02 Oca 04:55"
+        },
+        {
+          "dest": "Üsküp",
+          "dates": "2026-12-29→2027-01-02",
+          "flight_3adults": 31904.4,
+          "hotel_4n": 8921,
+          "combined": 40825.4
+        },
+        {
+          "dest": "Priştine / Prizren",
+          "dates": "2026-12-29→2027-01-02",
+          "flight_3adults": 28898.4,
+          "hotel_4n": 12260,
+          "combined": 41158.4,
+          "return_early": "02 Oca 02:50"
+        },
+        {
+          "dest": "Üsküp",
+          "dates": "2026-12-30→2027-01-03",
+          "flight_3adults": 39038.4
+        },
+        {
+          "dest": "Priştine / Prizren",
+          "dates": "2026-12-30→2027-01-03",
+          "flight_3adults": 31982.4
+        }
+      ],
+      "other_routes": {
+        "Belgrad": {
+          "pegasus_adb_3adults": 80738.4,
+          "over_budget": true
+        },
+        "Tiflis": {
+          "pegasus_adb_3adults": 67949.4,
+          "over_budget": true
+        },
+        "Batum": {
+          "pegasus_adb_3adults": null,
+          "no_return_fare": true
+        },
+        "Baku": {
+          "pegasus_adb_3adults": null,
+          "no_return_fare": true
+        }
+      },
+      "qualified_price_drop": false,
+      "alert": false,
+      "reason": "No confirmed like-for-like 3-person+bag fares below 50,000 TRY with final checkout; no confirmed <= -3000 TRY or <= -10% comparable price drop. 28/29 Dec-2 Jan ECN fares rose, not decreased; 30-4 Girne cheapest outbound/return itinerary changed; Skopje 30-4 stayed 31,034.40 TRY. No false new-low alert."
     }
   ],
   "sources": {
     "air": "https://www.flypgs.com/",
     "hotel": "https://www.trivago.com.tr/",
     "visa": "https://www.mfa.gov.tr/turk-vatandaslarinin-tabi-oldugu-vize-uygulamalari.tr.mfa",
-    "montenegro": "https://www.gov.me/en/diplomatic-missions/embassies-and-consulates-of-montenegro/turkey",
+    "montenegro": "https://www.gov.me/clanak/izmjene-viznog-rezima-koje-se-primjenjuju-od-1-novembra-2026-godine-servisne-informacije",
     "kosovo_entry": "https://mzv.gov.cz/pristina/cz/informace_pro_vstup_do_zeme_turistika/upozorneni_pro_cechy_cestujici_do_kosova.html",
     "georgia_insurance": "https://australia.mfa.gov.ge/en/news/629860-information-on-the-mandatory-health-insurance-policy-for-all-tourists-entering-georgia",
     "baggage": "https://www.flypgs.com/en/pegasus-baggage-allowance",
@@ -508,6 +621,6 @@
     "bolbol_membership": "https://www.flypgs.com/en/pegasus-bolbol-membership-agreement",
     "thy_cash_miles": "https://www.turkishairlines.com/tr-de/miles-and-smiles/mil-uygulamalari/cash-and-miles/"
   },
-  "last_check_slot": "2026-11-02 sabah (Europe/Istanbul)",
+  "last_check_slot": "2026-11-02 akşam (Europe/Istanbul)",
   "verified_price_drop": false
 }
