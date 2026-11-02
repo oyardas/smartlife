@@ -102,6 +102,9 @@
 .three-budget-card .three-note{font-size:.72rem;color:#bbcad5;line-height:1.35}
 .three-budget-card a{margin-top:auto;align-self:flex-start}
 @media(max-width:900px){.three-budget-cards{grid-template-columns:1fr}.three-budget-card{padding:12px}.three-budget-total span{text-align:left}}
+
+/* Dated whole-trip budget; isolated from historical price widgets. */
+.latest-trip-budget{border:1px solid #577458;background:linear-gradient(130deg,#172a24,#151b23);border-radius:16px;padding:22px;margin-bottom:20px}.latest-trip-budget .budget-new-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:16px 0}.latest-trip-budget .budget-new-metric{padding:13px;background:rgba(0,0,0,.18);border:1px solid var(--line);border-radius:10px}.latest-trip-budget .budget-new-metric strong{display:block;font-size:1.35rem;color:var(--accent);margin-top:5px}.latest-trip-budget ul{padding-left:20px}.latest-trip-budget .budget-date{font-weight:700;color:#d5ead8}@media(max-width:650px){.latest-trip-budget{padding:16px}.latest-trip-budget .budget-new-grid{grid-template-columns:1fr}.latest-trip-budget .budget-new-metric strong{font-size:1.2rem}}
 </style>
 </head>
 <body>
@@ -141,8 +144,28 @@
 </div></section>
 
 <section id="fiyat-takibi" class="wrap" aria-label="Gerçek fiyat taraması">
-<div class="watch-wrap"><div class="three-budget-watch" id="budget50k" aria-label="Üç kişi 50 bin lira ulaşım bütçesi">
- <div class="three-budget-head"><div><div class="kicker">3 KİŞİ • GİDİŞ–DÖNÜŞ • BÜTÇE İZLEME</div><h3>Hedef: 50.000 TL toplam ulaşım</h3><p class="mini muted">İzmir veya İstanbul çıkışlı Belgrad uçuşları. Konaklama bütçeye dahil değil; BolPuan ve THY milleri kullanılabilir ancak kalan TL tutarı teyit edilmeden indirim sayılmaz.</p></div><div class="three-budget-total">50.000 TL <span>üst sınır</span></div></div>
+<div class="watch-wrap">
+<article id="toplam-tatil-butcesi" class="latest-trip-budget" aria-labelledby="latest-trip-title">
+ <div class="kicker">GÜNCEL TOPLAM TATİL HEDEFİ • 3 YETİŞKİN • GİDİŞ–DÖNÜŞ</div>
+ <h3 id="latest-trip-title">31 Aralık–4 Ocak: yaklaşık 100.000 TL hedefiyle yeni karşılaştırma</h3>
+ <p class="budget-date">31 Aralık 2026 Perşembe → 4 Ocak 2027 Pazartesi • 4 gece • İzmir–Belgrad</p>
+ <p class="mini muted">Kontrol: 2 Kasım 2026, 10.30–10.32 Türkiye saati. Bunlar tarihli ön fiyat gözlemleri ve planlama tahminleridir; satın alınabilir nihai rezervasyon garantisi değildir. Az miktarda bütçe aşımı kabul edilebilir; aşağıdaki fark açıkça gösterilir.</p>
+ <div class="budget-new-grid">
+  <div class="budget-new-metric"><span>3 kişi gidiş–dönüş Pegasus</span><strong>80.564,40 TL</strong><small>İzmir çıkışlı, İstanbul aktarmalı; bagaj ve son ödeme teyitsiz</small></div>
+  <div class="budget-new-metric"><span>Vuk • 4 gece konaklama</span><strong>9.142 TL</strong><small>Trivago / Airbnb göstergesi; yatak, iptal ve nihai vergi kapsamı teyitsiz</small></div>
+  <div class="budget-new-metric"><span>Uçuş + otel gözlem toplamı</span><strong>89.706,40 TL</strong><small>100.000 TL hedefine diğer giderler için 10.293,60 TL kalıyor</small></div>
+ </div>
+ <p><b>Tahmini tüm tatil: 110.000–115.000 TL.</b> Yeme-içme, bagaj, yerel ulaşım/transferler, varsa harç ve diğer giderler için yaklaşık <b>20.294–25.294 TL planlama payı</b> eklendi. Bu pay doğrulanmış ücretlerden oluşmuyor; toplam, 100.000 TL hedefini yaklaşık <b>10.000–15.000 TL</b> aşıyor.</p>
+ <ul class="mini">
+  <li><b>Puan indirimi düşülmedi.</b> BolPuan/mil kullanımı ve kalan nakit tutar, ilgili resmî rezervasyon ekranında teyit edilmeli.</li>
+  <li><b>İstanbul / SAW direkt alternatifi:</b> üç kişi gidiş–dönüş <b>70.707 TL</b>; İzmir–İstanbul konumlandırması ve konaklama hariç. Bagaj ve son ödeme teyitsiz. İzmir çıkışlı uçuş + otel toplamıyla doğrudan eşdeğer değildir.</li>
+  <li><b>Dönüş Pazartesi.</b> 3 Ocak Pazar dönüşlü önceki seçenekler aşağıda korunuyor; yeni tarih onları silmez.</li>
+  <li>Vuk teklifinin oda/yatak düzeni, iptal koşulu, vergi ve toplam tahsilatı doğrulanmadan satın alma kararı verilmemeli. Farklı tesise geçiş, aynı ürünün tarihsel indirimi değildir; yeni dip fiyat alarmı yok.</li>
+ </ul>
+ <p class="mini muted">Kaynak sağlayıcılar: <a href="https://www.flypgs.com/" target="_blank" rel="noopener noreferrer">Pegasus</a> ve <a href="https://www.trivago.com.tr/" target="_blank" rel="noopener noreferrer">Trivago</a>. Bağlantılar sağlayıcı ana sayfalarıdır; Vuk için kesin satın alınabilir teklif bağlantısı doğrulanmadı. Kişisel puan bakiyeleri yayımlanmıyor.</p>
+</article>
+<div class="three-budget-watch" id="budget50k" aria-label="Önceki üç kişi 50 bin lira ulaşım bütçesi">
+ <div class="three-budget-head"><div><div class="kicker">3 KİŞİ • GİDİŞ–DÖNÜŞ • BÜTÇE İZLEME</div><h3>Önceki hedef: 50.000 TL yalnız ulaşım</h3><p class="mini muted">İzmir veya İstanbul çıkışlı Belgrad uçuşları. Konaklama bütçeye dahil değil; BolPuan ve THY milleri kullanılabilir ancak kalan TL tutarı teyit edilmeden indirim sayılmaz.</p></div><div class="three-budget-total">50.000 TL <span>önceki ulaşım hedefi</span></div></div>
  <div id="threeBudgetStatus" class="three-budget-status" role="status">Üç kişilik uygun fiyat bilgileri yükleniyor…</div>
  <div id="threeBudgetCards" class="three-budget-cards"></div>
  <div id="threeBudgetFoot" class="watch-foot"></div>
