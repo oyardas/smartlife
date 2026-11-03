@@ -379,6 +379,56 @@
       "flight_plus_hotel_try": null,
       "flight_detail": "28 Ara 20:30–20:50 direkt / 2 Oca 04:55–07:20 direkt",
       "warning": "2 Oca gece transferi; uçuş fiyatı üç yetişkin ama bagaj ve nihai ödeme teyitsiz."
+    },
+    {
+      "destination": "Priştine / Prizren",
+      "dates": "2026-12-31 → 2027-01-04",
+      "nights": 4,
+      "adults": 3,
+      "flight_try": 29150.4,
+      "hotel": "Town Square Apartmanı",
+      "hotel_try": 10966,
+      "flight_plus_hotel_try": 40116.4,
+      "flight_detail": "31 Ara ADB 08:20→PRN 11:00 (SAW aktarma 1sa55dk) / 4 Oca PRN 12:00→ADB 18:15 (SAW aktarma 1sa35dk)",
+      "warning": "Trivago 3 yetişkin/1 oda, 4 gece gösterge fiyatı; Airbnb ilanı 3 misafir + queen bed + sofa bed kapasitesini teyit ediyor, fakat aynı tarihlerde nihai rezervasyon sepeti, ısıtma ve ücretli bagaj/transfer kesin değil. Kosova özel ev adres bildirimi gerekli.",
+      "source": "https://www.airbnb.com/rooms/48991846"
+    },
+    {
+      "destination": "Üsküp",
+      "dates": "2026-12-31 → 2027-01-04",
+      "nights": 4,
+      "adults": 3,
+      "flight_try": 33620.4,
+      "hotel": "Hotel Pine",
+      "hotel_try": 10072,
+      "flight_plus_hotel_try": 43692.4,
+      "flight_detail": "31 Ara ADB 05:25→SKP 16:40 (SAW aktarma 10sa40dk) / 4 Oca SKP 11:30→ADB 18:15; 31 Ara 21:35 ucuz uçuşu 1 Oca 09:35 varacağından elendi",
+      "warning": "Hotel Pine triple oda tipine sahip ancak 10.072 TL Trivago teklifinin triple odaya ait olduğu kesin değil; merkeze ~2,6 km, uzun aktarma, bagaj ve ısıtma teyitsiz.",
+      "source": "https://www.booking.com/hotel/mk/pine.en-gb.html"
+    },
+    {
+      "destination": "Tiran",
+      "dates": "2026-12-31 → 2027-01-04",
+      "nights": 4,
+      "adults": 3,
+      "flight_try": 30977.4,
+      "hotel": "Family Apartment",
+      "hotel_try": 17121,
+      "flight_plus_hotel_try": 48098.4,
+      "flight_detail": "31 Ara ADB 08:20→TIA 11:45 (SAW aktarma 2sa30dk) / 4 Oca TIA 11:05→ADB 18:15",
+      "warning": "3 yetişkin tek oda arama fiyatı; yatak kapasitesi ve ısıtma, uçuş bagaj/son checkout kesin değil."
+    },
+    {
+      "destination": "Girne / KKTC",
+      "dates": "2026-12-31 → 2027-01-04",
+      "nights": 4,
+      "adults": 3,
+      "flight_try": 28452,
+      "hotel": "Homelike Guest house",
+      "hotel_try": 22381,
+      "flight_plus_hotel_try": 50833,
+      "flight_detail": "31 Ara ADB 10:45→ECN 11:05 direkt / 4 Oca ECN 21:30→ADB 23:55 direkt",
+      "warning": "Nonrefundable 4 gece konaklama, 3 yatak düzeni ve ısıtma kesin değil; ECN-Girne ulaşımı ve bagaj hariç. 31 Aralık öncesinde varış şartı karşılanır."
     }
   ],
   "history": [
@@ -1021,6 +1071,70 @@
       "verified_all_in_transport_under_50k": false,
       "alert": false,
       "reason": "Ana rotalarda aynı uçuş+tarife+bagaj/nihai sepet bazında 3.000 TL ya da %10 düşüş görülmedi; önceki dip fiyatlar korundu. 5 gece Priştine uçuşu +342 TL, diğer ilk dört uçuş sabit. Saraybosna dönüşte 4 Oca günü İzmir'e varan tarifeye göre öncekiyle aynı. Uygun otelde değişiklik aynı otelin indirimine işaret etmez."
+    },
+    {
+      "checked_on": "2026-11-03 18:31 (Europe/Istanbul) ek esnek tarih karşılaştırması",
+      "type": "supplementary_flexible_four_night_search",
+      "observed_date": "2026-11-03",
+      "travellers": 3,
+      "source_note": "Pegasus resmi 3 yetişkin ADB çıkışlı gidiş/dönüş yön fiyat toplamı, Trivago 3 yetişkin/1 oda 31 Ara–4 Oca (4 gece). Otel fiziksel kapasitesi ikincil ilanla kısmen doğrulandı. Son ödeme, bagaj/transfer ve ısıtma kesinleşmedi.",
+      "flexible_4night": [
+        {
+          "destination": "Priştine / Prizren",
+          "dates": "2026-12-31 → 2027-01-04",
+          "nights": 4,
+          "adults": 3,
+          "flight_try": 29150.4,
+          "hotel": "Town Square Apartmanı",
+          "hotel_try": 10966,
+          "flight_plus_hotel_try": 40116.4,
+          "flight_detail": "31 Ara ADB 08:20→PRN 11:00 (SAW aktarma 1sa55dk) / 4 Oca PRN 12:00→ADB 18:15 (SAW aktarma 1sa35dk)",
+          "warning": "Trivago 3 yetişkin/1 oda, 4 gece gösterge fiyatı; Airbnb ilanı 3 misafir + queen bed + sofa bed kapasitesini teyit ediyor, fakat aynı tarihlerde nihai rezervasyon sepeti, ısıtma ve ücretli bagaj/transfer kesin değil. Kosova özel ev adres bildirimi gerekli.",
+          "source": "https://www.airbnb.com/rooms/48991846"
+        },
+        {
+          "destination": "Üsküp",
+          "dates": "2026-12-31 → 2027-01-04",
+          "nights": 4,
+          "adults": 3,
+          "flight_try": 33620.4,
+          "hotel": "Hotel Pine",
+          "hotel_try": 10072,
+          "flight_plus_hotel_try": 43692.4,
+          "flight_detail": "31 Ara ADB 05:25→SKP 16:40 (SAW aktarma 10sa40dk) / 4 Oca SKP 11:30→ADB 18:15; 31 Ara 21:35 ucuz uçuşu 1 Oca 09:35 varacağından elendi",
+          "warning": "Hotel Pine triple oda tipine sahip ancak 10.072 TL Trivago teklifinin triple odaya ait olduğu kesin değil; merkeze ~2,6 km, uzun aktarma, bagaj ve ısıtma teyitsiz.",
+          "source": "https://www.booking.com/hotel/mk/pine.en-gb.html"
+        },
+        {
+          "destination": "Tiran",
+          "dates": "2026-12-31 → 2027-01-04",
+          "nights": 4,
+          "adults": 3,
+          "flight_try": 30977.4,
+          "hotel": "Family Apartment",
+          "hotel_try": 17121,
+          "flight_plus_hotel_try": 48098.4,
+          "flight_detail": "31 Ara ADB 08:20→TIA 11:45 (SAW aktarma 2sa30dk) / 4 Oca TIA 11:05→ADB 18:15",
+          "warning": "3 yetişkin tek oda arama fiyatı; yatak kapasitesi ve ısıtma, uçuş bagaj/son checkout kesin değil."
+        },
+        {
+          "destination": "Girne / KKTC",
+          "dates": "2026-12-31 → 2027-01-04",
+          "nights": 4,
+          "adults": 3,
+          "flight_try": 28452,
+          "hotel": "Homelike Guest house",
+          "hotel_try": 22381,
+          "flight_plus_hotel_try": 50833,
+          "flight_detail": "31 Ara ADB 10:45→ECN 11:05 direkt / 4 Oca ECN 21:30→ADB 23:55 direkt",
+          "warning": "Nonrefundable 4 gece konaklama, 3 yatak düzeni ve ısıtma kesin değil; ECN-Girne ulaşımı ve bagaj hariç. 31 Aralık öncesinde varış şartı karşılanır."
+        }
+      ],
+      "lowest_previous_comparable": "Önceki 29 Ara–2 Oca 4 gece Priştine 38.258,4 TL uçuş+otel, fakat 10sa35dk SAW aktarma ve 02:50 gece dönüşü. Yeni 31 Ara–4 Oca 40.116,4 TL farklı tarih/saat olduğundan aynı üründe indirim değildir.",
+      "qualified_price_drop": false,
+      "verified_all_in_transport_under_50k": false,
+      "alert": false,
+      "reason": "Eşdeğer uçuş ve bagaj/son ödeme ekranında %10 veya 3.000 TL doğrulanmış fiyat düşüşü bulunmadı; mevcut akşam ana rota fiyatları önceki gözlemle eşdeğer. Farklı tarihli alternatifleri dip fiyat alarmına dönüştürme."
     }
   ],
   "sources": {
@@ -1035,6 +1149,6 @@
     "bolbol_membership": "https://www.flypgs.com/en/pegasus-bolbol-membership-agreement",
     "thy_cash_miles": "https://www.turkishairlines.com/tr-de/miles-and-smiles/mil-uygulamalari/cash-and-miles/"
   },
-  "last_check_slot": "2026-11-03 akşam (Europe/Istanbul)",
+  "last_check_slot": "2026-11-03 18:31 ek esnek tarih taraması (Europe/Istanbul)",
   "verified_price_drop": false
 }
