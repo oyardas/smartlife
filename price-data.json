@@ -2646,7 +2646,8 @@
         "25.000 BolPuan, kış dönemi uluslararası tek yön için referans tutardır; ADB–SAW–BEG aktarmalı itinererin puan ücreti doğrulanmadı.",
         "Vergi, check-in, hizmet bedeli ve bagaj dahil nihai tutar Pegasus ödeme ekranında doğrulanmalıdır.",
         "İlk puan kullanımında yalnızca üyenin kendi adına bilet/ek hizmet alınabilir; üçüncü kişi için kullanımı ilk puanlı uçuşun tamamlanmasından sonra mümkündür.",
-        "BolPuan'ın sabit TL karşılığı yoktur; nihai nakit tutar yalnız Pegasus'un kişiye sunduğu tekliftir."
+        "BolPuan'ın sabit TL karşılığı yoktur; nihai nakit tutar yalnız Pegasus'un kişiye sunduğu tekliftir.",
+        "23 Aralık 2025 itibarıyla kısmen/tamamen BolPuan ile düzenlenen biletlerde değişiklik ve açığa alma yapılmaz; iptal kuralları ayrıca uygulanır."
       ]
     },
     "thy": {
@@ -2688,7 +2689,8 @@
       }
     ],
     "historical_price_drop_eligible": false,
-    "warning": "Farklı günlerdeki ve farklı rota/üründeki fiyatlar karşılaştırılabilir tarihsel düşüş değildir. Puan sonrası indirim ancak aynı rezervasyonun Pegasus ödeme ekranında görülen tutarıyla hesaplanabilir."
+    "warning": "Farklı günlerdeki ve farklı rota/üründeki fiyatlar karşılaştırılabilir tarihsel düşüş değildir. Puan sonrası indirim ancak aynı rezervasyonun Pegasus ödeme ekranında görülen tutarıyla hesaplanabilir.",
+    "rules_checked_at": "2026-11-03"
   },
   "three_person_transport_budget": {
     "schema_version": 1,
@@ -2775,10 +2777,9 @@
     "rating": "Price observations, NOT live booking guarantee"
   },
   "latest_total_trip_budget": {
-    "schema_version": 1,
-    "checked_at": "2026-11-02T07:32:00Z",
-    "observation_window_utc": "2026-11-02 07:30–07:32 UTC",
-    "source_provenance": "2 Kasım 2026 tarihli Pegasus ve Trivago bağlantılı araç araştırması; kullanıcıyla güncel görüşmede ele alınan göstergeler.",
+    "schema_version": 2,
+    "checked_at": "2026-11-03T08:20:00Z",
+    "source_provenance": "Pegasus ve Trivago bağlantılı aramalar; Airbnb satıcı ekranı ile tarih, kişi sayısı, fiyat, yatak ve iptal kontrolü.",
     "travelers": 3,
     "traveler_type": "adults",
     "currency": "TRY",
@@ -2790,58 +2791,397 @@
     "return_day_tr": "Pazartesi",
     "nights": 4,
     "total_trip_target_try": 100000,
-    "slight_overrun_acceptable": true,
     "flight": {
       "carrier": "Pegasus",
-      "routing": "İstanbul aktarmalı",
-      "total_three_adults": 80564.4,
+      "routing": "ADB–SAW–BEG / BEG–SAW–ADB",
+      "total_three_adults": 80999.4,
+      "outbound_total": 50222.4,
+      "inbound_total": 30777,
+      "outbound_departure": "07:00",
+      "outbound_arrival_local": "2026-12-31 10:15",
+      "return_departure_local": "11:15",
+      "return_arrival": "18:15",
       "source_url": "https://www.flypgs.com/",
       "baggage_verified": false,
       "cancellation_verified": false,
+      "fare_class_verified": false,
       "final_payment_verified": false
     },
     "hotel": {
-      "name": "Vuk",
+      "name": "Old tree apartments Savamala 2",
       "nights": 4,
-      "total_three_adults": 9142,
-      "source": "Trivago / Airbnb fiyat göstergesi",
-      "source_url": "https://www.trivago.com.tr/",
-      "exact_deal_url_verified": false,
-      "bed_configuration_verified": false,
-      "cancellation_verified": false,
-      "final_taxes_verified": false
+      "total_three_adults": 27416,
+      "source": "Trivago / Airbnb; Airbnb satıcı ekranında aynı toplam doğrulandı",
+      "source_url": "https://www.airbnb.com.tr/rooms/14196128",
+      "exact_deal_url": "https://www.trivago.com.tr/tr/lm/tüm-ev-apart-daire-eski-ağaç-daireler-savamala-2-belgrad?cip=234716015&currencyCode=TRY&search=100-42164214%3B106-1527%3Bdr-20261231-20270104%3Bdrs-40%3Brc-1-3&cds=8VCrgo17m9KgvmX7dxGDq8E9a%2BEy1Tw0zh3w1Uu5GvoOBFpD7wLCSssm%2Fyfx%2FaYlU%2BnyBkgGgbIaPt4%2F%2BRlu0tYz2DdvLhxk3OFtt7E4cBh4%2Fup5rN1bX89AZrO0sQqkD6aPW%2BfJ3%2BxjU66hnEVVM3KzJ5Xi9u%2FGA0mOhDV%2BF06GMwHpp15kqQ%3D%3D&cdsOrigin=DEAL_ON_DEALFINDER",
+      "exact_deal_url_verified": true,
+      "bed_configuration": "1 yatak odasında büyük boy yatak + oturma odasında 1 kanepe; 3 ayrı yatak değil",
+      "bed_configuration_verified": true,
+      "occupancy": 3,
+      "cancellation_verified": true,
+      "cancellation": "Ücretsiz iptal son günü 1 Aralık; 24 Aralık öncesi kısmi iade. Kesin saat ve kısmi iade oranı teyit edilmedi.",
+      "seller_all_fees_included_label": true,
+      "final_payment_verified": false,
+      "safety_note": "Karbonmonoksit alarmı ve duman dedektörü bildirilmedi; mülkte evcil hayvanlar bulunuyor."
     },
-    "observed_flight_plus_hotel_try": 89706.4,
-    "remaining_to_target_before_other_costs_try": 10293.6,
-    "estimated_all_in_try_min": 110000,
-    "estimated_all_in_try_max": 115000,
-    "indicative_other_cost_allowance_try_min": 20293.6,
-    "indicative_other_cost_allowance_try_max": 25293.6,
-    "estimated_over_target_try_min": 10000,
-    "estimated_over_target_try_max": 15000,
-    "other_costs_note": "Yeme-içme, bagaj, yerel ulaşım/transferler, varsa harç ve diğer giderler için toplam planlama payı; tek tek doğrulanmış satış ücretleri değildir.",
+    "observed_flight_plus_hotel_try": 108415.4,
+    "remaining_to_target_before_other_costs_try": -8415.4,
+    "estimated_all_in_try_min": null,
+    "estimated_all_in_try_max": null,
+    "planning_subtotal_try_min": 146415.4,
+    "planning_subtotal_try_max": 153415.4,
+    "indicative_other_cost_allowance_try_min": 38000,
+    "indicative_other_cost_allowance_try_max": 45000,
+    "subtotal_exclusions": [
+      "Doğrulanmamış bagaj ve uçuş ek hizmetleri",
+      "Türkiye havalimanı erişimi / İstanbul konumlandırması",
+      "Yılbaşı gala veya özel etkinliği",
+      "Alışveriş"
+    ],
+    "other_costs_note": "5 takvim günü / 4 gece / 3 yetişkin için yemek, transfer, çıkış harcı, küçük geziler/bağlantı ve kur payı. Satıcı tarafından verilmiş paket fiyat değildir; dışarıda bırakılan giderler eklendiğinde gerçek toplam yükselir.",
     "points_discount_try": null,
     "points_discount_verified": false,
     "istanbul_alternative": {
       "airport": "SAW",
-      "total_three_adults_roundtrip": 70707,
+      "total_three_adults_roundtrip": 71130,
       "direct": true,
       "izmir_positioning_included": false,
       "hotel_included": false,
       "baggage_verified": false,
       "final_payment_verified": false,
-      "comparison_note": "İzmir bağlantısı ve konaklama eklenmeden 89.706,40 TL uçuş+otel tabanıyla eşdeğer karşılaştırılamaz."
+      "flight_plus_chosen_hotel_try": 98546,
+      "planning_subtotal_try_min": 136546,
+      "planning_subtotal_try_max": 143546,
+      "comparison_note": "İzmir–İstanbul bağlantısı ve gerekli tampon süre/konaklama ayrıca eklenmelidir. İzmir çıkışlı planla eşdeğer kapsam değildir."
     },
     "sunday_alternatives_preserved": true,
     "historical_price_drop": false,
-    "alert": false,
+    "alert": true,
+    "alert_reason": "Önceki ucuz konaklama yeniden doğrulanmadı; bazı arama sonuçlarında şehir/konum uyumsuzluğu bulundu. 100.000 TL tüm giderler hedefi doğrulanamadı.",
     "caveats": [
-      "Kesin rezervasyon veya bagaj dahil son ödeme tutarı değildir.",
-      "Vuk teklifinin üç kişilik yatak düzeni, iptal koşulları ve nihai vergileri teyitsizdir.",
-      "Puan indirimi hesaplanmadı; kalan nakit ödeme resmî rezervasyon ekranında doğrulanmalıdır.",
-      "4 Ocak 2027 dönüşü Pazartesi günüdür; 3 Ocak Pazar alternatifleri korunmuştur.",
-      "100.000 TL toplam tatil hedefi, önceki 50.000 TL yalnız ulaşım hedefinden ayrıdır.",
-      "Farklı konaklamaya geçiş tarihsel fiyat düşüşü olarak etiketlenmez."
+      "Bu bir piyasa minimumu veya satın alınabilir nihai paket fiyat değildir.",
+      "Pegasus 0 TL / 00:00 / boş varış kayıtları eksik veri sayıldı, ücretsiz bilet kabul edilmedi.",
+      "31 Aralık 21:35 İzmir çıkışı ertesi gün varır ve yılbaşı gecesini kaçırır.",
+      "2 Kasım Vuk 9.142 TL/4 gece teklifi yeniden doğrulanamadı; geçmiş kayıt korunuyor.",
+      "Daha düşük fiyatlı daire arama sonuçları var; koşulları tam doğrulanmadığı için ana senaryoda kullanılmadı.",
+      "Puanlar sabit TL değeriyle düşülmedi ve kişisel bakiyeler yayımlanmadı."
     ]
-  }
+  },
+  "total_trip_budget_history": [
+    {
+      "schema_version": 1,
+      "checked_at": "2026-11-02T07:32:00Z",
+      "observation_window_utc": "2026-11-02 07:30–07:32 UTC",
+      "source_provenance": "2 Kasım 2026 tarihli Pegasus ve Trivago bağlantılı araç araştırması; kullanıcıyla güncel görüşmede ele alınan göstergeler.",
+      "travelers": 3,
+      "traveler_type": "adults",
+      "currency": "TRY",
+      "roundtrip": true,
+      "origin": "İzmir (ADB)",
+      "destination": "Belgrad (BEG)",
+      "outbound": "2026-12-31",
+      "inbound": "2027-01-04",
+      "return_day_tr": "Pazartesi",
+      "nights": 4,
+      "total_trip_target_try": 100000,
+      "slight_overrun_acceptable": true,
+      "flight": {
+        "carrier": "Pegasus",
+        "routing": "İstanbul aktarmalı",
+        "total_three_adults": 80564.4,
+        "source_url": "https://www.flypgs.com/",
+        "baggage_verified": false,
+        "cancellation_verified": false,
+        "final_payment_verified": false
+      },
+      "hotel": {
+        "name": "Vuk",
+        "nights": 4,
+        "total_three_adults": 9142,
+        "source": "Trivago / Airbnb fiyat göstergesi",
+        "source_url": "https://www.trivago.com.tr/",
+        "exact_deal_url_verified": false,
+        "bed_configuration_verified": false,
+        "cancellation_verified": false,
+        "final_taxes_verified": false
+      },
+      "observed_flight_plus_hotel_try": 89706.4,
+      "remaining_to_target_before_other_costs_try": 10293.6,
+      "estimated_all_in_try_min": 110000,
+      "estimated_all_in_try_max": 115000,
+      "indicative_other_cost_allowance_try_min": 20293.6,
+      "indicative_other_cost_allowance_try_max": 25293.6,
+      "estimated_over_target_try_min": 10000,
+      "estimated_over_target_try_max": 15000,
+      "other_costs_note": "Yeme-içme, bagaj, yerel ulaşım/transferler, varsa harç ve diğer giderler için toplam planlama payı; tek tek doğrulanmış satış ücretleri değildir.",
+      "points_discount_try": null,
+      "points_discount_verified": false,
+      "istanbul_alternative": {
+        "airport": "SAW",
+        "total_three_adults_roundtrip": 70707,
+        "direct": true,
+        "izmir_positioning_included": false,
+        "hotel_included": false,
+        "baggage_verified": false,
+        "final_payment_verified": false,
+        "comparison_note": "İzmir bağlantısı ve konaklama eklenmeden 89.706,40 TL uçuş+otel tabanıyla eşdeğer karşılaştırılamaz."
+      },
+      "sunday_alternatives_preserved": true,
+      "historical_price_drop": false,
+      "alert": false,
+      "caveats": [
+        "Kesin rezervasyon veya bagaj dahil son ödeme tutarı değildir.",
+        "Vuk teklifinin üç kişilik yatak düzeni, iptal koşulları ve nihai vergileri teyitsizdir.",
+        "Puan indirimi hesaplanmadı; kalan nakit ödeme resmî rezervasyon ekranında doğrulanmalıdır.",
+        "4 Ocak 2027 dönüşü Pazartesi günüdür; 3 Ocak Pazar alternatifleri korunmuştur.",
+        "100.000 TL toplam tatil hedefi, önceki 50.000 TL yalnız ulaşım hedefinden ayrıdır.",
+        "Farklı konaklamaya geçiş tarihsel fiyat düşüşü olarak etiketlenmez."
+      ]
+    }
+  ],
+  "latest_daily_scan": {
+    "checked_at": "2026-11-03T08:20:00Z",
+    "traveler_count": 3,
+    "currency": "TRY",
+    "status": "completed_with_unpriced_items",
+    "flight_source": "https://www.flypgs.com/",
+    "flight_price_scope": "Her iki yön tutarı da 3 yetişkin içindir; toplam bu iki grup ücretinin toplamıdır.",
+    "flight_options": [
+      {
+        "origin": "ADB",
+        "outbound": "2026-12-31",
+        "inbound": "2027-01-04",
+        "outbound_total": 50222.4,
+        "inbound_total": 30777,
+        "total": 80999.4,
+        "arrival": "2026-12-31T10:15:00+01:00",
+        "nights_at_destination": 4,
+        "status": "indicative_quote"
+      },
+      {
+        "origin": "SAW",
+        "outbound": "2026-12-31",
+        "inbound": "2027-01-04",
+        "outbound_total": 45096,
+        "inbound_total": 26034,
+        "total": 71130,
+        "nights_at_destination": 4,
+        "status": "indicative_quote"
+      },
+      {
+        "origin": "ADB",
+        "outbound": "2026-12-30",
+        "inbound": "2027-01-03",
+        "outbound_total": 50222.4,
+        "inbound_total": 53181,
+        "total": 103403.4,
+        "arrival": "2026-12-31T10:15:00+01:00",
+        "nights_at_destination": 3,
+        "status": "overnight_outbound"
+      },
+      {
+        "origin": "ADB",
+        "outbound": "2026-12-31",
+        "inbound": "2027-01-03",
+        "outbound_total": 50222.4,
+        "inbound_total": 53181,
+        "total": 103403.4,
+        "nights_at_destination": 3,
+        "status": "indicative_quote"
+      },
+      {
+        "origin": "SAW",
+        "outbound": "2026-12-31",
+        "inbound": "2027-01-03",
+        "outbound_total": 45096,
+        "inbound_total": 48438,
+        "total": 93534,
+        "nights_at_destination": 3,
+        "status": "indicative_quote"
+      },
+      {
+        "origin": "ADB",
+        "outbound": "2026-12-31",
+        "inbound": "2027-01-04",
+        "outbound_departure": "21:35",
+        "outbound_total": 23915.4,
+        "inbound_total": 30777,
+        "total": 54692.4,
+        "arrival": "2027-01-01T10:15:00+01:00",
+        "status": "excluded_misses_new_year"
+      },
+      {
+        "origin": "SAW",
+        "outbound": "2026-12-30",
+        "inbound": "2027-01-03",
+        "total": null,
+        "status": "invalid_zero_outbound"
+      },
+      {
+        "origin": "SAW",
+        "outbound": "2026-12-31",
+        "inbound": "2027-01-02",
+        "total": null,
+        "status": "invalid_zero_return"
+      },
+      {
+        "origin": "ADB",
+        "outbound": "2026-12-29",
+        "inbound": "2027-01-04",
+        "total": null,
+        "status": "invalid_zero_outbound"
+      }
+    ],
+    "airfare_unknowns": [
+      "Bagaj",
+      "Ücret sınıfı",
+      "Değişiklik/iptal",
+      "Son ödeme tutarı",
+      "Aynı fiyatta üç koltuğun ödeme anında mevcudiyeti"
+    ],
+    "airlines_without_target_date_quote": [
+      "THY",
+      "Air Serbia",
+      "AJet"
+    ],
+    "hotel_selected": {
+      "name": "Old tree apartments Savamala 2",
+      "nights": 4,
+      "total_three_adults": 27416,
+      "source": "Trivago / Airbnb; Airbnb satıcı ekranında aynı toplam doğrulandı",
+      "source_url": "https://www.airbnb.com.tr/rooms/14196128",
+      "exact_deal_url": "https://www.trivago.com.tr/tr/lm/tüm-ev-apart-daire-eski-ağaç-daireler-savamala-2-belgrad?cip=234716015&currencyCode=TRY&search=100-42164214%3B106-1527%3Bdr-20261231-20270104%3Bdrs-40%3Brc-1-3&cds=8VCrgo17m9KgvmX7dxGDq8E9a%2BEy1Tw0zh3w1Uu5GvoOBFpD7wLCSssm%2Fyfx%2FaYlU%2BnyBkgGgbIaPt4%2F%2BRlu0tYz2DdvLhxk3OFtt7E4cBh4%2Fup5rN1bX89AZrO0sQqkD6aPW%2BfJ3%2BxjU66hnEVVM3KzJ5Xi9u%2FGA0mOhDV%2BF06GMwHpp15kqQ%3D%3D&cdsOrigin=DEAL_ON_DEALFINDER",
+      "exact_deal_url_verified": true,
+      "bed_configuration": "1 yatak odasında büyük boy yatak + oturma odasında 1 kanepe; 3 ayrı yatak değil",
+      "bed_configuration_verified": true,
+      "occupancy": 3,
+      "cancellation_verified": true,
+      "cancellation": "Ücretsiz iptal son günü 1 Aralık; 24 Aralık öncesi kısmi iade. Kesin saat ve kısmi iade oranı teyit edilmedi.",
+      "seller_all_fees_included_label": true,
+      "final_payment_verified": false,
+      "safety_note": "Karbonmonoksit alarmı ve duman dedektörü bildirilmedi; mülkte evcil hayvanlar bulunuyor."
+    },
+    "additional_hotel_observations": [
+      {
+        "name": "Çiçekler ve çatılar",
+        "outbound": "2026-12-31",
+        "inbound": "2027-01-04",
+        "total": 16338,
+        "source": "Airbnb 3 misafir arama sonucu",
+        "source_url": "https://www.airbnb.com.tr/rooms/938378785228913955",
+        "status": "search_result_only",
+        "unknowns": [
+          "Ayrıntılı konum",
+          "Yatak türleri",
+          "İptal son tarihi"
+        ]
+      },
+      {
+        "name": "Nobel Palace",
+        "outbound": "2026-12-31",
+        "inbound": "2027-01-04",
+        "total": 33047,
+        "source": "Trivago / Booking.com",
+        "breakfast": true,
+        "nonrefundable": true,
+        "status": "aggregator_quote_room_unverified",
+        "source_url": "https://nobelpalace.rs/"
+      },
+      {
+        "name": "Vuk Apartman",
+        "outbound": "2026-12-31",
+        "inbound": "2027-01-03",
+        "total": 6882,
+        "source": "Trivago / Airbnb",
+        "status": "three_nights_only_unverified_location_beds_terms",
+        "note": "2 Kasım 9.142 TL/4 gece ile eşdeğer değildir."
+      },
+      {
+        "name": "Signorina",
+        "outbound": "2026-12-31",
+        "inbound": "2027-01-04",
+        "total": 13184,
+        "status": "excluded_wrong_city",
+        "source_url": "https://www.booking.com/hotel/rs/signorina.sr.html",
+        "note": "Trivago Belgrad dedi; Booking satıcı yönlendirmesi Smederevo/Semendire gösterdi."
+      },
+      {
+        "name": "Sky Vista Hotel",
+        "outbound": "2026-12-31",
+        "inbound": "2027-01-04",
+        "total": 22523,
+        "status": "excluded_central_one_room_comparison",
+        "note": "Agoda satıcı ekranı Surčin ve 2 oda dahil gösterdi; Trivago merkez yakınlığıyla tutarsız."
+      }
+    ],
+    "costs": {
+      "days": 5,
+      "people": 3,
+      "planning_allowance_try": [
+        38000,
+        45000
+      ],
+      "items": [
+        {
+          "name": "Yemek, kahve ve su",
+          "estimate_try": [
+            21400,
+            28600
+          ],
+          "basis": "Kişi/gün 3.000–4.000 RSD; sıradan menü, yılbaşı gala değil",
+          "source": "https://beograd.masarestaurant.rs/en/menu/"
+        },
+        {
+          "name": "Havalimanı taksi gidiş-dönüş payı",
+          "estimate_try": 4000,
+          "basis": "Resmî merkez geliş tarifesi 3.500 RSD/araç; dönüş ve yılbaşı tamponu planlama payı",
+          "source": "https://www.bgprevoz.rs/storage/dokumenti/moduli/29/hK22rGx22ycnbQAvkvxmCl2kHKyTxfRyntg320vp.pdf"
+        },
+        {
+          "name": "Yurt dışına çıkış harcı",
+          "estimate_try": 3750,
+          "basis": "2026 için 1.250 TL x yükümlü 3 yetişkin; muafiyet varsa düşer",
+          "source": "https://www.gib.gov.tr/mevzuat/kanun/455/teblig/11846"
+        },
+        {
+          "name": "Küçük geziler, bağlantı ve ek yerel ulaşım",
+          "estimate_try": 3000
+        },
+        {
+          "name": "Kur ve fiyat tamponu",
+          "estimate_try": 5000
+        }
+      ],
+      "public_transport": {
+        "municipal_fares": "ücretsiz",
+        "airport_bus": "72, Zeleni Venac; yaklaşık 30–40 dakika",
+        "sources": [
+          "https://www.bgprevoz.rs/index.php/naplata/besplatan-javni-prevoz",
+          "https://beg.aero/lat/prakticne-informacije/javni-prevoz"
+        ]
+      },
+      "fx": {
+        "as_of": "2026-11-03",
+        "try_to_rsd": 2.1,
+        "source": "https://webappcenter.nbs.rs/ExchangeRateWebApp/ExchangeRate/CurrentMiddleRate",
+        "note": "Orta kur; banka/kart komisyonu ve makası hariç"
+      }
+    },
+    "loyalty": {
+      "rules_checked_at": "2026-11-03",
+      "points_discount_verified": false,
+      "balances_published": false,
+      "notes": [
+        "BolPuan sabit nakit değildir; uluslararası kış tek yön 25.000 referansı aktarmalı tüm seyahat ücreti değildir.",
+        "Puanla kısmen/tamamen alınan biletlerde 23 Aralık 2025 sonrası değişiklik/açığa alma yok; iptal kuralları ayrıca geçerli.",
+        "THY Cash&Miles vergi hariç ücretin en fazla %50'si; sabit mil/TL yok; AJet/codeshare kapsam dışı."
+      ],
+      "sources": [
+        "https://www.flypgs.com/pegasus-bolbol-uyelik-sozlesmesi",
+        "https://www.turkishairlines.com/tr-tr/miles-and-smiles/mil-uygulamalari/cash-and-miles/"
+      ]
+    }
+  },
+  "latest_refresh_at": "2026-11-03T08:20:00Z",
+  "archive_notice": "combinations ve eski fiyat panelleri kendi kontrol tarihlerini koruyan arşivdir; 3 Kasım 2026 güncellemesi latest_daily_scan ve latest_total_trip_budget içindedir."
 }
