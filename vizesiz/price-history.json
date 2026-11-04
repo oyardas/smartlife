@@ -278,13 +278,13 @@
       "hotel": {
         "name": "Bashcharshija Apartment on Abdesthana",
         "full_stay_amount_try": 22309,
-        "review_score": 9.4,
-        "advertiser": "Booking.com",
+        "review_score": 9.9,
+        "advertiser": "Airbnb",
         "search_adults": 3,
         "search_rooms": 1,
         "room_capacity_for_this_rate_verified": false,
         "heating_at_this_rate_verified": false,
-        "source_name": "trivago 3 yetişkin, 1 oda, tam konaklama teklif göstergesi",
+        "source_name": "trivago 3 yetişkin/1 oda 30 Aralık–4 Ocak fiyatı (Airbnb), seçilen 3 kişi yatak/oda teyitsiz",
         "deal_url": "",
         "last_independently_observed_on": "2026-11-04"
       },
